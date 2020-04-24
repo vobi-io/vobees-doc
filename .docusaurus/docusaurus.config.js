@@ -233,7 +233,7 @@ export default {
       "logo": {
         "alt": "Vobees Logo",
         "src": "img/vobees.svg",
-        "srcDark": "img/docusaurus_keytar.svg"
+        "srcDark": "img/vobees_keytar.svg"
       },
       "links": [
         {
@@ -245,18 +245,6 @@ export default {
             {
               "label": "2.0.0-alpha.49",
               "to": "docs/introduction"
-            },
-            {
-              "label": "2.0.0-alpha.48",
-              "to": "docs/2.0.0-alpha.48/introduction"
-            },
-            {
-              "label": "2.0.0-alpha.43",
-              "to": "docs/2.0.0-alpha.43/introduction"
-            },
-            {
-              "label": "2.0.0-alpha.40",
-              "to": "docs/2.0.0-alpha.40/introduction"
             },
             {
               "label": "2.0.0-alpha.50",

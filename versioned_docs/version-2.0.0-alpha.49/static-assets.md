@@ -5,7 +5,7 @@ title: Static Assets
 
 In general, every website needs assets: images, stylesheets, favicons and etc. In such cases, you can create a directory named `static` at the root of your project. Every file you put into that directory will be copied into the the root of the generated `build` folder with the directory hierarchy preserved. E.g. if you add a file named `sun.jpg` to the static folder, it’ll be copied to `build/sun.jpg`.
 
-This means that if the site's `baseUrl` is `/`, an image in `/static/img/docusaurus_keytar.svg` is available at `/img/docusaurus_keytar.svg`.
+This means that if the site's `baseUrl` is `/`, an image in `/static/img/vobees_keytar.svg` is available at `/img/vobees_keytar.svg`.
 
 ## Referencing your static asset
 
@@ -20,7 +20,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 <img
   alt="Docusaurus with Keytar"
-  src={useBaseUrl('img/docusaurus_keytar.svg')}
+  src={useBaseUrl('img/vobees_keytar.svg')}
 />;
 ```
 
@@ -38,7 +38,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl'; // Add to the top of the file b
 
 ...
 
-<img alt="Docusaurus with Keytar" src={useBaseUrl('img/docusaurus_keytar.svg')} />;
+<img alt="Docusaurus with Keytar" src={useBaseUrl('img/vobees_keytar.svg')} />;
 ```
 
 You could also just use Markdown image syntax, but you would have to manually maintain the image paths yourself and isn't recommended.

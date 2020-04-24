@@ -75,7 +75,7 @@ function Home() {
               <img
                 alt="Docusaurus with Keytar"
                 className={styles.heroLogo}
-                src={useBaseUrl('img/docusaurus_keytar.svg')}
+                src={useBaseUrl('img/vobees_keytar.svg')}
               />
               Build{' '}
               <span className={styles.heroProjectKeywords}>optimized</span>{' '}

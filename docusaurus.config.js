@@ -85,7 +85,7 @@ module.exports = {
       logo: {
         alt: 'Vobees Logo',
         src: 'img/vobees.svg',
-        srcDark: 'img/docusaurus_keytar.svg',
+        srcDark: 'img/vobees_keytar.svg',
       },
       links: [
         {
