@@ -4,6 +4,6 @@ steps:
     args: ['install']
   - name: node:12.11.1
     entrypoint: yarn
-    args: [ 'run', 'build']
+    args: [ 'build']
   - name: 'gcr.io/cloud-builders/gsutil'
     args: ['-m', 'rsync', '-d', '-r', 'build/', 'gs://vobees.vobi.io']
