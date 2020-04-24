@@ -3,7 +3,7 @@ id: installation
 title: Installation
 ---
 
-Vobees is essentially a set of npm [packages](https://github.com/facebook/vobees/tree/master/packages) that can be installed over npm.
+Docusaurus is essentially a set of npm [packages](https://github.com/facebook/docusaurus/tree/master/packages) that can be installed over npm.
 
 ## Requirements
 
@@ -12,24 +12,24 @@ Vobees is essentially a set of npm [packages](https://github.com/facebook/vobees
 
 ## Scaffold project website
 
-The easiest way to install Vobees is to use the command line tool that helps you scaffold a skeleton Vobees website. You can run this command anywhere in a new empty repository or within an existing repository, it will create a new directory containing the scaffolded files.
+The easiest way to install Docusaurus is to use the command line tool that helps you scaffold a skeleton Docusaurus website. You can run this command anywhere in a new empty repository or within an existing repository, it will create a new directory containing the scaffolded files.
 
 ```bash
-npx @vobees/init@next init [name] [template]
+npx @docusaurus/init@next init [name] [template]
 ```
 
 Example:
 
 ```bash
-npx @vobees/init@next init my-website classic
+npx @docusaurus/init@next init my-website classic
 ```
 
-If you do not specify `name` or `template`, it will prompt you for them. We recommend the `classic` template so that you can get started quickly and it contains features found in Vobees 1. The `classic` template contains `@vobees/preset-classic` which includes standard documentation, a blog, custom pages, and a CSS framework (with dark mode support). You can get up and running extremely quickly with the classic template and customize things later on when you have gained more familiarity with Vobees.
+If you do not specify `name` or `template`, it will prompt you for them. We recommend the `classic` template so that you can get started quickly and it contains features found in Docusaurus 1. The `classic` template contains `@docusaurus/preset-classic` which includes standard documentation, a blog, custom pages, and a CSS framework (with dark mode support). You can get up and running extremely quickly with the classic template and customize things later on when you have gained more familiarity with Docusaurus.
 
-**[FB-Only]:** If you are setting up a new Vobees website for a Facebook open source project, use the `facebook` template instead, which comes with some useful Facebook-specific defaults:
+**[FB-Only]:** If you are setting up a new Docusaurus website for a Facebook open source project, use the `facebook` template instead, which comes with some useful Facebook-specific defaults:
 
 ```bash
-npx @vobees/init@next init my-website facebook
+npx @docusaurus/init@next init my-website facebook
 ```
 
 ## Project structure
@@ -56,7 +56,7 @@ my-website
 │       └── index.js
 ├── static
 │   └── img
-├── vobees.config.js
+├── docusaurus.config.js
 ├── package.json
 ├── README.md
 ├── sidebars.js
@@ -70,8 +70,8 @@ my-website
 - `/src/` - Non-documentation files like pages or custom React components. You don't have to strictly put your non-documentation files in here but putting them under a centralized directory makes it easier to specify in case you need to do some sort of linting/processing
   - `/src/pages` - Any files within this directory will be converted into a website page. More details can be found in the [pages guide](creating-pages.md).
 - `/static/` - Static directory. Any contents inside here will be copied into the root of the final `build` directory.
-- `/vobees.config.js` - A config file containing the site configuration. This is the equivalent of `siteConfig.js` in Vobees 1.
-- `/package.json` - A Vobees website is a React app. You can install and use any npm packages you like in them.
+- `/docusaurus.config.js` - A config file containing the site configuration. This is the equivalent of `siteConfig.js` in Docusaurus 1.
+- `/package.json` - A Docusaurus website is a React app. You can install and use any npm packages you like in them.
 - `/sidebar.js` - Used by the documentation to specify the order of documents in the sidebar.
 
 ## Running the development server
@@ -85,11 +85,11 @@ npm run start
 
 By default, a browser window will open at http://localhost:3000.
 
-Congratulations! You have just created your first Vobees site! Browse around the site to see what's available.
+Congratulations! You have just created your first Docusaurus site! Browse around the site to see what's available.
 
 ## Build
 
-Vobees is a modern static website generator so we need to build the website into a directory of static contents and put it on a web server so that it can be viewed. To build the website:
+Docusaurus is a modern static website generator so we need to build the website into a directory of static contents and put it on a web server so that it can be viewed. To build the website:
 
 ```bash npm2yarn
 npm run build
@@ -97,20 +97,20 @@ npm run build
 
 and contents will be generated within the `/build` directory, which can be copied to any static file hosting service like [GitHub pages](https://pages.github.com/), [Now](https://zeit.co/now) or [Netlify](https://www.netlify.com/). Check out the docs on [deployment](deployment.md) for more details.
 
-## Updating your Vobees version
+## Updating your Docusaurus version
 
-There are many ways to update your Vobees version. One guaranteed way is to manually change the version number in `package.json` to the desired version. Note that all `@vobees/`-namespaced packages should be using the same version.
+There are many ways to update your Docusaurus version. One guaranteed way is to manually change the version number in `package.json` to the desired version. Note that all `@docusaurus/`-namespaced packages should be using the same version.
 
 :::important
 
-Please update to the latest Vobees 2 version shown at the top of the page, not what is shown below.
+Please update to the latest Docusaurus 2 version shown at the top of the page, not what is shown below.
 
 :::
 
 ```json
   "dependencies": {
-    "@vobees/core": "^2.0.0-alpha.49",
-    "@vobees/preset-classic": "^2.0.0-alpha.49",
+    "@docusaurus/core": "^2.0.0-alpha.49",
+    "@docusaurus/preset-classic": "^2.0.0-alpha.49",
     ...
   }
 ```
@@ -124,7 +124,7 @@ npm install
 To check that that the update occurred successfully, run:
 
 ```bash npm2yarn
-npm vobees --version
+npm docusaurus --version
 ```
 
 You should see the correct version as output.
@@ -132,9 +132,9 @@ You should see the correct version as output.
 Alternatively, if you are using Yarn, you can do:
 
 ```
-yarn upgrade @vobees/core@2.0.0-alpha.49 @vobees/preset-classic@2.0.0-alpha.49
+yarn upgrade @docusaurus/core@2.0.0-alpha.49 @docusaurus/preset-classic@2.0.0-alpha.49
 ```
 
 ## Problems?
 
-Ask for help on [Stack Overflow](https://stackoverflow.com/questions/tagged/vobees), on our [GitHub repository](https://github.com/facebook/vobees) or [Twitter](https://twitter.com/vobees).
+Ask for help on [Stack Overflow](https://stackoverflow.com/questions/tagged/docusaurus), on our [GitHub repository](https://github.com/facebook/docusaurus) or [Twitter](https://twitter.com/docusaurus).

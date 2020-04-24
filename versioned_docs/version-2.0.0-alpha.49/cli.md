@@ -3,40 +3,40 @@ id: cli
 title: CLI
 ---
 
-Vobees provides a set of scripts to help you generate, serve, and deploy your website.
+Docusaurus provides a set of scripts to help you generate, serve, and deploy your website.
 
-Once your website is generated, your website package will contain the Vobees scripts that you may invoke with your package manager:
+Once your website is generated, your website package will contain the Docusaurus scripts that you may invoke with your package manager:
 
 ```json title="package.json"
 {
   // ...
   "scripts": {
-    "start": "vobees start",
-    "build": "vobees build",
-    "swizzle": "vobees swizzle",
-    "deploy": "vobees deploy"
+    "start": "docusaurus start",
+    "build": "docusaurus build",
+    "swizzle": "docusaurus swizzle",
+    "deploy": "docusaurus deploy"
   }
 }
 ```
 
-## Vobees CLI commands
+## Docusaurus CLI commands
 
-Below is a list of Vobees CLI commands and their usages:
+Below is a list of Docusaurus CLI commands and their usages:
 
 <!-- TODO: init docs after the init command is implemented
 
-### `vobees init`
+### `docusaurus init`
 
-The `vobees init` command is intended to be used with `vobees` installed globally:
+The `docusaurus init` command is intended to be used with `docusaurus` installed globally:
 
 ```shell
-$ yarn global add vobees
+$ yarn global add docusaurus
 # or
-$ npm install --global vobees
+$ npm install --global docusaurus
 ```
 -->
 
-### `vobees start`
+### `docusaurus start`
 
 Builds and serves the static site with [Webpack Dev Server](https://webpack.js.org/configuration/dev-server).
 
@@ -55,7 +55,7 @@ Please note that some functionality (for example, anchor links) will not work in
 
 :::
 
-### `vobees build`
+### `docusaurus build`
 
 Compiles your site for production.
 
@@ -67,7 +67,7 @@ Compiles your site for production.
 | `--out-dir` | `build` | The full path for the new output directory, relative to the current workspace. |
 | `--no-minify` | `false` | Build website without minimizing JS/CSS bundles. |
 
-### `vobees swizzle`
+### `docusaurus swizzle`
 
 :::caution
 
@@ -75,10 +75,10 @@ We would like to discourage swizzling of components until we've minimally reache
 
 :::
 
-Swizzle any Vobees Theme components with your own component with `vobees swizzle`.
+Swizzle any Docusaurus Theme components with your own component with `docusaurus swizzle`.
 
 ```shell
-vobees swizzle <themeName> [componentName] [siteDir]
+docusaurus swizzle <themeName> [componentName] [siteDir]
 ```
 
 **params**
@@ -86,7 +86,7 @@ vobees swizzle <themeName> [componentName] [siteDir]
 - `themeName`: name of the theme you are using
 - `swizzleComponent`: name of the component to be swizzled
 
-Running the above command will copy the relevant theme files to your site folder. You may then make any changes to it and Vobees will use it instead of the one provided from the theme.
+Running the above command will copy the relevant theme files to your site folder. You may then make any changes to it and Docusaurus will use it instead of the one provided from the theme.
 
 To unswizzle a component, simply delete the files of the swizzled component.
 
@@ -94,7 +94,7 @@ To unswizzle a component, simply delete the files of the swizzled component.
 
 To learn more about swizzling, check [here](#).
 
-### `vobees deploy`
+### `docusaurus deploy`
 
 Deploys your site with [GitHub Pages](https://pages.github.com/).
 

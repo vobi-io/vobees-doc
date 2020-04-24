@@ -6,7 +6,7 @@ keywords:
   - search
 ---
 
-Vobees' own `@vobees/preset-classic` supports a search integration.
+Docusaurus' own `@docusaurus/preset-classic` supports a search integration.
 
 There are two main options, you can use [Algolia DocSearch](https://community.algolia.com/docsearch/) or bring in your own `SearchBar` component.
 
@@ -19,7 +19,7 @@ Algolia DocSearch works by crawling the content of your website every 24 hours a
 To connect your docs with Algolia, add an `algolia` field in your `themeConfig`. Note that you will need algolia API key and algolia index. You can [apply for DocSearch here](https://community.algolia.com/docsearch/).
 
 ```jsx {4-9}
-// vobees.config.js
+// docusaurus.config.js
 themeConfig: {
     // ....
     algolia: {
@@ -33,20 +33,20 @@ themeConfig: {
 
 ### Customizing the Algolia search bar
 
-If you prefer to customize Algolia's search bar React component, swizzle the `SearchBar` component in `@vobees/theme-search-algolia`:
+If you prefer to customize Algolia's search bar React component, swizzle the `SearchBar` component in `@docusaurus/theme-search-algolia`:
 
 ```bash npm2yarn
-npm run swizzle @vobees/theme-search-algolia SearchBar
+npm run swizzle @docusaurus/theme-search-algolia SearchBar
 ```
 
 ## Using your own search
 
-To use your own search, swizzle the `SearchBar` component in `@vobees/theme-classic`
+To use your own search, swizzle the `SearchBar` component in `@docusaurus/theme-classic`
 
 ```bash npm2yarn
-npm run swizzle @vobees/theme-classic SearchBar
+npm run swizzle @docusaurus/theme-classic SearchBar
 ```
 
-This will create a `src/themes/SearchBar` file in your project folder. Restart your dev server and edit the component, you will see that Vobees uses your own `SearchBar` component now.
+This will create a `src/themes/SearchBar` file in your project folder. Restart your dev server and edit the component, you will see that Docusaurus uses your own `SearchBar` component now.
 
 **Notes**: You can alternatively [swizzle from Algolia SearchBar](#customizing-the-algolia-search-bar) and create your own search component from there.

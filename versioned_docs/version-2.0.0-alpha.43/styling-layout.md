@@ -1,22 +1,22 @@
 ---
 id: styling-layout
 title: Styling and Layout
-description: A Vobees site is a pre-rendered single-page React application. You can style it the way you style React apps.
+description: A Docusaurus site is a pre-rendered single-page React application. You can style it the way you style React apps.
 ---
 
 import ColorGenerator from '@site/src/components/ColorGenerator';
 
 ## Traditional CSS
 
-If you're using `@vobees/preset-classic`, you can create your own CSS files (e.g. `/src/css/custom.css`) and import them globally by passing it as an option into the preset.
+If you're using `@docusaurus/preset-classic`, you can create your own CSS files (e.g. `/src/css/custom.css`) and import them globally by passing it as an option into the preset.
 
 ```js {8-10}
-// vobees.config.js
+// docusaurus.config.js
 module.exports = {
   // ...
   presets: [
     [
-      '@vobees/preset-classic',
+      '@docusaurus/preset-classic',
       {
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -31,9 +31,9 @@ Any CSS you write within that file will be available globally and can be referen
 
 ## Styling your site with Infima
 
-`@vobees/preset-classic` uses [Infima](https://facebookincubator.github.io/infima/) as the underlying styling framework. Infima provides flexible layout and common UI components styling suitable for content-centric websites (blogs, documentation, landing pages). For more details, check out the [Infima website](https://facebookincubator.github.io/infima/).
+`@docusaurus/preset-classic` uses [Infima](https://facebookincubator.github.io/infima/) as the underlying styling framework. Infima provides flexible layout and common UI components styling suitable for content-centric websites (blogs, documentation, landing pages). For more details, check out the [Infima website](https://facebookincubator.github.io/infima/).
 
-When you `init` your Vobees 2 project, the website will be generated with basic Infima stylesheets and default styling. You may customize the styling by editing the `src/css/custom.css` file.
+When you `init` your Docusaurus 2 project, the website will be generated with basic Infima stylesheets and default styling. You may customize the styling by editing the `src/css/custom.css` file.
 
 ```css
 /**
@@ -63,7 +63,7 @@ Alternatively, use the following tool to generate the different shades for your 
 
 ## Styling approaches
 
-A Vobees site is a single-page React application. You can style it the way you style React apps.
+A Docusaurus site is a single-page React application. You can style it the way you style React apps.
 
 There are a few approaches/frameworks which will work, depending on your preferences and the type of website you are trying to build. Websites that are highly interactive and behave more like web apps will benefit from a more modern styling approaches that co-locate styles with the components. Component styling can also be particularly useful when you wish to customize or swizzle a component.
 
@@ -71,7 +71,7 @@ There are a few approaches/frameworks which will work, depending on your prefere
 
 This is the most traditional way of styling that most developers (including non-front end developers) would be familiar with.
 
-Assuming you are using `@vobees/preset-classic` and `/src/css/custom.css` was passed in to the preset config, styles inside that file would be available globally.
+Assuming you are using `@docusaurus/preset-classic` and `/src/css/custom.css` was passed in to the preset config, styles inside that file would be available globally.
 
 ```css
 /* /src/css/custom.css */
@@ -126,4 +126,4 @@ The class names which will be processed by webpack into a globally unique class 
 
 ### CSS-in-JS
 
-> :warning: _This section is a work in progress._ [Welcoming PRs](https://github.com/facebook/vobees/issues/1640).\_
+> :warning: _This section is a work in progress._ [Welcoming PRs](https://github.com/facebook/docusaurus/issues/1640).\_

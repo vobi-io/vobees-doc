@@ -1,0 +1,8 @@
+steps:
+  - name: node:12.11.1
+    entrypoint: yarn
+    args: ['install']
+  - name: 'gcr.io/cloud-builders/yarn'
+    args: ['build']
+  - name: 'gcr.io/cloud-builders/gsutil'
+    args: ['-m', 'rsync', '-d', '-r', 'build/', 'gs://vobees.vobi.io']

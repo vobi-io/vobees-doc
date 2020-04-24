@@ -8,17 +8,17 @@
 import React, {useEffect} from 'react';
 import Layout from '@theme/Layout';
 
-import Link from '@vobees/Link';
-import useBaseUrl from '@vobees/useBaseUrl';
+import Link from '@docusaurus/Link';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 
 function Help() {
   return (
-    <Layout permalink="/help" description="Vobees 2 Help page">
+    <Layout permalink="/help" description="Docusaurus 2 Help page">
       <div className="container margin-vert--xl">
         <div className="text--center margin-bottom--xl">
           <h1>Need Help?</h1>
           <p>
-            If you need help with Vobees 2, you can try one of the
+            If you need help with Docusaurus 2, you can try one of the
             mechanisms below.
           </p>
         </div>
@@ -26,7 +26,7 @@ function Help() {
           <div className="col">
             <h2>Browse the docs</h2>
             <p>
-              Learn more about Vobees using the{' '}
+              Learn more about Docusaurus using the{' '}
               <Link to={useBaseUrl('docs/introduction')}>
                 official documentation
               </Link>
@@ -39,7 +39,7 @@ function Help() {
               <a
                 target="_blank"
                 rel="noreferrer noopener"
-                href="https://discord.gg/vobees">
+                href="https://discord.gg/docusaurus">
                 Discord
               </a>{' '}
               on one of our two text channels:{' '}
@@ -47,14 +47,14 @@ function Help() {
                 target="_blank"
                 rel="noreferrer noopener"
                 href="https://discord.gg/7wjJ9yH">
-                #vobees-2-dogfooding
+                #docusaurus-2-dogfooding
               </a>{' '}
               for user help and{' '}
               <a
                 target="_blank"
                 rel="noreferrer noopener"
                 href="https://discord.gg/6g6ASPA">
-                #vobees-2-dev
+                #docusaurus-2-dev
               </a>{' '}
               for contributing help.
             </p>
@@ -66,7 +66,7 @@ function Help() {
               <a
                 target="_blank"
                 rel="noreferrer noopener"
-                href="https://twitter.com/vobees">
+                href="https://twitter.com/docusaurus">
                 Twitter
               </a>
               .
@@ -79,21 +79,21 @@ function Help() {
               <a
                 target="_blank"
                 rel="noreferrer noopener"
-                href="https://github.com/facebook/vobees">
+                href="https://github.com/facebook/docusaurus">
                 GitHub repo
               </a>{' '}
               Browse and submit{' '}
               <a
                 target="_blank"
                 rel="noreferrer noopener"
-                href="https://github.com/facebook/vobees/issues">
+                href="https://github.com/facebook/docusaurus/issues">
                 issues
               </a>{' '}
               or{' '}
               <a
                 target="_blank"
                 rel="noreferrer noopener"
-                href="https://github.com/facebook/vobees/pulls">
+                href="https://github.com/facebook/docusaurus/pulls">
                 pull requests
               </a>{' '}
               for bugs you find or any new features you may want implemented. Be
@@ -101,7 +101,7 @@ function Help() {
               <a
                 target="_blank"
                 rel="noreferrer noopener"
-                href="https://github.com/facebook/vobees/blob/master/CONTRIBUTING.md">
+                href="https://github.com/facebook/docusaurus/blob/master/CONTRIBUTING.md">
                 contributing guide
               </a>
               .

@@ -1,0 +1,21 @@
+{
+  "id": "version-2.0.0-alpha.49/docusaurus-core",
+  "title": "Docusaurus Client API",
+  "description": "Docusaurus provides some APIs on the clients that can be helpful to you when building your site.",
+  "source": "@site/versioned_docs/version-2.0.0-alpha.49/docusaurus-core.md",
+  "permalink": "/docs/docusaurus-core",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/versioned_docs/version-2.0.0-alpha.49/docusaurus-core.md",
+  "version": "2.0.0-alpha.49",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "sidebar_label": "Client API",
+  "sidebar": "version-2.0.0-alpha.49/docs",
+  "previous": {
+    "title": "CLI",
+    "permalink": "/docs/cli"
+  },
+  "next": {
+    "title": "docusaurus.config.js",
+    "permalink": "/docs/docusaurus.config.js"
+  }
+}

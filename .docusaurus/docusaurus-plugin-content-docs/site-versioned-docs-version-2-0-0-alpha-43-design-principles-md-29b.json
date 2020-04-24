@@ -1,0 +1,20 @@
+{
+  "id": "version-2.0.0-alpha.43/design-principles",
+  "title": "Design Principles",
+  "description": "> :warning: _This section is a work in progress._",
+  "source": "@site/versioned_docs/version-2.0.0-alpha.43/design-principles.md",
+  "permalink": "/docs/2.0.0-alpha.43/design-principles",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/versioned_docs/version-2.0.0-alpha.43/design-principles.md",
+  "version": "2.0.0-alpha.43",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "sidebar": "version-2.0.0-alpha.43/docs",
+  "previous": {
+    "title": "Introduction",
+    "permalink": "/docs/2.0.0-alpha.43/introduction"
+  },
+  "next": {
+    "title": "Contributing",
+    "permalink": "/docs/2.0.0-alpha.43/contributing"
+  }
+}

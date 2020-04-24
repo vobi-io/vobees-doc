@@ -7,7 +7,7 @@ title: Blog
 
 To setup your site's blog, start by creating a `blog` directory.
 
-Then, add a navbar link to your blog within `vobees.config.js`:
+Then, add a navbar link to your blog within `docusaurus.config.js`:
 
 ```js
 links: [
@@ -21,23 +21,23 @@ links: [
 
 To publish in the blog, create a file within the blog directory with a formatted name of `YYYY-MM-DD-my-blog-post-title.md`. The post date is extracted from the file name.
 
-For example, at `my-website/blog/2019-09-05-hello-vobees-v2.md`:
+For example, at `my-website/blog/2019-09-05-hello-docusaurus-v2.md`:
 
 ```yml
 ---
-title: Welcome Vobees v2
+title: Welcome Docusaurus v2
 author: Joel Marcey
-author_title: Co-creator of Vobees 1
+author_title: Co-creator of Docusaurus 1
 author_url: https://github.com/JoelMarcey
 author_image_url: https://graph.facebook.com/611217057/picture/?height=200&width=200
 authorURL: https://github.com/JoelMarcey
-tags: [hello, vobees-v2]
+tags: [hello, docusaurus-v2]
 ---
-Welcome to this blog. This blog is created with [**Vobees 2 alpha**](https://v2.vobees.io/).
+Welcome to this blog. This blog is created with [**Docusaurus 2 alpha**](https://v2.docusaurus.io/).
 
 <!--truncate-->
 
-This is my first post on Vobees 2.
+This is my first post on Docusaurus 2.
 
 A whole bunch of exploration to follow.
 ```
@@ -91,12 +91,12 @@ feedOptions?: {
 Example usage:
 
 ```js {9-12}
-// vobees.config.js
+// docusaurus.config.js
 module.exports = {
   // ...
   presets: [
     [
-      '@vobees/preset-classic',
+      '@docusaurus/preset-classic',
       {
         blog: {
           feedOptions: {
@@ -128,17 +128,17 @@ https://{your-domain}/blog/atom.xml
 
 ### Blog-only mode
 
-You can run your Vobees 2 site without a landing page and instead have your blog's post list page as the index page. Set the `routeBasePath` to be `'/'` to indicate it's the root path.
+You can run your Docusaurus 2 site without a landing page and instead have your blog's post list page as the index page. Set the `routeBasePath` to be `'/'` to indicate it's the root path.
 
 **Note:** Make sure there's no `index.js` page in `src/pages` or else there will be two files mapping to the same route!
 
 ```js {10}
-// vobees.config.js
+// docusaurus.config.js
 module.exports = {
   // ...
   presets: [
     [
-      '@vobees/preset-classic',
+      '@docusaurus/preset-classic',
       {
         blog: {
           path: './blog',
@@ -156,7 +156,7 @@ Adding a blog using the blog plugin.
 
 References
 ---
-- [source code](/packages/vobees-plugin-content-blog/src/index.js)
-- [v1 doc](https://vobees.io/docs/en/next/adding-blog)
+- [source code](/packages/docusaurus-plugin-content-blog/src/index.js)
+- [v1 doc](https://docusaurus.io/docs/en/next/adding-blog)
 
 -->

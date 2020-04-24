@@ -1,0 +1,20 @@
+{
+  "id": "lifecycle-apis",
+  "title": "Lifecycle APIs",
+  "description": ":::caution",
+  "source": "@site/docs/lifecycle-apis.md",
+  "permalink": "/docs/next/lifecycle-apis",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/lifecycle-apis.md",
+  "version": "next",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "sidebar": "docs",
+  "previous": {
+    "title": "docusaurus.config.js",
+    "permalink": "/docs/next/docusaurus.config.js"
+  },
+  "next": {
+    "title": "@docusaurus/theme-classic",
+    "permalink": "/docs/next/theme-classic"
+  }
+}

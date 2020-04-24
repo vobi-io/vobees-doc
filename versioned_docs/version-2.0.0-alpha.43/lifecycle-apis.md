@@ -14,11 +14,11 @@ Specifies the paths to watch for plugins and themes. The paths are watched by th
 Example:
 
 ```js {6-8}
-// vobees-plugin/src/index.js
+// docusaurus-plugin/src/index.js
 const path = require('path');
 module.exports = function(context, options) {
   return {
-    name: 'vobees-plugin',
+    name: 'docusaurus-plugin',
     getPathsToWatch() {
       const contentPath = path.resolve(context.siteDir, options.path);
       return [`${contentPath}/**/*.{ts,tsx}`];
@@ -34,11 +34,11 @@ Plugins should use this lifecycle to fetch from data sources (filesystem, remote
 For example, this plugin below return a random integer between 1 to 10 as content;
 
 ```js {6-7}
-// vobees-plugin/src/index.js
+// docusaurus-plugin/src/index.js
 const path = require('path');
 module.exports = function(context, options) {
   return {
-    name: 'vobees-plugin',
+    name: 'docusaurus-plugin',
     async loadContent() {
       return 1 + Math.floor(Math.random() * 10);
     },
@@ -101,10 +101,10 @@ export default function(props) {
 ```
 
 ```javascript {5-20}
-// vobees-plugin/src/index.js
+// docusaurus-plugin/src/index.js
 module.exports = function(context, options) {
   return {
-    name: 'vobees-plugin',
+    name: 'docusaurus-plugin',
     async contentLoaded({content, actions}) {
       const {createData, addRoute} = actions;
       // create a data named 'prizes.json'
@@ -151,10 +151,10 @@ You may use them to return your webpack configures conditionally.
 For example, this plugin below modify the webpack config to transpile `.foo` file.
 
 ```js {5-12}
-// vobees-plugin/src/index.js
+// docusaurus-plugin/src/index.js
 module.exports = function(context, options) {
   return {
-    name: 'custom-vobees-plugin',
+    name: 'custom-docusaurus-plugin',
     configureWebpack(config, isServer, utils) {
       const {getCacheLoader} = utils;
       return {
@@ -194,10 +194,10 @@ type Props = {
 Example:
 
 ```js {5-10}
-// vobees-plugin/src/index.js
+// docusaurus-plugin/src/index.js
 module.exports = function(context, options) {
   return {
-    name: 'vobees-plugin',
+    name: 'docusaurus-plugin',
     async postBuild({siteConfig = {}, routesPaths = [], outDir}) {
       // Print out to console all the rendered routes
       routesPaths.map(route => {
@@ -210,15 +210,15 @@ module.exports = function(context, options) {
 
 ## `extendCli(cli)`
 
-Register an extra command to enhance the CLI of vobees. `cli` is [commander](https://www.npmjs.com/package/commander) object.
+Register an extra command to enhance the CLI of docusaurus. `cli` is [commander](https://www.npmjs.com/package/commander) object.
 
 Example:
 
 ```js {5-12}
-// vobees-plugin/src/index.js
+// docusaurus-plugin/src/index.js
 module.exports = function(context, options) {
   return {
-    name: 'vobees-plugin',
+    name: 'docusaurus-plugin',
     extendCli(cli) {
       cli
         .command('roll')
@@ -233,7 +233,7 @@ module.exports = function(context, options) {
 
 ## `injectHtmlTags()`
 
-Inject head and/or body html tags to Vobees generated html.
+Inject head and/or body html tags to Docusaurus generated html.
 
 ```typescript
 function injectHtmlTags(): {
@@ -266,10 +266,10 @@ interface HtmlTagObject {
 Example:
 
 ```js {5-29}
-// vobees-plugin/src/index.js
+// docusaurus-plugin/src/index.js
 module.exports = function(context, options) {
   return {
-    name: 'vobees-plugin',
+    name: 'docusaurus-plugin',
     injectHtmlTags() {
       return {
         headTags: [
@@ -339,7 +339,7 @@ module.exports = function(context, options) {
 ```
 
 <!--
-For example, the in vobees-plugin-content-docs:
+For example, the in docusaurus-plugin-content-docs:
 
     In loadContent, it loads the doc Markdown files based on the specified directory in options (defaulting to docs).
     In contentLoaded, for each doc Markdown file, a route is created: /doc/installation, /doc/getting-started, etc.
@@ -355,7 +355,7 @@ const DEFAULT_OPTIONS = {
 };
 
 // A JavaScript function that returns an object.
-// `context` is provided by Vobees. Example: siteConfig can be accessed from context.
+// `context` is provided by Docusaurus. Example: siteConfig can be accessed from context.
 // `opts` is the user-defined options.
 module.exports = function(context, opts) {
   // Merge defaults with user-defined options.
@@ -367,7 +367,7 @@ module.exports = function(context, opts) {
     // If you're writing your own local plugin, you will want it to
     // be unique in order not to potentially conflict with imported plugins.
     // A good way will be to add your own project name within.
-    name: 'vobees-my-project-cool-plugin',
+    name: 'docusaurus-my-project-cool-plugin',
 
     async loadContent() {
       // The loadContent hook is executed after siteConfig and env has been loaded
@@ -376,16 +376,16 @@ module.exports = function(context, opts) {
 
     async contentLoaded({content, actions}) {
       // contentLoaded hook is done after loadContent hook is done
-      // actions are set of functional API provided by Vobees. e.g: addRoute
+      // actions are set of functional API provided by Docusaurus. e.g: addRoute
     },
 
     async postBuild(props) {
-      // after vobees <build> finish
+      // after docusaurus <build> finish
     },
 
     // TODO
     async postStart(props) {
-      // vobees <start> finish
+      // docusaurus <start> finish
     },
 
     // TODO
@@ -420,7 +420,7 @@ module.exports = function(context, opts) {
     },
 
     extendCli(cli) {
-      // Register an extra command to enhance the CLI of vobees
+      // Register an extra command to enhance the CLI of docusaurus
     },
 
     injectHtmlTags() {

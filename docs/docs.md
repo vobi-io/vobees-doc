@@ -31,14 +31,14 @@ Lorem ipsum
 
 ## Sidebar
 
-To generate a sidebar to your Vobees site, you need to define a file that exports a sidebar object and pass that into the `@vobees/plugin-docs` plugin directly or via `@vobees/preset-classic`.
+To generate a sidebar to your Docusaurus site, you need to define a file that exports a sidebar object and pass that into the `@docusaurus/plugin-docs` plugin directly or via `@docusaurus/preset-classic`.
 
-```js {8-9} title="vobees.config.js"
+```js {8-9} title="docusaurus.config.js"
 module.exports = {
   // ...
   presets: [
     [
-      '@vobees/preset-classic',
+      '@docusaurus/preset-classic',
       {
         docs: {
           // Sidebars filepath relative to the site dir.
@@ -71,7 +71,7 @@ Below is an example of a sidebar object. The key `docs` is the id of the sidebar
 module.exports = {
   docs: {
     'Getting started': ['greeting'],
-    Vobees: ['doc1'],
+    Docusaurus: ['doc1'],
   },
 };
 ```
@@ -88,7 +88,7 @@ module.exports = {
     },
     {
       type: 'category',
-      label: 'Vobees',
+      label: 'Docusaurus',
       items: ['doc1'],
     },
   ],
@@ -246,7 +246,7 @@ module.exports = {
 
 For sites with a sizable amount of content, we support the option to expand/collapse a category to toggle the display of its contents. Categories are collapsible by default. If you want them to be always expanded, set `themeConfig.sidebarCollapsible` to `false`:
 
-```js {4} title="vobees.config.js"
+```js {4} title="docusaurus.config.js"
 module.exports = {
   ...
   themeConfig: {
@@ -260,14 +260,14 @@ module.exports = {
 
 If you just want the documentation feature, you can follow the instructions for a "docs-only mode":
 
-1. Set the `routeBasePath` property of the `docs` object in `@vobees/preset-classic` in `vobees.config.js` to the root of your site:
+1. Set the `routeBasePath` property of the `docs` object in `@docusaurus/preset-classic` in `docusaurus.config.js` to the root of your site:
 
-```js {8} title="vobees.config.js"
+```js {8} title="docusaurus.config.js"
 module.exports = {
   // ...
   presets: [
     [
-      '@vobees/preset-classic',
+      '@docusaurus/preset-classic',
       {
         docs: {
           routeBasePath: '', // Set to empty string.
@@ -285,8 +285,8 @@ module.exports = {
 ```jsx title="src/pages/index.js"
 import React from 'react';
 
-import {Redirect} from '@vobees/router';
-import useBaseUrl from '@vobees/useBaseUrl';
+import {Redirect} from '@docusaurus/router';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 
 function Home() {
   return <Redirect to={useBaseUrl('/getting-started')} />;
@@ -299,6 +299,6 @@ Now, when visiting your site, it will show your initial document instead of a la
 
 :::tip
 
-There's also a "blog-only mode", for those who only want to use the blog component of Vobees 2. You can use the same method detailed above, except that you need to delete the `src/pages/index.js` file. Follow the setup instructions on [Blog-only mode](blog.md#blog-only-mode).
+There's also a "blog-only mode", for those who only want to use the blog component of Docusaurus 2. You can use the same method detailed above, except that you need to delete the `src/pages/index.js` file. Follow the setup instructions on [Blog-only mode](blog.md#blog-only-mode).
 
 :::

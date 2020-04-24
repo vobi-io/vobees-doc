@@ -1,0 +1,21 @@
+{
+  "id": "docs",
+  "title": "Docs Introduction",
+  "description": "The docs feature provides users with a way to organize Markdown files in a hierarchical format.",
+  "source": "@site/docs/docs.md",
+  "permalink": "/docs/next/docs",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/docs.md",
+  "version": "next",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "sidebar_label": "Introduction",
+  "sidebar": "docs",
+  "previous": {
+    "title": "Static Assets",
+    "permalink": "/docs/next/static-assets"
+  },
+  "next": {
+    "title": "Markdown Features",
+    "permalink": "/docs/next/markdown-features"
+  }
+}

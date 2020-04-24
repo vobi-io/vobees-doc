@@ -1,0 +1,20 @@
+{
+  "id": "styling-layout",
+  "title": "Styling and Layout",
+  "description": "A Docusaurus site is a pre-rendered single-page React application. You can style it the way you style React apps.",
+  "source": "@site/docs/styling-layout.md",
+  "permalink": "/docs/next/styling-layout",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/styling-layout.md",
+  "version": "next",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "sidebar": "docs",
+  "previous": {
+    "title": "Creating Pages",
+    "permalink": "/docs/next/creating-pages"
+  },
+  "next": {
+    "title": "Static Assets",
+    "permalink": "/docs/next/static-assets"
+  }
+}

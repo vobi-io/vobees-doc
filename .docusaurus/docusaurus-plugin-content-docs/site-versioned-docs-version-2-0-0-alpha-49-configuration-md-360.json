@@ -1,0 +1,20 @@
+{
+  "id": "version-2.0.0-alpha.49/configuration",
+  "title": "Configuration",
+  "description": "Docusaurus has a unique take on configurations. We encourage you to congregate information of your site into one place. We will guard the fields of this file, and facilitate making this data object accessible across your site.",
+  "source": "@site/versioned_docs/version-2.0.0-alpha.49/configuration.md",
+  "permalink": "/docs/configuration",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/versioned_docs/version-2.0.0-alpha.49/configuration.md",
+  "version": "2.0.0-alpha.49",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "sidebar": "version-2.0.0-alpha.49/docs",
+  "previous": {
+    "title": "Installation",
+    "permalink": "/docs/installation"
+  },
+  "next": {
+    "title": "Creating Pages",
+    "permalink": "/docs/creating-pages"
+  }
+}

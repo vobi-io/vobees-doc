@@ -3,16 +3,16 @@ id: using-themes
 title: Themes
 ---
 
-Like plugins, themes are designed to add functionality to your Vobees site. As a good rule of thumb, themes are mostly focused on client-side, where plugins are more focused on server-side functionalities. Themes are also designed to be replace-able with other themes.
+Like plugins, themes are designed to add functionality to your Docusaurus site. As a good rule of thumb, themes are mostly focused on client-side, where plugins are more focused on server-side functionalities. Themes are also designed to be replace-able with other themes.
 
 ## Using themes
 
-To use themes, specify the themes in your `vobees.config.js`. You may use multiple themes:
+To use themes, specify the themes in your `docusaurus.config.js`. You may use multiple themes:
 
-```js {3} title="vobees.config.js"
+```js {3} title="docusaurus.config.js"
 module.exports = {
   // ...
-  themes: ['@vobees/theme-classic', '@vobees/theme-live-codeblock'],
+  themes: ['@docusaurus/theme-classic', '@docusaurus/theme-live-codeblock'],
 };
 ```
 
@@ -29,15 +29,15 @@ import Navbar from '@theme/Navbar';
 The alias `@theme` can refer to a few directories, in the following priority:
 
 1. A user's `website/src/theme` directory, which is a special directory that has the higher precedence.
-1. A Vobees theme packages's `theme` directory.
-1. Fallback components provided by Vobees core (usually not needed).
+1. A Docusaurus theme packages's `theme` directory.
+1. Fallback components provided by Docusaurus core (usually not needed).
 
 Given the following structure
 
 ```
 website
 ├── node_modules
-│   └── vobees-theme
+│   └── docusaurus-theme
 │       └── theme
 │           └── Navbar.js
 └── src
@@ -49,9 +49,9 @@ website
 
 **Themes are for providing UI components to present the content.** Most content plugins need to be paired with a theme in order to be actually useful. The UI is a separate layer from the data schema, so it makes it easy to swap out the themes for other designs (i.e., Bootstrap).
 
-For example, a Vobees blog consists of a blog plugin and a blog theme.
+For example, a Docusaurus blog consists of a blog plugin and a blog theme.
 
-```js title="vobees.config.js"
+```js title="docusaurus.config.js"
 {
   theme: ['theme-blog'],
   plugins: ['plugin-content-blog'],
@@ -60,7 +60,7 @@ For example, a Vobees blog consists of a blog plugin and a blog theme.
 
 and if you want to use Bootstrap styling, you can swap out the theme with `theme-blog-bootstrap` (fictitious non-existing theme):
 
-```js title="vobees.config.js"
+```js title="docusaurus.config.js"
 {
   theme: ['theme-blog-bootstrap'],
   plugins: ['plugin-content-blog'],
@@ -77,67 +77,67 @@ We would like to discourage swizzling of components until we've minimally reache
 
 :::
 
-Vobees Themes' components are designed to be replaceable. To make it easier for you, we created a command for you to replace theme components called `swizzle`.
+Docusaurus Themes' components are designed to be replaceable. To make it easier for you, we created a command for you to replace theme components called `swizzle`.
 
 To swizzle a component for a theme, run the following command in your doc site:
 
 ```shell
-vobees swizzle <theme name> [component name]
+docusaurus swizzle <theme name> [component name]
 ```
 
-As an example, to swizzle the `<Footer />` component in `@vobees/theme-classic` for your site, run:
+As an example, to swizzle the `<Footer />` component in `@docusaurus/theme-classic` for your site, run:
 
 ```bash npm2yarn
-npm run swizzle @vobees/theme-classic Footer
+npm run swizzle @docusaurus/theme-classic Footer
 ```
 
-This will copy the current `<Footer />` component used by the theme to a `src/theme/Footer` directory under the root of your site, which is where Vobees will look for swizzled components. Vobees will then use swizzled component in place of the original one from the theme.
+This will copy the current `<Footer />` component used by the theme to a `src/theme/Footer` directory under the root of your site, which is where Docusaurus will look for swizzled components. Docusaurus will then use swizzled component in place of the original one from the theme.
 
-**Note**: You need to restart your dev server for Vobees to pick up the new component.
+**Note**: You need to restart your dev server for Docusaurus to pick up the new component.
 
-## Official themes by Vobees
+## Official themes by Docusaurus
 
-### `@vobees/theme-classic`
+### `@docusaurus/theme-classic`
 
-The classic theme for Vobees. You can refer to [classic theme configuration](theme-classic.md) for more details on the configuration.
+The classic theme for Docusaurus. You can refer to [classic theme configuration](theme-classic.md) for more details on the configuration.
 
 ```bash npm2yarn
-npm install --save @vobees/theme-classic
+npm install --save @docusaurus/theme-classic
 ```
 
 :::tip
 
-If you have installed `@vobees/preset-classic`, you don't need to install it as a dependency.
+If you have installed `@docusaurus/preset-classic`, you don't need to install it as a dependency.
 
 :::
 
-### `@vobees/theme-search-algolia`
+### `@docusaurus/theme-search-algolia`
 
-This theme provides a `@theme/SearchBar` component that integrates with Algolia DocSearch easily. Combined with `@vobees/theme-classic`, it provides a very easy search integration. You can read more on [search](search.md) documentation.
+This theme provides a `@theme/SearchBar` component that integrates with Algolia DocSearch easily. Combined with `@docusaurus/theme-classic`, it provides a very easy search integration. You can read more on [search](search.md) documentation.
 
 ```bash npm2yarn
-npm install --save @vobees/theme-search-algolia
+npm install --save @docusaurus/theme-search-algolia
 ```
 
 :::tip
 
-If you have installed `@vobees/preset-classic`, you don't need to install it as a dependency.
+If you have installed `@docusaurus/preset-classic`, you don't need to install it as a dependency.
 
 :::
 
-### `@vobees/theme-live-codeblock`
+### `@docusaurus/theme-live-codeblock`
 
 This theme provides a `@theme/CodeBlock` component that is powered by react-live. You can read more on [interactive code editor](markdown-features.mdx#interactive-code-editor) documentation.
 
 ```bash npm2yarn
-npm install --save @vobees/theme-live-codeblock
+npm install --save @docusaurus/theme-live-codeblock
 ```
 
 ## Themes design
 
 While themes share the exact same lifecycle methods with plugins, their implementations can look very different from those of plugins based on themes' designed objectives.
 
-Themes are designed to complete the build of your Vobees site and supply the components used by your site, plugins, and the themes themselves. So a typical theme implementation would look like a `src/index.js` file that hooks it up to the lifecycle methods. Most likely they would not use `loadContent`, which plugins would use. And it is typically accompanied by a `src/theme` directory full of components.
+Themes are designed to complete the build of your Docusaurus site and supply the components used by your site, plugins, and the themes themselves. So a typical theme implementation would look like a `src/index.js` file that hooks it up to the lifecycle methods. Most likely they would not use `loadContent`, which plugins would use. And it is typically accompanied by a `src/theme` directory full of components.
 
 To summarize:
 
@@ -145,9 +145,9 @@ To summarize:
 - Themes are run after all existing Plugins
 - Themes exist to add component aliases by extending the webpack config
 
-## Writing customized Vobees themes
+## Writing customized Docusaurus themes
 
-A Vobees theme normally includes an `index.js` file where you hook up to the lifecycle methods, alongside with a `theme/` directory of components. A typical Vobees `theme` folder looks like this:
+A Docusaurus theme normally includes an `index.js` file where you hook up to the lifecycle methods, alongside with a `theme/` directory of components. A typical Docusaurus `theme` folder looks like this:
 
 ```shell {5-7}
 website
@@ -181,8 +181,8 @@ Related pieces
 
 References
 ---
-- [themes RFC](https://github.com/facebook/vobees/issues/1438)
-- [how classic template uses themes](/packages/vobees/templates/classic/vobees.config.js)
+- [themes RFC](https://github.com/facebook/docusaurus/issues/1438)
+- [how classic template uses themes](/packages/docusaurus/templates/classic/docusaurus.config.js)
 - [using plugins doc](using-plugins.md)
 - [vuepress docs on themes](https://v1.vuepress.vuejs.org/theme/)
 

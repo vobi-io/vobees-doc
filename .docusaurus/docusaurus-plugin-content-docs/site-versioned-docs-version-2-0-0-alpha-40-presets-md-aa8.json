@@ -1,0 +1,20 @@
+{
+  "id": "version-2.0.0-alpha.40/presets",
+  "title": "Presets",
+  "description": "Presets are collections of plugins and themes.",
+  "source": "@site/versioned_docs/version-2.0.0-alpha.40/presets.md",
+  "permalink": "/docs/2.0.0-alpha.40/presets",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/versioned_docs/version-2.0.0-alpha.40/presets.md",
+  "version": "2.0.0-alpha.40",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "sidebar": "version-2.0.0-alpha.40/docs",
+  "previous": {
+    "title": "Themes",
+    "permalink": "/docs/2.0.0-alpha.40/using-themes"
+  },
+  "next": {
+    "title": "CLI",
+    "permalink": "/docs/2.0.0-alpha.40/cli"
+  }
+}

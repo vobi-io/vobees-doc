@@ -2,7 +2,7 @@
   "version-2.0.0-alpha.43/docs": [
     {
       "type": "category",
-      "label": "Vobees",
+      "label": "Docusaurus",
       "items": [
         {
           "type": "doc",
@@ -112,11 +112,11 @@
         },
         {
           "type": "doc",
-          "id": "version-2.0.0-alpha.43/vobees-core"
+          "id": "version-2.0.0-alpha.43/docusaurus-core"
         },
         {
           "type": "doc",
-          "id": "version-2.0.0-alpha.43/vobees.config.js"
+          "id": "version-2.0.0-alpha.43/docusaurus.config.js"
         },
         {
           "type": "doc",

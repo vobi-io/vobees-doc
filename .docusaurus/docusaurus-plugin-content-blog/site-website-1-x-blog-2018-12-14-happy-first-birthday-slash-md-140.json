@@ -1,0 +1,22 @@
+{
+  "permalink": "/blog/2018/12/14/Happy-First-Birthday-Slash",
+  "source": "@site/../website-1.x/blog/2018-12-14-Happy-First-Birthday-Slash.md",
+  "description": "![First Birthday Slash](/img/docusaurus-slash-first-birthday.svg)",
+  "date": "2018-12-14T00:00:00.000Z",
+  "tags": [
+    {
+      "label": "birth",
+      "permalink": "/blog/tags/birth"
+    }
+  ],
+  "title": "Happy 1st Birthday Slash!",
+  "truncated": true,
+  "prevItem": {
+    "title": "Docusaurus 2019 Recap",
+    "permalink": "/blog/2019/12/30/docusaurus-2019-recap"
+  },
+  "nextItem": {
+    "title": "Towards Docusaurus 2",
+    "permalink": "/blog/2018/09/11/Towards-Docusaurus-2"
+  }
+}

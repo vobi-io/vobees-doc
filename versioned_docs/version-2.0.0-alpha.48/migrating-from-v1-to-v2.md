@@ -5,9 +5,9 @@ title: Migrating from v1 to v2
 
 import ColorGenerator from '@site/src/components/ColorGenerator';
 
-This doc guides you through migrating an existing Vobees 1 site to Vobees 2.
+This doc guides you through migrating an existing Docusaurus 1 site to Docusaurus 2.
 
-**Note: This migration guide is targeted at Vobees users without translation and/or versioning features and assumes the following structure:**
+**Note: This migration guide is targeted at Docusaurus users without translation and/or versioning features and assumes the following structure:**
 
 ```sh
 ├── docs
@@ -28,62 +28,62 @@ This doc guides you through migrating an existing Vobees 1 site to Vobees 2.
 
 #### Scoped package names
 
-In Vobees 2, we use scoped package names:
+In Docusaurus 2, we use scoped package names:
 
-- `vobees` -> `@vobees/core`
+- `docusaurus` -> `@docusaurus/core`
 
-This provides a clear distinction between Vobees' official packages and community maintained packages. In another words, all Vobees' official packages are namespaced under `@vobees/`.
+This provides a clear distinction between Docusaurus' official packages and community maintained packages. In another words, all Docusaurus' official packages are namespaced under `@docusaurus/`.
 
-Meanwhile, the default doc site functionalities provided by Vobees 1 are now provided by `@vobees/preset-classic`. Therefore, we need to add this dependency as well:
+Meanwhile, the default doc site functionalities provided by Docusaurus 1 are now provided by `@docusaurus/preset-classic`. Therefore, we need to add this dependency as well:
 
 ```json
 // package.json
 {
   dependencies: {
--   "vobees": "^1.x.x",
-+   "@vobees/core": "^2.0.0-alpha.48",
-+   "@vobees/preset-classic": "^2.0.0-alpha.48",
+-   "docusaurus": "^1.x.x",
++   "@docusaurus/core": "^2.0.0-alpha.48",
++   "@docusaurus/preset-classic": "^2.0.0-alpha.48",
   }
 }
 ```
 
 :::tip
 
-Please use the most recent Vobees 2 alpha version, which you can check out [here](https://www.npmjs.com/package/@vobees/core) (it's tagged `next`).
+Please use the most recent Docusaurus 2 alpha version, which you can check out [here](https://www.npmjs.com/package/@docusaurus/core) (it's tagged `next`).
 
 :::
 
 #### CLI commands
 
-Meanwhile, CLI commands are renamed to `vobees <command>` (instead of `vobees-command`).
+Meanwhile, CLI commands are renamed to `docusaurus <command>` (instead of `docusaurus-command`).
 
 The `"scripts"` section of your `package.json` should be updated as follows:
 
 ```json {3-6}
 {
   "scripts": {
-    "start": "vobees start",
-    "build": "vobees build",
-    "swizzle": "vobees swizzle",
-    "deploy": "vobees deploy"
+    "start": "docusaurus start",
+    "build": "docusaurus build",
+    "swizzle": "docusaurus swizzle",
+    "deploy": "docusaurus deploy"
     ...
   }
 }
 ```
 
-A typical Vobees 2 `package.json` may look like this:
+A typical Docusaurus 2 `package.json` may look like this:
 
 ```json
 {
   "scripts": {
-    "start": "vobees start",
-    "build": "vobees build",
-    "swizzle": "vobees swizzle",
-    "deploy": "vobees deploy"
+    "start": "docusaurus start",
+    "build": "docusaurus build",
+    "swizzle": "docusaurus swizzle",
+    "deploy": "docusaurus deploy"
   },
   "dependencies": {
-    "@vobees/core": "^2.0.0-alpha.40",
-    "@vobees/preset-classic": "^2.0.0-alpha.40",
+    "@docusaurus/core": "^2.0.0-alpha.40",
+    "@docusaurus/preset-classic": "^2.0.0-alpha.40",
     "classnames": "^2.2.6",
     "react": "^16.10.2",
     "react-dom": "^16.10.2"
@@ -101,7 +101,7 @@ A typical Vobees 2 `package.json` may look like this:
 
 ### Update references to the `build` directory
 
-In Vobees 1, all the build artifacts are located within `website/build/<PROJECT_NAME>`. However, in Vobees 2, it is now moved to just `website/build`. Make sure that you update your deployment configuration to read the generated files from the correct `build` directory.
+In Docusaurus 1, all the build artifacts are located within `website/build/<PROJECT_NAME>`. However, in Docusaurus 2, it is now moved to just `website/build`. Make sure that you update your deployment configuration to read the generated files from the correct `build` directory.
 
 If you are deploying to GitHub pages, make sure to run `yarn deploy` instead of `yarn publish-gh-pages` script.
 
@@ -117,7 +117,7 @@ The `.gitignore` in your `website` should contain:
 /build
 
 # generated files
-.vobees
+.docusaurus
 .cache-loader
 
 # misc
@@ -134,19 +134,19 @@ yarn-error.log*
 
 ## Site configurations
 
-### `vobees.config.js`
+### `docusaurus.config.js`
 
-Rename `siteConfig.js` to `vobees.config.js`. In Vobees 2, we split each functionality (blog, docs, pages) into plugins for modularity. Presets are bundles of plugins and for backward compatibility we built a `@vobees/preset-classic` preset which bundles most of the essential plugins present in Vobees 1.
+Rename `siteConfig.js` to `docusaurus.config.js`. In Docusaurus 2, we split each functionality (blog, docs, pages) into plugins for modularity. Presets are bundles of plugins and for backward compatibility we built a `@docusaurus/preset-classic` preset which bundles most of the essential plugins present in Docusaurus 1.
 
-Add the following preset configuration to your `vobees.config.js`.
+Add the following preset configuration to your `docusaurus.config.js`.
 
 ```jsx
-// vobees.config.js
+// docusaurus.config.js
 module.exports = {
   // ...
   presets: [
     [
-      '@vobees/preset-classic',
+      '@docusaurus/preset-classic',
       {
         docs: {
           // docs folder path relative to website dir.
@@ -161,7 +161,7 @@ module.exports = {
 };
 ```
 
-We recommend moving the `docs` folder into the `website` folder and that is also the default directory structure in v2. [Now](https://zeit.co/now) supports [Vobees project deployments out-of-the-box](https://github.com/zeit/now-examples/tree/master/vobees) if the `docs` directory is within the `website`. It is also generally better for the docs to be within the website so that the docs and the rest of the website code are co-located within one `website` directory.
+We recommend moving the `docs` folder into the `website` folder and that is also the default directory structure in v2. [Now](https://zeit.co/now) supports [Docusaurus project deployments out-of-the-box](https://github.com/zeit/now-examples/tree/master/docusaurus) if the `docs` directory is within the `website`. It is also generally better for the docs to be within the website so that the docs and the rest of the website code are co-located within one `website` directory.
 
 Refer to migration guide below for each field in `siteConfig.js`.
 
@@ -173,15 +173,15 @@ No actions needed.
 
 #### `colors`
 
-Deprecated. We wrote a custom CSS framework for Vobees 2 called Infima which uses CSS variables for theming. The docs are not quite ready yet and we will update here when it is. To overwrite Infima's CSS variables, create your own CSS file (e.g. `./src/css/custom.css`) and import it globally by passing it as an option to `@vobees/preset-classic`:
+Deprecated. We wrote a custom CSS framework for Docusaurus 2 called Infima which uses CSS variables for theming. The docs are not quite ready yet and we will update here when it is. To overwrite Infima's CSS variables, create your own CSS file (e.g. `./src/css/custom.css`) and import it globally by passing it as an option to `@docusaurus/preset-classic`:
 
 ```js {8-10}
-// vobees.config.js
+// docusaurus.config.js
 module.exports = {
   // ...
   presets: [
     [
-      '@vobees/preset-classic',
+      '@docusaurus/preset-classic',
       {
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -219,22 +219,22 @@ Alteratively, use the following tool to generate the different shades for your w
 
 #### `footerIcon`, `copyright`, `ogImage`, `twitterImage`, `docsSideNavCollapsible`
 
-Site meta info such as assets, SEO, copyright info are now handled by themes. To customize them, use the `themeConfig` field in your `vobees.config.js`:
+Site meta info such as assets, SEO, copyright info are now handled by themes. To customize them, use the `themeConfig` field in your `docusaurus.config.js`:
 
 ```jsx
-// vobees.config.js
+// docusaurus.config.js
 module.exports = {
   // ...
   themeConfig: {
     footer: {
       logo: {
         alt: 'Facebook Open Source Logo',
-        src: 'https://vobees.io/img/oss_logo.png',
+        src: 'https://docusaurus.io/img/oss_logo.png',
         href: 'https://opensource.facebook.com/',
       },
       copyright: `Copyright © ${new Date().getFullYear()} Facebook, Inc.`, // You can also put own HTML here
     },
-    image: 'img/vobees.png',
+    image: 'img/docusaurus.png',
     // Equivalent to `docsSideNavCollapsible`
     sidebarCollapsible: false,
     // ...
@@ -244,10 +244,10 @@ module.exports = {
 
 #### `headerIcon`, `headerLinks`
 
-In Vobees 1, header icon and header links were root fields in `siteConfig`:
+In Docusaurus 1, header icon and header links were root fields in `siteConfig`:
 
 ```js
-headerIcon: 'img/vobees.svg',
+headerIcon: 'img/docusaurus.svg',
 headerLinks: [
   { doc: "doc1", label: "Getting Started" },
   { page: "help", label: "Help" },
@@ -259,15 +259,15 @@ headerLinks: [
 Now, these two fields are both handled by the theme:
 
 ```jsx {7-20}
-// vobees.config.js
+// docusaurus.config.js
 module.exports = {
   // ...
   themeConfig: {
     navbar: {
-      title: 'Vobees',
+      title: 'Docusaurus',
       logo: {
-        alt: 'Vobees Logo',
-        src: 'img/vobees.svg',
+        alt: 'Docusaurus Logo',
+        src: 'img/docusaurus.svg',
       },
       links: [
         {to: 'docs/doc1', label: 'Getting Started', position: 'left'},
@@ -288,13 +288,13 @@ module.exports = {
 #### `algolia`
 
 ```jsx {5-9}
-// vobees.config.js
+// docusaurus.config.js
 module.exports = {
   // ...
   themeConfig: {
     algolia: {
       apiKey: '47ecd3b21be71c5822571b9f59e52544',
-      indexName: 'vobees-2',
+      indexName: 'docusaurus-2',
       algoliaOptions: { ... },
     },
     // ...
@@ -304,15 +304,15 @@ module.exports = {
 
 #### `blogSidebarCount`
 
-Deprecated. Pass it as a blog option to `@vobees/preset-classic` instead:
+Deprecated. Pass it as a blog option to `@docusaurus/preset-classic` instead:
 
 ```jsx {9}
-// vobees.config.js
+// docusaurus.config.js
 module.exports = {
   // ...
   presets: [
     [
-      '@vobees/preset-classic',
+      '@docusaurus/preset-classic',
       {
         blog: {
           postsPerPage: 10,
@@ -330,23 +330,23 @@ Deprecated. Create a `CNAME` file in your `static` folder instead with your cust
 
 #### `customDocsPath`, `docsUrl`, `editUrl`, `enableUpdateBy`, `enableUpdateTime`
 
-**BREAKING**: `editUrl` should point to (website) vobees project instead of `docs` directory.
+**BREAKING**: `editUrl` should point to (website) docusaurus project instead of `docs` directory.
 
-Deprecated. Pass it as an option to `@vobees/preset-classic` docs instead:
+Deprecated. Pass it as an option to `@docusaurus/preset-classic` docs instead:
 
 ```jsx {9-22}
-// vobees.config.js
+// docusaurus.config.js
 module.exports = {
   // ...
   presets: [
     [
-      '@vobees/preset-classic',
+      '@docusaurus/preset-classic',
       {
         docs: {
           // Equivalent to `customDocsPath`.
           path: 'docs',
           // Equivalent to `editUrl` but should point to `website` dir instead of `website/docs`
-          editUrl: 'https://github.com/facebook/vobees/edit/master/website',
+          editUrl: 'https://github.com/facebook/docusaurus/edit/master/website',
           // Equivalent to `docsUrl`.
           routeBasePath: 'docs',
           // Remark and Rehype plugins passed to MDX. Replaces `markdownOptions` and `markdownPlugins`.
@@ -367,7 +367,7 @@ module.exports = {
 #### `gaTrackingId`
 
 ```jsx {6}
-// vobees.config.js
+// docusaurus.config.js
 module.exports = {
   // ...
   themeConfig: {
@@ -382,7 +382,7 @@ module.exports = {
 #### `gaGtag`
 
 ```jsx {6}
-// vobees.config.js
+// docusaurus.config.js
 module.exports = {
   // ...
   themeConfig: {
@@ -400,7 +400,7 @@ The following fields are all deprecated, you may remove from your configuration 
 
 - `blogSidebarTitle`
 - `cleanUrl` - Clean URL is used by default now.
-- `defaultVersionShown` - Versioning is not ported yet. You'd be unable to migration to Vobees 2 if you are using versioning. Stay tuned.
+- `defaultVersionShown` - Versioning is not ported yet. You'd be unable to migration to Docusaurus 2 if you are using versioning. Stay tuned.
 - `disableHeaderTitle`
 - `disableTitleTagline`
 - `docsSideNavCollapsible` is available at `themeConfig.sidebarCollapsible`, and this is turned on by default now.
@@ -447,34 +447,34 @@ You'll have to migrate your sidebar if it contains category type. Rename `subcat
 
 ### Footer
 
-`website/core/Footer.js` is no longer needed. If you want to modify the default footer provided by Vobees, [swizzle](using-themes.md#swizzling-theme-components) it:
+`website/core/Footer.js` is no longer needed. If you want to modify the default footer provided by Docusaurus, [swizzle](using-themes.md#swizzling-theme-components) it:
 
 ```bash npm2yarn
-npm run swizzle @vobees/theme-classic Footer
+npm run swizzle @docusaurus/theme-classic Footer
 ```
 
 This will copy the current `<Footer />` component used by the theme to a `src/theme/Footer` directory under the root of your site, you may then edit this component for customization.
 
 ### Pages
 
-Please refer to [creating pages](creating-pages.md) to learn how Vobees 2 pages work. After reading that, notice that you have to move `pages/en` files in v1 to `src/pages` instead.
+Please refer to [creating pages](creating-pages.md) to learn how Docusaurus 2 pages work. After reading that, notice that you have to move `pages/en` files in v1 to `src/pages` instead.
 
 `CompLibrary` is deprecated in v2, so you have to write your own React component or use Infima styles (Docs will be available soon, sorry about that! In the meanwhile, inspect the V2 website or view https://facebookincubator.github.io/infima/ to see what styles are available).
 
 The following code could be helpful for migration of various pages:
 
-- Index page - [Flux](https://github.com/facebook/flux/blob/master/website/src/pages/index.js) (recommended), [Vobees 2](https://github.com/facebook/vobees/blob/master/website/src/pages/index.js), [Hermes](https://github.com/facebook/hermes/blob/master/website/src/pages/index.js)
-- Help/Support page - [Vobees 2](https://github.com/facebook/vobees/blob/master/website/src/pages/help.js), [Flux](http://facebook.github.io/flux/support)
+- Index page - [Flux](https://github.com/facebook/flux/blob/master/website/src/pages/index.js) (recommended), [Docusaurus 2](https://github.com/facebook/docusaurus/blob/master/website/src/pages/index.js), [Hermes](https://github.com/facebook/hermes/blob/master/website/src/pages/index.js)
+- Help/Support page - [Docusaurus 2](https://github.com/facebook/docusaurus/blob/master/website/src/pages/help.js), [Flux](http://facebook.github.io/flux/support)
 
 ## Content
 
 ### Remove AUTOGENERATED_TABLE_OF_CONTENTS
 
-This feature is deprecated. You may read more about it in [this issue](https://github.com/facebook/vobees/issues/1549). If you need the feature, use [remark-toc](https://github.com/remarkjs/remark-toc) instead and pass it to docs plugin's `remarkPlugins` option.
+This feature is deprecated. You may read more about it in [this issue](https://github.com/facebook/docusaurus/issues/1549). If you need the feature, use [remark-toc](https://github.com/remarkjs/remark-toc) instead and pass it to docs plugin's `remarkPlugins` option.
 
 ### Update Markdown syntax to be MDX-compatible
 
-In Vobees 2, the markdown syntax has been changed to [MDX](https://mdxjs.com/). Hence there might be some broken syntax in the existing docs which you would have to update. A common example is self-closing tags like `<img>` and `<br>` which are valid in HTML would have to be explicitly closed now ( `<img/>` and `<br/>`). All tags in MDX documents have to be valid JSX.
+In Docusaurus 2, the markdown syntax has been changed to [MDX](https://mdxjs.com/). Hence there might be some broken syntax in the existing docs which you would have to update. A common example is self-closing tags like `<img>` and `<br>` which are valid in HTML would have to be explicitly closed now ( `<img/>` and `<br/>`). All tags in MDX documents have to be valid JSX.
 
 **Tips**: You might want to use some online tools like [HTML to JSX](https://transform.tools/html-to-jsx) to make the migration easier.
 
@@ -484,7 +484,7 @@ Refer to the [multi-language support code blocks](markdown-features.mdx#multi-la
 
 ### Frontmatter
 
-The Vobees frontmatter fields for the blog have been changed from camelCase to snake_case to be consistent with the docs.
+The Docusaurus frontmatter fields for the blog have been changed from camelCase to snake_case to be consistent with the docs.
 
 The fields `authorFBID` and `authorTwitter` have been deprecated. They are only used for generating the profile image of the author which can be done via the `author_image_url` field.
 
@@ -505,7 +505,7 @@ my-project
     ├── package.json
     ├── sidebars.json
     ├── .gitignore
-    ├── vobees.config.js
+    ├── docusaurus.config.js
     └── static
 ```
 
@@ -518,11 +518,11 @@ yarn start
 
 ## Example migration PRs
 
-You might want to refer to our migration PRs for [Create React App](https://github.com/facebook/create-react-app/pull/7785) and [Flux](https://github.com/facebook/flux/pull/471) as examples of how a migration for a basic Vobees v1 site can be done.
+You might want to refer to our migration PRs for [Create React App](https://github.com/facebook/create-react-app/pull/7785) and [Flux](https://github.com/facebook/flux/pull/471) as examples of how a migration for a basic Docusaurus v1 site can be done.
 
 ## Support
 
-For any questions, you can ask in the [`#vobees-1-to-2-migration` Discord channel](https://discordapp.com/invite/kYaNd6V). Feel free to tag [@yangshun](https://github.com/yangshun) in any migration PRs if you would like us to have a look.
+For any questions, you can ask in the [`#docusaurus-1-to-2-migration` Discord channel](https://discordapp.com/invite/kYaNd6V). Feel free to tag [@yangshun](https://github.com/yangshun) in any migration PRs if you would like us to have a look.
 
 ## Versioned Site
 
@@ -534,7 +534,7 @@ The versioning feature is a work in progress! Although we've implemented docs ve
 
 ## Changes from v1
 
-Read up https://v2.vobees.io/blog/2018/09/11/Towards-Vobees-2#versioning first for reasoning on v1's problem
+Read up https://v2.docusaurus.io/blog/2018/09/11/Towards-Docusaurus-2#versioning first for reasoning on v1's problem
 
 ### Migrate your `versioned_docs` frontmatter
 
@@ -551,7 +551,7 @@ title: Hello, World !
 Hi, Endilie here :)
 ```
 
-When you cut a new version 1.0.0, in Vobees v1, `website/versioned_docs/version-1.0.0/hello.md` looks like this:
+When you cut a new version 1.0.0, in Docusaurus v1, `website/versioned_docs/version-1.0.0/hello.md` looks like this:
 
 ```md
 ---
@@ -563,7 +563,7 @@ original_id: hello
 Hi, Endilie here :)
 ```
 
-In comparison, Vobees 2 `website/versioned_docs/version-1.0.0/hello.md` looks like this (exactly same as original)
+In comparison, Docusaurus 2 `website/versioned_docs/version-1.0.0/hello.md` looks like this (exactly same as original)
 
 ```md
 ---
@@ -594,7 +594,7 @@ Hi, Endilie here :)
 
 Because in v1 there is a good chance someone created a new file with front matter id `"version-${version}-${id}"` that can conflict with `versioned_docs` id.
 
-For example, Vobees 1 can't differentiate `docs/xxx.md`
+For example, Docusaurus 1 can't differentiate `docs/xxx.md`
 
 ```md
 ---
@@ -640,7 +640,7 @@ Example `versioned_sidebars/version-1.0.0-sidebars.json`:
 
 ### Populate your `versioned_sidebars` and `versioned_docs`
 
-In v2, we use snapshot approach on documentation versioning. **Every versioned docs does not depends on other version**. It is possible to have `foo.md` in `version-1.0.0` but it doesn't exist in `version-1.2.0`. This is not possible in previous version due to Vobees v1 fallback functionality (https://vobees.io/docs/en/versioning#fallback-functionality).
+In v2, we use snapshot approach on documentation versioning. **Every versioned docs does not depends on other version**. It is possible to have `foo.md` in `version-1.0.0` but it doesn't exist in `version-1.2.0`. This is not possible in previous version due to Docusaurus v1 fallback functionality (https://docusaurus.io/docs/en/versioning#fallback-functionality).
 
 For example, if your `versions.json` looks like this in v1
 
@@ -649,7 +649,7 @@ For example, if your `versions.json` looks like this in v1
 ["1.1.0", "1.0.0"]
 ```
 
-Vobees v1 creates versioned docs **if and only if the doc content is different**. Your docs structure might look like this if the only doc changed from v1.0.0 to v1.1.0 is `hello.md`.
+Docusaurus v1 creates versioned docs **if and only if the doc content is different**. Your docs structure might look like this if the only doc changed from v1.0.0 to v1.1.0 is `hello.md`.
 
 ```shell
 website
@@ -684,7 +684,7 @@ website
 
 ### Convert style attributes to style objects in MDX
 
-Vobees 2 uses JSX for doc files. If you have any style attributes in your Vobees 1 docs, convert them to style objects, like this:
+Docusaurus 2 uses JSX for doc files. If you have any style attributes in your Docusaurus 1 docs, convert them to style objects, like this:
 
 ```diff
 ---

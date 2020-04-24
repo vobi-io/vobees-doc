@@ -1,0 +1,20 @@
+{
+  "id": "version-2.0.0-alpha.49/contributing",
+  "title": "Contributing",
+  "description": "[Docusaurus 2](https://v2.docusaurus.io) is currently under alpha development. We have [early adopters who already started using it](/showcase). We are now welcoming contributors to collaborate on the next Docusaurus.",
+  "source": "@site/versioned_docs/version-2.0.0-alpha.49/contributing.md",
+  "permalink": "/docs/contributing",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/versioned_docs/version-2.0.0-alpha.49/contributing.md",
+  "version": "2.0.0-alpha.49",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "sidebar": "version-2.0.0-alpha.49/docs",
+  "previous": {
+    "title": "Design Principles",
+    "permalink": "/docs/design-principles"
+  },
+  "next": {
+    "title": "Awesome Resources",
+    "permalink": "/docs/resources"
+  }
+}

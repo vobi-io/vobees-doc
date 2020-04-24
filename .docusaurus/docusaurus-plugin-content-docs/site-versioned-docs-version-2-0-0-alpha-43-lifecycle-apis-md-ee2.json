@@ -1,0 +1,20 @@
+{
+  "id": "version-2.0.0-alpha.43/lifecycle-apis",
+  "title": "Lifecycle APIs",
+  "description": "> :warning: _This section is a work in progress._",
+  "source": "@site/versioned_docs/version-2.0.0-alpha.43/lifecycle-apis.md",
+  "permalink": "/docs/2.0.0-alpha.43/lifecycle-apis",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/versioned_docs/version-2.0.0-alpha.43/lifecycle-apis.md",
+  "version": "2.0.0-alpha.43",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "sidebar": "version-2.0.0-alpha.43/docs",
+  "previous": {
+    "title": "docusaurus.config.js",
+    "permalink": "/docs/2.0.0-alpha.43/docusaurus.config.js"
+  },
+  "next": {
+    "title": "@docusaurus/theme-classic",
+    "permalink": "/docs/2.0.0-alpha.43/theme-classic"
+  }
+}

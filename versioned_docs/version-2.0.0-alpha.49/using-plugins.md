@@ -3,33 +3,33 @@ id: using-plugins
 title: Plugins
 ---
 
-Plugins are the building blocks of features in a Vobees 2 site. Each plugin handles its own individual feature. Plugins may work and be distributed as part of bundle via [presets](presets.md).
+Plugins are the building blocks of features in a Docusaurus 2 site. Each plugin handles its own individual feature. Plugins may work and be distributed as part of bundle via [presets](presets.md).
 
 ## Installing a plugin
 
 A plugin is usually a npm package, so you install them like other npm packages using npm.
 
 ```bash npm2yarn
-npm install --save vobees-plugin-name
+npm install --save docusaurus-plugin-name
 ```
 
-Then you add it in your site's `vobees.config.js`'s `plugins` option:
+Then you add it in your site's `docusaurus.config.js`'s `plugins` option:
 
-```jsx {3} title="vobees.config.js"
+```jsx {3} title="docusaurus.config.js"
 module.exports = {
   // ...
-  plugins: ['@vobees/plugin-content-pages'],
+  plugins: ['@docusaurus/plugin-content-pages'],
 };
 ```
 
-Vobees can also load plugins from your local directory, you can do something like the following:
+Docusaurus can also load plugins from your local directory, you can do something like the following:
 
-```jsx {5} title="vobees.config.js"
+```jsx {5} title="docusaurus.config.js"
 const path = require('path');
 
 module.exports = {
   // ...
-  plugins: [path.resolve(__dirname, '/path/to/vobees-local-plugin')],
+  plugins: [path.resolve(__dirname, '/path/to/docusaurus-local-plugin')],
 };
 ```
 
@@ -39,12 +39,12 @@ For the most basic usage of plugins, you can provide just the plugin name or the
 
 However, plugins can have options specified by wrapping the name and an options object in an array inside your config. This style is usually called `Babel Style`.
 
-```js {4-9} title="vobees.config.js"
+```js {4-9} title="docusaurus.config.js"
 module.exports = {
   // ...
   plugins: [
     [
-      '@vobees/plugin-xxx',
+      '@docusaurus/plugin-xxx',
       {
         /* options */
       },
@@ -55,15 +55,15 @@ module.exports = {
 
 Example:
 
-```js title="vobees.config.js"
+```js title="docusaurus.config.js"
 module.exports = {
   plugins: [
     // Basic usage.
-    '@vobees/plugin-google-analytics',
+    '@docusaurus/plugin-google-analytics',
 
     // With options object (babel style)
     [
-      '@vobees/plugin-sitemap',
+      '@docusaurus/plugin-sitemap',
       {
         cacheTime: 600 * 1000,
       },
@@ -74,7 +74,7 @@ module.exports = {
 
 ## Plugins design
 
-Vobees' implementation of the plugins system provides us with a convenient way to hook into the website's lifecycle to modify what goes on during development/build, which involves (but not limited to) extending the webpack config, modifying the data being loaded and creating new components to be used in a page.
+Docusaurus' implementation of the plugins system provides us with a convenient way to hook into the website's lifecycle to modify what goes on during development/build, which involves (but not limited to) extending the webpack config, modifying the data being loaded and creating new components to be used in a page.
 
 ## Creating plugins
 
@@ -84,11 +84,11 @@ A plugin is a module which exports a function that takes two parameters and retu
 
 The exported modules for plugins are called with two parameters: `context` and `options` and returns a JavaScript object with defining the [lifecycle APIs](./lifecycle-apis.md).
 
-```js title="vobees.config.js"
+```js title="docusaurus.config.js"
 module.exports = function(context, options) {
   // ...
   return {
-    name: 'my-vobees-plugin',
+    name: 'my-docusaurus-plugin',
     async loadContent() { ... },
     async contentLoaded({content, actions}) { ... },
     /* other lifecycle api */
@@ -98,7 +98,7 @@ module.exports = function(context, options) {
 
 #### `context`
 
-`context` is plugin-agnostic and the same object will be passed into all plugins used for a Vobees website. The `context` object contains the following fields:
+`context` is plugin-agnostic and the same object will be passed into all plugins used for a Docusaurus website. The `context` object contains the following fields:
 
 ```js
 interface LoadContext {
@@ -112,7 +112,7 @@ interface LoadContext {
 
 #### `options`
 
-`options` are the [second optional parameter when the plugins are used](using-plugins.md#configuring-plugins). `options` are plugin-specific and are specified by users when they use them in `vobees.config.js`. Alternatively, if preset contains the plugin, the preset will then be in charge of passing the correct options into the plugin. It is up to individual plugin to define what options it takes.
+`options` are the [second optional parameter when the plugins are used](using-plugins.md#configuring-plugins). `options` are plugin-specific and are specified by users when they use them in `docusaurus.config.js`. Alternatively, if preset contains the plugin, the preset will then be in charge of passing the correct options into the plugin. It is up to individual plugin to define what options it takes.
 
 #### Return value
 
@@ -120,29 +120,29 @@ The returned object value should implement the [lifecycle APIs](./lifecycle-apis
 
 ## Official plugins
 
-Find the list of official Vobees plugins [here](https://github.com/facebook/vobees/tree/master/packages).
+Find the list of official Docusaurus plugins [here](https://github.com/facebook/docusaurus/tree/master/packages).
 
-### `@vobees/plugin-content-blog`
+### `@docusaurus/plugin-content-blog`
 
-Provides the [Blog](blog.md) feature and is the default blog plugin for Vobees.
+Provides the [Blog](blog.md) feature and is the default blog plugin for Docusaurus.
 
 **Installation**
 
 ```bash npm2yarn
-npm install --save @vobees/plugin-content-blog
+npm install --save @docusaurus/plugin-content-blog
 ```
 
 :::tip
 
-If you have installed `@vobees/preset-classic`, you don't need to install it as a dependency. You can also configure it through the [classic preset options](presets.md#docusauruspreset-classic) instead of doing it like below.
+If you have installed `@docusaurus/preset-classic`, you don't need to install it as a dependency. You can also configure it through the [classic preset options](presets.md#docusauruspreset-classic) instead of doing it like below.
 
 :::
 
-```js title="vobees.config.js"
+```js title="docusaurus.config.js"
 module.exports = {
   plugins: [
     [
-      '@vobees/plugin-content-blog',
+      '@docusaurus/plugin-content-blog',
       {
         /**
          * Path to data on filesystem
@@ -191,27 +191,27 @@ module.exports = {
 };
 ```
 
-### `@vobees/plugin-content-docs`
+### `@docusaurus/plugin-content-docs`
 
-Provides the [Docs](markdown-features.mdx) functionality and is the default docs plugin for Vobees.
+Provides the [Docs](markdown-features.mdx) functionality and is the default docs plugin for Docusaurus.
 
 **Installation**
 
 ```bash npm2yarn
-npm install --save @vobees/plugin-content-docs
+npm install --save @docusaurus/plugin-content-docs
 ```
 
 :::tip
 
-If you have installed `@vobees/preset-classic`, you don't need to install it as a dependency. You can also configure it through the [classic preset options](presets.md#docusauruspreset-classic) instead of doing it like below.
+If you have installed `@docusaurus/preset-classic`, you don't need to install it as a dependency. You can also configure it through the [classic preset options](presets.md#docusauruspreset-classic) instead of doing it like below.
 
 :::
 
-```js title="vobees.config.js"
+```js title="docusaurus.config.js"
 module.exports = {
   plugins: [
     [
-      '@vobees/plugin-content-docs',
+      '@docusaurus/plugin-content-docs',
       {
         /**
          * Path to data on filesystem
@@ -219,9 +219,9 @@ module.exports = {
          */
         path: 'docs',
         /**
-         * URL for editing website repo, example: 'https://github.com/facebook/vobees/edit/master/website/'
+         * URL for editing website repo, example: 'https://github.com/facebook/docusaurus/edit/master/website/'
          */
-        editUrl: 'https://github.com/facebook/vobees/edit/master/website/',
+        editUrl: 'https://github.com/facebook/docusaurus/edit/master/website/',
         /**
          * URL route for the blog section of your site
          * do not include trailing slash
@@ -259,23 +259,23 @@ module.exports = {
 };
 ```
 
-### `@vobees/plugin-content-pages`
+### `@docusaurus/plugin-content-pages`
 
-The default pages plugin for Vobees. The classic template ships with this plugin with default configurations. This plugin provides [creating pages](creating-pages.md) functionality.
+The default pages plugin for Docusaurus. The classic template ships with this plugin with default configurations. This plugin provides [creating pages](creating-pages.md) functionality.
 
 **Installation**
 
 ```bash npm2yarn
-npm install --save @vobees/plugin-content-pages
+npm install --save @docusaurus/plugin-content-pages
 ```
 
 :::tip
 
-If you have installed `@vobees/preset-classic`, you don't need to install it as a dependency. You can also configure it through the [classic preset options](presets.md#docusauruspreset-classic) instead of doing it like below.
+If you have installed `@docusaurus/preset-classic`, you don't need to install it as a dependency. You can also configure it through the [classic preset options](presets.md#docusauruspreset-classic) instead of doing it like below.
 
 :::
 
-```js title="vobees.config.js"
+```js title="docusaurus.config.js"
 module.exports = {
   plugins: [
     [
@@ -299,27 +299,27 @@ module.exports = {
 };
 ```
 
-### `@vobees/plugin-google-analytics`
+### `@docusaurus/plugin-google-analytics`
 
 The default [Google Analytics](https://developers.google.com/analytics/devguides/collection/analyticsjs/) plugin. It is a JavaScript library for measuring how users interact with your website.
 
 **Installation**
 
 ```bash npm2yarn
-npm install --save @vobees/plugin-google-analytics
+npm install --save @docusaurus/plugin-google-analytics
 ```
 
 :::tip
 
-If you have installed `@vobees/preset-classic`, you don't need to install it as a dependency.
+If you have installed `@docusaurus/preset-classic`, you don't need to install it as a dependency.
 
 :::
 
 **Configuration**
 
-```js title="vobees.config.js"
+```js title="docusaurus.config.js"
 module.exports = {
-  plugins: ['@vobees/plugin-google-analytics'],
+  plugins: ['@docusaurus/plugin-google-analytics'],
   themeConfig: {
     googleAnalytics: {
       trackingID: 'UA-141789564-1',
@@ -330,27 +330,27 @@ module.exports = {
 };
 ```
 
-### `@vobees/plugin-google-gtag`
+### `@docusaurus/plugin-google-gtag`
 
-The default [Global Site Tag (gtag.js)](https://developers.google.com/analytics/devguides/collection/gtagjs/) plugin. It is a JavaScript tagging framework and API that allows you to send event data to Google Analytics, Google Ads, and Google Marketing Platform. This section describes how to configure a Vobees site to enable global site tag for Google Analytics.
+The default [Global Site Tag (gtag.js)](https://developers.google.com/analytics/devguides/collection/gtagjs/) plugin. It is a JavaScript tagging framework and API that allows you to send event data to Google Analytics, Google Ads, and Google Marketing Platform. This section describes how to configure a Docusaurus site to enable global site tag for Google Analytics.
 
 **Installation**
 
 ```bash npm2yarn
-npm install --save @vobees/plugin-google-gtag
+npm install --save @docusaurus/plugin-google-gtag
 ```
 
 :::tip
 
-If you have installed `@vobees/preset-classic`, you don't need to install it as a dependency.
+If you have installed `@docusaurus/preset-classic`, you don't need to install it as a dependency.
 
 :::
 
 **Configuration**
 
-```js title="vobees.config.js"
+```js title="docusaurus.config.js"
 module.exports = {
-  plugins: ['@vobees/plugin-google-gtag'],
+  plugins: ['@docusaurus/plugin-google-gtag'],
   themeConfig: {
     gtag: {
       trackingID: 'UA-141789564-1',
@@ -361,26 +361,26 @@ module.exports = {
 };
 ```
 
-### `@vobees/plugin-sitemap`
+### `@docusaurus/plugin-sitemap`
 
 This plugin creates sitemap for your site so that search engine crawlers can crawl your site more accurately.
 
 **Installation**
 
 ```bash npm2yarn
-npm install --save @vobees/plugin-sitemap
+npm install --save @docusaurus/plugin-sitemap
 ```
 
 :::tip
 
-If you have installed `@vobees/preset-classic`, you don't need to install it as a dependency. You can also configure it through the [classic preset options](presets.md#docusauruspreset-classic) instead of doing it like below.
+If you have installed `@docusaurus/preset-classic`, you don't need to install it as a dependency. You can also configure it through the [classic preset options](presets.md#docusauruspreset-classic) instead of doing it like below.
 
 :::
 
-```js title="vobees.config.js"
+```js title="docusaurus.config.js"
 module.exports = {
   plugins: [
-    '@vobees/plugin-sitemap',
+    '@docusaurus/plugin-sitemap',
     {
       cacheTime: 600 * 1000, // 600 sec - cache purge period
       changefreq: 'weekly',
@@ -390,20 +390,20 @@ module.exports = {
 };
 ```
 
-### `@vobees/plugin-ideal-image`
+### `@docusaurus/plugin-ideal-image`
 
-Vobees Plugin to generate an almost ideal image (responsive, lazy-loading, and low quality placeholder)
+Docusaurus Plugin to generate an almost ideal image (responsive, lazy-loading, and low quality placeholder)
 
 ```bash npm2yarn
-npm install --save @vobees/plugin-ideal-image
+npm install --save @docusaurus/plugin-ideal-image
 ```
 
-Modify your `vobees.config.js`
+Modify your `docusaurus.config.js`
 
 ```diff
 module.exports = {
   ...
-+ plugins: ['@vobees/plugin-ideal-image'],
++ plugins: ['@docusaurus/plugin-ideal-image'],
   ...
 }
 ```

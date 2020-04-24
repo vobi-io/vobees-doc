@@ -39,7 +39,7 @@ website
 ├── versioned_sidebars
 │   ├── version-1.1.0-sidebars.json
 │   └── version-1.0.0-sidebars.json
-├── vobees.config.js
+├── docusaurus.config.js
 └── package.json
 ```
 
@@ -57,7 +57,7 @@ The table below explains how a versioned file maps to its version and the genera
 1. Enter a new version number.
 
 ```bash npm2yarn
-npm run vobees docs:version 1.1.0
+npm run docusaurus docs:version 1.1.0
 ```
 
 When tagging a new version, the document versioning mechanism will:
@@ -152,7 +152,7 @@ As a good rule of thumb, try to keep the number of your versions below 10. **It 
 
 ### Use absolute import within the docs
 
-Don't use relative paths import within the docs. Because when we cut a version the paths no longer work (the nesting level is different, among other reasons). You can utilize the `@site` alias provided by vobees, that points to the `website` directory. Example:
+Don't use relative paths import within the docs. Because when we cut a version the paths no longer work (the nesting level is different, among other reasons). You can utilize the `@site` alias provided by docusaurus, that points to the `website` directory. Example:
 
 ```diff
 - import Foo from '../src/components/Foo';

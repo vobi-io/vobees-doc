@@ -1,10 +1,10 @@
 ---
-id: vobees-core
-title: Vobees Client API
+id: docusaurus-core
+title: Docusaurus Client API
 sidebar_label: Client API
 ---
 
-Vobees provides some APIs on the clients that can be helpful to you when building your site.
+Docusaurus provides some APIs on the clients that can be helpful to you when building your site.
 
 ## Components
 
@@ -16,7 +16,7 @@ Usage Example:
 
 ```jsx {2,6,11}
 import React from 'react';
-import Head from '@vobees/Head';
+import Head from '@docusaurus/Head';
 
 const MySEO = () => (
   <>
@@ -61,11 +61,11 @@ Outputs
 
 This component enables linking to internal pages as well as a powerful performance feature called preloading. Preloading is used to prefetch resources so that the resources are fetched by the time the user navigates with this component. We use an `IntersectionObserver` to fetch a low-priority request when the `<Link>` is in the viewport and then use an `onMouseOver` event to trigger a high-priority request when it is likely that a user will navigate to the requested resource.
 
-The component is a wrapper around react-router’s `<NavLink>` component that adds useful enhancements specific to Vobees. All props are passed through to react-router’s `<NavLink>` component.
+The component is a wrapper around react-router’s `<NavLink>` component that adds useful enhancements specific to Docusaurus. All props are passed through to react-router’s `<NavLink>` component.
 
 ```jsx {2,7}
 import React from 'react';
-import Link from '@vobees/Link';
+import Link from '@docusaurus/Link';
 
 const Page = () => (
   <div>
@@ -74,7 +74,7 @@ const Page = () => (
     </p>
     <p>
       {/* Note that external links still use `a` tags. */}
-      Follow me on <a href="https://twitter.com/vobees">Twitter</a>!
+      Follow me on <a href="https://twitter.com/docusaurus">Twitter</a>!
     </p>
   </div>
 );
@@ -106,7 +106,7 @@ Example usage:
 
 ```jsx {2,5}
 import React from 'react';
-import {Redirect} from '@vobees/router';
+import {Redirect} from '@docusaurus/router';
 
 function Home() {
   return <Redirect to="/docs/test" />;
@@ -117,7 +117,7 @@ function Home() {
 
 ### `useDocusaurusContext`
 
-React hook to access Vobees Context. Context contains `siteConfig` object from [vobees.config.js](vobees.config.js.md).
+React hook to access Docusaurus Context. Context contains `siteConfig` object from [docusaurus.config.js](docusaurus.config.js.md).
 
 ```ts
 interface DocusaurusContext {
@@ -129,7 +129,7 @@ Usage example:
 
 ```jsx {2,5}
 import React from 'react';
-import useDocusaurusContext from '@vobees/useDocusaurusContext';
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 
 const Test = () => {
   const context = useDocusaurusContext();
@@ -148,15 +148,15 @@ Example usage:
 
 ```jsx {3,11}
 import React, {useEffect} from 'react';
-import Link from '@vobees/Link';
-import useBaseUrl from '@vobees/useBaseUrl';
+import Link from '@docusaurus/Link';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 
 function Help() {
   return (
     <div className="col">
       <h2>Browse the docs</h2>
       <p>
-        Learn more about Vobees using the{' '}
+        Learn more about Docusaurus using the{' '}
         <Link to={useBaseUrl('docs/introduction')}>official documentation</Link>
       </p>
     </div>
@@ -172,7 +172,7 @@ A module which exposes a few boolean variables to check the current rendering en
 
 ```jsx {2}
 import React from 'react';
-import ExecutionEnvironment from '@vobees/ExecutionEnvironment';
+import ExecutionEnvironment from '@docusaurus/ExecutionEnvironment';
 
 function MyPage() {
   const location = ExecutionEnvironment.canUseDOM ? window.href.location : null;

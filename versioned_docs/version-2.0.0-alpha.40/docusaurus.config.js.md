@@ -1,12 +1,12 @@
 ---
-id: vobees.config.js
-title: vobees.config.js
-description: API reference for Vobees configuration file.
+id: docusaurus.config.js
+title: docusaurus.config.js
+description: API reference for Docusaurus configuration file.
 ---
 
 ## Overview
 
-`vobees.config.js` contains configurations for your site and is placed in the root directory of your site.
+`docusaurus.config.js` contains configurations for your site and is placed in the root directory of your site.
 
 ## Required fields
 
@@ -17,9 +17,9 @@ description: API reference for Vobees configuration file.
 Title for your website.
 
 ```js
-// vobees.config.js
+// docusaurus.config.js
 module.exports = {
-  title: 'Vobees',
+  title: 'Docusaurus',
 };
 ```
 
@@ -30,10 +30,10 @@ module.exports = {
 The tagline for your website.
 
 ```js
-// vobees.config.js
+// docusaurus.config.js
 module.exports = {
   tagline:
-    'Vobees makes it easy to maintain Open Source documentation websites.',
+    'Docusaurus makes it easy to maintain Open Source documentation websites.',
 };
 ```
 
@@ -44,9 +44,9 @@ module.exports = {
 URL for site favicon. Example:
 
 ```js
-// vobees.config.js
+// docusaurus.config.js
 module.exports = {
-  favicon: 'https://v2.vobees.io/favicon.ico',
+  favicon: 'https://v2.docusaurus.io/favicon.ico',
 };
 ```
 
@@ -64,7 +64,7 @@ You can also use the favicon URL relative to the `static` directory of your site
 So you can refer it like below:
 
 ```js
-// vobees.config.js
+// docusaurus.config.js
 module.exports = {
   favicon: 'img/favicon.ico',
 };
@@ -74,12 +74,12 @@ module.exports = {
 
 - Type: `string`
 
-URL for your website. This can also be considered the top-level hostname. For example, `https://facebook.github.io` is the URL of https://facebook.github.io/metro/, and `https://vobees.io` is the URL for https://vobees.io. This field is related to the [baseUrl](#baseurl) field.
+URL for your website. This can also be considered the top-level hostname. For example, `https://facebook.github.io` is the URL of https://facebook.github.io/metro/, and `https://docusaurus.io` is the URL for https://docusaurus.io. This field is related to the [baseUrl](#baseurl) field.
 
 ```js
-// vobees.config.js
+// docusaurus.config.js
 module.exports = {
-  url: 'https://vobees.io',
+  url: 'https://docusaurus.io',
 };
 ```
 
@@ -90,7 +90,7 @@ module.exports = {
 Base URL for your site. This can also be considered the path after the host. For example, `/metro/` is the baseUrl of https://facebook.github.io/metro/. For URLs that have no path, the baseUrl should be set to `/`. This field is related to the [url](#url) field.
 
 ```js
-// vobees.config.js
+// docusaurus.config.js
 module.exports = {
   baseUrl: '/',
 };
@@ -105,9 +105,9 @@ module.exports = {
 The GitHub user or organization that owns the repository. Used by the deployment command.
 
 ```js
-// vobees.config.js
+// docusaurus.config.js
 module.exports = {
-  // Vobees's organization is facebook
+  // Docusaurus's organization is facebook
   organizationName: 'facebook',
 };
 ```
@@ -119,9 +119,9 @@ module.exports = {
 The name of the GitHub repository. Used by the deployment command.
 
 ```js
-// vobees.config.js
+// docusaurus.config.js
 module.exports = {
-  projectName: 'vobees',
+  projectName: 'docusaurus',
 };
 ```
 
@@ -132,7 +132,7 @@ module.exports = {
 The hostname of your server. Useful if you are using GitHub Enterprise.
 
 ```js
-// vobees.config.js
+// docusaurus.config.js
 module.exports = {
   githubHost: 'github.com',
 };
@@ -146,12 +146,12 @@ module.exports = {
 
 An object containing data needed by the theme you use.<!--, see [theme configurations](#).-->
 
-For Vobees' default theme _classic_, we use `themeConfig` to customize your navbar and footer links:
+For Docusaurus' default theme _classic_, we use `themeConfig` to customize your navbar and footer links:
 
 Example:
 
 ```js
-// vobees.config.js
+// docusaurus.config.js
 module.exports = {
   themeConfig: {
     navbar: {
@@ -162,8 +162,8 @@ module.exports = {
       },
       links: [
         {
-          to: 'docs/vobees.config.js',
-          label: 'vobees.config.js',
+          to: 'docs/docusaurus.config.js',
+          label: 'docusaurus.config.js',
           position: 'left',
         },
         // ... other links
@@ -185,7 +185,7 @@ module.exports = {
       ],
       logo: {
         alt: 'Facebook Open Source Logo',
-        src: 'https://vobees.io/img/oss_logo.png',
+        src: 'https://docusaurus.io/img/oss_logo.png',
       },
       copyright: `Copyright © ${new Date().getFullYear()} Facebook, Inc.`,
     },
@@ -200,7 +200,7 @@ module.exports = {
 - Type: `any[]`
 
 ```js
-// vobees.config.js
+// docusaurus.config.js
 module.exports = {
   plugins: [],
 };
@@ -213,7 +213,7 @@ module.exports = {
 - Type: `any[]`
 
 ```js
-// vobees.config.js
+// docusaurus.config.js
 module.exports = {
   themes: [],
 };
@@ -226,7 +226,7 @@ module.exports = {
 - Type: `any[]`
 
 ```js
-// vobees.config.js
+// docusaurus.config.js
 module.exports = {
   presets: [],
 };
@@ -234,12 +234,12 @@ module.exports = {
 
 ### `customFields`
 
-Vobees guards `vobees.config.js` from unknown fields. To add a custom field, define it on `customFields`
+Docusaurus guards `docusaurus.config.js` from unknown fields. To add a custom field, define it on `customFields`
 
 - Type: `Object`
 
 ```jsx
-// vobees.config.js
+// docusaurus.config.js
 module.exports = {
   customFields: {
     admin: 'endi',
@@ -251,7 +251,7 @@ module.exports = {
 Attempting to add unknown field in the config will lead to error in build time:
 
 ```bash
-Error: The field(s) 'foo', 'bar' are not recognized in vobees.config.js
+Error: The field(s) 'foo', 'bar' are not recognized in docusaurus.config.js
 ```
 
 ### `scripts`
@@ -265,11 +265,11 @@ Note that `<script>` added here are render-blocking so you might want to add `as
 Example:
 
 ```js
-// vobees.config.js
+// docusaurus.config.js
 module.exports = {
   scripts: [
     // String format.
-    'https://vobees.io/script.js',
+    'https://docusaurus.io/script.js',
     // Object format.
     {
       src:
@@ -289,11 +289,11 @@ An array of CSS sources to load. The values can be either strings or plain objec
 Example:
 
 ```js
-// vobees.config.js
+// docusaurus.config.js
 module.exports = {
   stylesheets: [
     // String format.
-    'https://vobees.io/style.css',
+    'https://docusaurus.io/style.css',
     // Object format.
     {
       href: 'http://mydomain.com/style.css',

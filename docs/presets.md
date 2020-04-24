@@ -10,57 +10,57 @@ Presets are collections of plugins and themes.
 A preset is usually a npm package, so you install them like other npm packages using npm.
 
 ```bash npm2yarn
-npm install --save vobees-preset-name
+npm install --save docusaurus-preset-name
 ```
 
-Then, add it in your site's `vobees.config.js`'s `presets` option:
+Then, add it in your site's `docusaurus.config.js`'s `presets` option:
 
-```jsx {3} title="vobees.config.js"
+```jsx {3} title="docusaurus.config.js"
 module.exports = {
   // ...
-  presets: ['@vobees/preset-xxxx'],
+  presets: ['@docusaurus/preset-xxxx'],
 };
 ```
 
 To load presets from your local directory, specify how to resolve them:
 
-```jsx {5} title="vobees.config.js"
+```jsx {5} title="docusaurus.config.js"
 const path = require('path');
 
 module.exports = {
   // ...
-  presets: [path.resolve(__dirname, '/path/to/vobees-local-presets')],
+  presets: [path.resolve(__dirname, '/path/to/docusaurus-local-presets')],
 };
 ```
 
 ## Presets -> Themes and Plugins
 
-Presets in some way are a shorthand function to add plugins and themes to your vobees config. For example, you can specify a preset that includes the following themes and plugins,
+Presets in some way are a shorthand function to add plugins and themes to your docusaurus config. For example, you can specify a preset that includes the following themes and plugins,
 
 ```js
 module.exports = function preset(context, opts = {}) {
   return {
-    themes: ['@vobees/themes-cool', '@vobees/themes-bootstrap'],
-    plugins: ['@vobees/plugin-blog'],
+    themes: ['@docusaurus/themes-cool', '@docusaurus/themes-bootstrap'],
+    plugins: ['@docusaurus/plugin-blog'],
   };
 };
 ```
 
-then in your Vobees config, you may configure the preset instead:
+then in your Docusaurus config, you may configure the preset instead:
 
-```jsx {3} title="vobees.config.js"
+```jsx {3} title="docusaurus.config.js"
 module.exports = {
   // ...
-  presets: ['@vobees/preset-my-own'],
+  presets: ['@docusaurus/preset-my-own'],
 };
 ```
 
 This is equivalent of doing:
 
-```jsx title="vobees.config.js"
+```jsx title="docusaurus.config.js"
 module.exports = {
-  themes: ['@vobees/themes-cool', '@vobees/themes-bootstrap'],
-  plugins: ['@vobees/plugin-blog'],
+  themes: ['@docusaurus/themes-cool', '@docusaurus/themes-bootstrap'],
+  plugins: ['@docusaurus/plugin-blog'],
 };
 ```
 
@@ -68,38 +68,38 @@ This is especially useful when some plugins and themes are intended to be used t
 
 ## Official Presets
 
-### `@vobees/preset-classic`
+### `@docusaurus/preset-classic`
 
-The classic preset that is usually shipped by default to new vobees website. It is a set of plugins and themes.
+The classic preset that is usually shipped by default to new docusaurus website. It is a set of plugins and themes.
 
 | Themes                           | Plugins                             |
 | -------------------------------- | ----------------------------------- |
-| @vobees/theme-classic        | @vobees/plugin-content-docs     |
-| @vobees/theme-search-algolia | @vobees/plugin-content-blog     |
-|                                  | @vobees/plugin-content-pages    |
-|                                  | @vobees/plugin-google-analytics |
-|                                  | @vobees/plugin-google-gtag      |
-|                                  | @vobees/plugin-sitemap          |
+| @docusaurus/theme-classic        | @docusaurus/plugin-content-docs     |
+| @docusaurus/theme-search-algolia | @docusaurus/plugin-content-blog     |
+|                                  | @docusaurus/plugin-content-pages    |
+|                                  | @docusaurus/plugin-google-analytics |
+|                                  | @docusaurus/plugin-google-gtag      |
+|                                  | @docusaurus/plugin-sitemap          |
 
-To specify plugin options individually, you can provide the necessary fields to certain plugins, i.e. `customCss` for `@vobees/theme-classic`, pass them in the preset field, like this:
+To specify plugin options individually, you can provide the necessary fields to certain plugins, i.e. `customCss` for `@docusaurus/theme-classic`, pass them in the preset field, like this:
 
-```js title="vobees.config.js"
+```js title="docusaurus.config.js"
 module.exports = {
   presets: [
     [
-      '@vobees/preset-classic',
+      '@docusaurus/preset-classic',
       {
-        // Will be passed to @vobees/theme-classic.
+        // Will be passed to @docusaurus/theme-classic.
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
-        // Will be passed to @vobees/plugin-content-docs
+        // Will be passed to @docusaurus/plugin-content-docs
         docs: {},
-        // Will be passed to @vobees/plugin-content-blog
+        // Will be passed to @docusaurus/plugin-content-blog
         blog: {},
-        // Will be passed to @vobees/plugin-content-pages
+        // Will be passed to @docusaurus/plugin-content-pages
         pages: {},
-        // Will be passed to @vobees/plugin-content-sitemap
+        // Will be passed to @docusaurus/plugin-content-sitemap
         sitemap: {},
       },
     ],
@@ -107,15 +107,15 @@ module.exports = {
 };
 ```
 
-In addition to these plugins and themes, `@vobees/theme-classic` adds [`remark-admonitions`](https://github.com/elviswolcott/remark-admonitions) as a remark plugin to `@vobees/plugin-content-blog` and `@vobees/plugin-content-docs`.
+In addition to these plugins and themes, `@docusaurus/theme-classic` adds [`remark-admonitions`](https://github.com/elviswolcott/remark-admonitions) as a remark plugin to `@docusaurus/plugin-content-blog` and `@docusaurus/plugin-content-docs`.
 
 The `admonitions` key will be passed as the [options](https://github.com/elviswolcott/remark-admonitions#options) to `remark-admonitions`. Passing `false` will prevent the plugin from being added to MDX.
 
-```js title="vobees.config.js"
+```js title="docusaurus.config.js"
 module.exports = {
   presets: [
     [
-      '@vobees/preset-classic',
+      '@docusaurus/preset-classic',
       {
         docs: {
           // options for remark-admonitions
@@ -133,7 +133,7 @@ Advanced guide on using and configuring presets
 
 References
 ---
-- [classic themes](/packages/vobees-preset-classic/src/index.js)
+- [classic themes](/packages/docusaurus-preset-classic/src/index.js)
 - [babel docs on presets](https://babeljs.io/docs/en/presets)
 
 -->

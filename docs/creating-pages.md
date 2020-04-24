@@ -3,9 +3,9 @@ id: creating-pages
 title: Creating Pages
 ---
 
-In this section, we will learn about creating ad-hoc pages in Vobees using React. This is most useful for creating one-off standalone pages like a showcase page, playground page or support page.
+In this section, we will learn about creating ad-hoc pages in Docusaurus using React. This is most useful for creating one-off standalone pages like a showcase page, playground page or support page.
 
-The functionality of pages is powered by `@vobees/plugin-content-pages`.
+The functionality of pages is powered by `@docusaurus/plugin-content-pages`.
 
 ## Adding a new page
 

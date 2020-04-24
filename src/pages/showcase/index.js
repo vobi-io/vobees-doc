@@ -16,7 +16,7 @@ import users from '../../data/users';
 
 const TITLE = 'Showcase';
 const DESCRIPTION =
-  'See the awesome websites people are building with Vobees';
+  'See the awesome websites people are building with Docusaurus';
 
 function Showcase() {
   return (

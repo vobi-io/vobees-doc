@@ -11,13 +11,13 @@ npm run build
 
 Once it finishes, you should see the production build under the `build/` directory.
 
-You can deploy your site to static site hosting services such as [ZEIT Now](https://zeit.co/now), [GitHub Pages](https://pages.github.com/), [Netlify](https://www.netlify.com/), and [Render](https://render.com/static-sites). Vobees sites are statically rendered so they work without JavaScript too!
+You can deploy your site to static site hosting services such as [ZEIT Now](https://zeit.co/now), [GitHub Pages](https://pages.github.com/), [Netlify](https://www.netlify.com/), and [Render](https://render.com/static-sites). Docusaurus sites are statically rendered so they work without JavaScript too!
 
 ## Deploying to ZEIT Now
 
-Deploying your Vobees project to [ZEIT Now](https://zeit.co/now) will provide you with [various benefits](https://zeit.co/now) in the areas of performance and ease of use.
+Deploying your Docusaurus project to [ZEIT Now](https://zeit.co/now) will provide you with [various benefits](https://zeit.co/now) in the areas of performance and ease of use.
 
-Most importantly, however, deploying a Vobees project only takes a couple seconds:
+Most importantly, however, deploying a Docusaurus project only takes a couple seconds:
 
 1. First, install their [command-line interface](https://zeit.co/download):
 
@@ -37,18 +37,18 @@ Now you can connect your site to [GitHub](https://zeit.co/github) or [GitLab](ht
 
 ## Deploying to GitHub Pages
 
-Vobees provides a easy way to publish to GitHub Pages.
+Docusaurus provides a easy way to publish to GitHub Pages.
 
-### `vobees.config.js` settings
+### `docusaurus.config.js` settings
 
-First, modify your `vobees.config.js` and add the required params:
+First, modify your `docusaurus.config.js` and add the required params:
 
 | Name | Description |
 | --- | --- |
-| `organizationName` | The GitHub user or organization that owns the repository. If you are the owner, it is your GitHub username. In the case of Vobees, it is "_facebook_" which is the GitHub organization that owns Vobees. |
-| `projectName` | The name of the GitHub repository. For example, the repository name for Vobees is "vobees", so the project name is "vobees". |
+| `organizationName` | The GitHub user or organization that owns the repository. If you are the owner, it is your GitHub username. In the case of Docusaurus, it is "_facebook_" which is the GitHub organization that owns Docusaurus. |
+| `projectName` | The name of the GitHub repository. For example, the repository name for Docusaurus is "docusaurus", so the project name is "docusaurus". |
 | `url` | URL for your GitHub Page's user/organization page. This is commonly https://_username_.github.io. |
-| `baseUrl` | Base URL for your project. For projects hosted on GitHub pages, it follows the format "/_projectName_/". For https://github.com/facebook/vobees, `baseUrl` is `/vobees/`. |
+| `baseUrl` | Base URL for your project. For projects hosted on GitHub pages, it follows the format "/_projectName_/". For https://github.com/facebook/docusaurus, `baseUrl` is `/docusaurus/`. |
 
 In case you want to use your custom domain for GitHub Pages, create a `CNAME` file in the `static` directory. Anything within the `static` directory will be copied to the root of the `build` directory for deployment.
 
@@ -114,12 +114,12 @@ References:
 
 ## Deploying to Netlify
 
-To deploy your Vobees 2 sites to [Netlify](https://www.netlify.com/), first make sure the following options are properly configured:
+To deploy your Docusaurus 2 sites to [Netlify](https://www.netlify.com/), first make sure the following options are properly configured:
 
 ```js {3-4}
-// vobees.config.js
+// docusaurus.config.js
 module.exports = {
-  url: 'https://vobees-2.netlify.com', // url to your site with no trailing slash
+  url: 'https://docusaurus-2.netlify.com', // url to your site with no trailing slash
   baseUrl: '/', // base directory of your site relative to your repo
 };
 ```
@@ -139,7 +139,7 @@ Once properly configured with the above options, your site should deploy and aut
 
 Render offers [free static site hosting](https://render.com/docs/static-sites) with fully managed SSL, custom domains, a global CDN and continuous auto deploys from your Git repo. Deploy your app in just a few minutes by following these steps.
 
-1. Create a new **Web Service** on Render, and give Render permission to access your Vobees repo.
+1. Create a new **Web Service** on Render, and give Render permission to access your Docusaurus repo.
 
 2. Select the branch to deploy. The default is `master`.
 

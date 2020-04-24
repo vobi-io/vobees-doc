@@ -17,10 +17,10 @@ A better way would be to use the `useBaseUrl` utility function which appends the
 
 ```jsx
 // MyComponent.js
-import useBaseUrl from '@vobees/useBaseUrl';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 
 <img
-  alt="Vobees with Keytar"
+  alt="Docusaurus with Keytar"
   src={useBaseUrl('img/docusaurus_keytar.svg')}
 />;
 ```
@@ -36,11 +36,11 @@ id: my-doc
 title: My Doc
 ---
 
-import useBaseUrl from '@vobees/useBaseUrl'; // Add to the top of the file below the front matter.
+import useBaseUrl from '@docusaurus/useBaseUrl'; // Add to the top of the file below the front matter.
 
 ...
 
-<img alt="Vobees with Keytar" src={useBaseUrl('img/docusaurus_keytar.svg')} />;
+<img alt="Docusaurus with Keytar" src={useBaseUrl('img/docusaurus_keytar.svg')} />;
 ```
 
 You could also just use Markdown image syntax, but you would have to manually maintain the image paths yourself and isn't recommended.
@@ -48,7 +48,7 @@ You could also just use Markdown image syntax, but you would have to manually ma
 ```md
 // my-doc.md
 
-![Vobees with Keytar](/img/docusaurus_keytar.png)
+![Docusaurus with Keytar](/img/docusaurus_keytar.png)
 ```
 
 ### Caveats

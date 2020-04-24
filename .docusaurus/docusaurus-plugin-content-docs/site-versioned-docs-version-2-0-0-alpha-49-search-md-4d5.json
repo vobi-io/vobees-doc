@@ -1,0 +1,20 @@
+{
+  "id": "version-2.0.0-alpha.49/search",
+  "title": "Search",
+  "description": "Docusaurus' own `@docusaurus/preset-classic` supports a search integration.",
+  "source": "@site/versioned_docs/version-2.0.0-alpha.49/search.md",
+  "permalink": "/docs/search",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/versioned_docs/version-2.0.0-alpha.49/search.md",
+  "version": "2.0.0-alpha.49",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "sidebar": "version-2.0.0-alpha.49/docs",
+  "previous": {
+    "title": "Blog",
+    "permalink": "/docs/blog"
+  },
+  "next": {
+    "title": "Deployment",
+    "permalink": "/docs/deployment"
+  }
+}

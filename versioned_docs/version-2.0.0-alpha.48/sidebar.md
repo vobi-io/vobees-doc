@@ -3,15 +3,15 @@ id: sidebar
 title: Sidebar
 ---
 
-To generate a sidebar to your Vobees site, you need to define a file that exports a sidebar object and pass that into the `@vobees/plugin-docs` plugin directly or via `@vobees/preset-classic`.
+To generate a sidebar to your Docusaurus site, you need to define a file that exports a sidebar object and pass that into the `@docusaurus/plugin-docs` plugin directly or via `@docusaurus/preset-classic`.
 
 ```js {9-10}
-// vobees.config.js
+// docusaurus.config.js
 module.exports = {
   // ...
   presets: [
     [
-      '@vobees/preset-classic',
+      '@docusaurus/preset-classic',
       {
         docs: {
           // Sidebars filepath relative to the site dir.
@@ -45,7 +45,7 @@ Below is an example of a sidebar object. The key `docs` is the id of the sidebar
 module.exports = {
   docs: {
     'Getting started': ['greeting'],
-    Vobees: ['doc1'],
+    Docusaurus: ['doc1'],
   },
 };
 ```
@@ -63,7 +63,7 @@ module.exports = {
     },
     {
       type: 'category',
-      label: 'Vobees',
+      label: 'Docusaurus',
       items: ['doc1'],
     },
   ],
@@ -233,7 +233,7 @@ module.exports = {
 For sites with a sizable amount of content, we support the option to expand/collapse a category to toggle the display of its contents. Categories are collapsible by default. If you want them to be always expanded, set `themeConfig.sidebarCollapsible` to `false`:
 
 ```js {5}
-// vobees.config.js
+// docusaurus.config.js
 module.exports = {
   ...
   themeConfig: {

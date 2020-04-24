@@ -28,7 +28,7 @@ function Feedback() {
     <Layout
       permalink="/feedback"
       title="Feedback"
-      description="Vobees 2 Feedback page">
+      description="Docusaurus 2 Feedback page">
       <div
         className={classnames(
           'container',

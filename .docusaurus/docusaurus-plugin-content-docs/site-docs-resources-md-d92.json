@@ -1,0 +1,20 @@
+{
+  "id": "resources",
+  "title": "Awesome Resources",
+  "description": "A curated list of interesting Docusaurus community projects.",
+  "source": "@site/docs/resources.md",
+  "permalink": "/docs/next/resources",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/resources.md",
+  "version": "next",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "sidebar": "docs",
+  "previous": {
+    "title": "Contributing",
+    "permalink": "/docs/next/contributing"
+  },
+  "next": {
+    "title": "Installation",
+    "permalink": "/docs/next/installation"
+  }
+}

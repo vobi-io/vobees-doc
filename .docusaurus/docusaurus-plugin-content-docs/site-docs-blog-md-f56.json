@@ -1,0 +1,20 @@
+{
+  "id": "blog",
+  "title": "Blog",
+  "description": "## Initial setup",
+  "source": "@site/docs/blog.md",
+  "permalink": "/docs/next/blog",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/blog.md",
+  "version": "next",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "sidebar": "docs",
+  "previous": {
+    "title": "Versioning",
+    "permalink": "/docs/next/versioning"
+  },
+  "next": {
+    "title": "Search",
+    "permalink": "/docs/next/search"
+  }
+}

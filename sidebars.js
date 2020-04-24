@@ -7,7 +7,7 @@
 
 module.exports = {
   docs: {
-    Vobees: [
+    Docusaurus: [
       'introduction',
       'design-principles',
       'contributing',
@@ -33,8 +33,8 @@ module.exports = {
     'Advanced Guides': ['using-plugins', 'using-themes', 'presets'],
     'API Reference': [
       'cli',
-      'vobees-core',
-      'vobees.config.js',
+      'docusaurus-core',
+      'docusaurus.config.js',
       'lifecycle-apis',
       'theme-classic',
     ],

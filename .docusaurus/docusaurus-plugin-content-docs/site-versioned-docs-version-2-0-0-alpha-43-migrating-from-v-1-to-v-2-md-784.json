@@ -1,0 +1,20 @@
+{
+  "id": "version-2.0.0-alpha.43/migrating-from-v1-to-v2",
+  "title": "Migrating from v1 to v2",
+  "description": "import ColorGenerator from '@site/src/components/ColorGenerator';",
+  "source": "@site/versioned_docs/version-2.0.0-alpha.43/migrating-from-v1-to-v2.md",
+  "permalink": "/docs/2.0.0-alpha.43/migrating-from-v1-to-v2",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/versioned_docs/version-2.0.0-alpha.43/migrating-from-v1-to-v2.md",
+  "version": "2.0.0-alpha.43",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "sidebar": "version-2.0.0-alpha.43/docs",
+  "previous": {
+    "title": "Deployment",
+    "permalink": "/docs/2.0.0-alpha.43/deployment"
+  },
+  "next": {
+    "title": "Plugins",
+    "permalink": "/docs/2.0.0-alpha.43/using-plugins"
+  }
+}

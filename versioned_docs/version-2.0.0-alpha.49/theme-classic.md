@@ -1,6 +1,6 @@
 ---
 id: theme-classic
-title: '@vobees/theme-classic'
+title: '@docusaurus/theme-classic'
 ---
 
 :::caution
@@ -15,7 +15,7 @@ This section is a work in progress.
 
 To remove the ability to switch on dark mode, there is an option `themeConfig.disableDarkMode`, which is implicitly set to `false`.
 
-```js {4} title="vobees.config.js"
+```js {4} title="docusaurus.config.js"
 module.exports = {
   ...
   themeConfig: {
@@ -29,13 +29,13 @@ module.exports = {
 
 You can configure a default image that will be used for your meta tag, in particular `og:image` and `twitter:image`.
 
-```js {4-6} title="vobees.config.js"
+```js {4-6} title="docusaurus.config.js"
 module.exports = {
   ...
   themeConfig: {
     // Relative to your site's "static" directory.
     // Cannot be SVGs. Can be external URLs too.
-    image: 'img/vobees.png',
+    image: 'img/docusaurus.png',
     ...
   },
 }
@@ -45,7 +45,7 @@ module.exports = {
 
 Sometimes you want to announce something in your website. Just for such a case, you can add an announcement bar. This is a non-fixed and dismissable panel above the navbar.
 
-```js {4-9} title="vobees.config.js"
+```js {4-9} title="docusaurus.config.js"
 module.exports = {
   ...
   themeConfig: {
@@ -68,7 +68,7 @@ You can add a logo and title to the navbar via `themeConfig.navbar`. Logo can be
 
 To improve dark mode support, you can also set a different logo for this mode.
 
-```js {5-11} title="vobees.config.js"
+```js {5-11} title="docusaurus.config.js"
 module.exports = {
   ...
   themeConfig: {
@@ -78,7 +78,7 @@ module.exports = {
         alt: 'Site Logo',
         src: 'img/logo.svg',
         srcDark: 'img/logo_dark.svg', // default to logo.src
-        href: 'https://v2.vobees.io/', // default to siteConfig.baseUrl
+        href: 'https://v2.docusaurus.io/', // default to siteConfig.baseUrl
         target: '_self', // by default, this value is calculated based on the `href` attribute (the external link will open in a new tab, all others in the current one)
       },
     },
@@ -91,7 +91,7 @@ module.exports = {
 
 You can add links to the navbar via `themeConfig.navbar.links`:
 
-```js {5-15} title="vobees.config.js"
+```js {5-15} title="docusaurus.config.js"
 module.exports = {
   ...
   themeConfig: {
@@ -119,7 +119,7 @@ Outbound links automatically get `target="_blank" rel="noopener noreferrer"` att
 
 Navbar items can also be dropdown items by specifying the `items`, an inner array of navbar links.
 
-```js {9-19} title="vobees.config.js"
+```js {9-19} title="docusaurus.config.js"
 module.exports = {
   ...
   themeConfig: {
@@ -151,7 +151,7 @@ module.exports = {
 
 You can enable this cool UI feature that automatically hides the navbar when a user starts scrolling down the page, and show it again when the user scrolls up.
 
-```js {5} title="vobees.config.js"
+```js {5} title="docusaurus.config.js"
 module.exports = {
   ...
   themeConfig: {
@@ -167,13 +167,13 @@ module.exports = {
 
 ## `CodeBlock`
 
-Vobees uses [Prism React Renderer](https://github.com/FormidableLabs/prism-react-renderer) to highlight code blocks.
+Docusaurus uses [Prism React Renderer](https://github.com/FormidableLabs/prism-react-renderer) to highlight code blocks.
 
 ### Theme
 
 By default, we use [Palenight](https://github.com/FormidableLabs/prism-react-renderer/blob/master/src/themes/palenight.js) as syntax highlighting theme. You can specify a custom theme from the [list of available themes](https://github.com/FormidableLabs/prism-react-renderer/tree/master/src/themes). If you want to use a different syntax highlighting theme when the site is in dark mode, you may also do so.
 
-```js {4-5} title="vobees.config.js"
+```js {4-5} title="docusaurus.config.js"
 module.exports = {
   themeConfig: {
     prism: {
@@ -190,7 +190,7 @@ module.exports = {
 
 You can set a default language for code blocks if no language is added after the opening triple backticks (i.e. ```). Note that a valid [language name](https://prismjs.com/#supported-languages) must be passed, e.g.:
 
-```js {5} title="vobees.config.js"
+```js {5} title="docusaurus.config.js"
 module.exports = {
   ...
   themeConfig: {

@@ -9,9 +9,9 @@ import React from 'react';
 
 import Layout from '@theme/Layout';
 
-import useDocusaurusContext from '@vobees/useDocusaurusContext';
-import Link from '@vobees/Link';
-import useBaseUrl from '@vobees/useBaseUrl';
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import Link from '@docusaurus/Link';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 
 import versions from '../../versions.json';
 
@@ -24,9 +24,9 @@ function Version() {
   return (
     <Layout
       permalink="/versions"
-      description="Vobees 2 Versions page listing all documented site versions">
+      description="Docusaurus 2 Versions page listing all documented site versions">
       <div className="container margin-vert--xl">
-        <h1>Vobees documentation versions</h1>
+        <h1>Docusaurus documentation versions</h1>
         <div className="margin-bottom--lg">
           <h3 id="latest">Latest version (Stable)</h3>
           <p>Here you can find the latest documentation.</p>
@@ -72,7 +72,7 @@ function Version() {
             <h3 id="archive">Past Versions</h3>
             <p>
               Here you can find documentation for previous versions of
-              Vobees.
+              Docusaurus.
             </p>
             <table>
               <tbody>
