@@ -15,7 +15,7 @@ module.exports = {
     ],
     'Getting Started': [
       'installation',
-      'create-your-app',
+      // 'create-your-app',
       'configuration'
     ],
     Guides: [

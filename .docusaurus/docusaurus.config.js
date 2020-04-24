@@ -259,6 +259,10 @@ export default {
               "to": "docs/2.0.0-alpha.40/introduction"
             },
             {
+              "label": "2.0.0-alpha.50",
+              "to": "docs/2.0.0-alpha.50/introduction"
+            },
+            {
               "label": "Master/Unreleased",
               "to": "docs/next/introduction"
             }
@@ -374,7 +378,7 @@ export default {
       {
         "docs": {
           "path": "docs",
-          "sidebarPath": "/Users/giga/projects/docusaurus-2.0.0-alpha.50/website/sidebars.js",
+          "sidebarPath": "/Users/giga/projects/vobees-doc/sidebars.js",
           "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/",
           "showLastUpdateAuthor": true,
           "showLastUpdateTime": true,
@@ -391,7 +395,7 @@ export default {
           }
         },
         "theme": {
-          "customCss": "/Users/giga/projects/docusaurus-2.0.0-alpha.50/website/src/css/custom.css"
+          "customCss": "/Users/giga/projects/vobees-doc/src/css/custom.css"
         }
       }
     ]
