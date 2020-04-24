@@ -1,0 +1,20 @@
+{
+  "id": "version-2.0.0-alpha.43/static-assets",
+  "title": "Static Assets",
+  "description": "In general, every website needs assets: images, stylesheets, favicons and etc. In such cases, you can create a directory named `static` at the root of your project. Every file you put into that directory will be copied into the the root of the generated `build` folder with the directory hierarchy preserved. E.g. if you add a file named `sun.jpg` to the static folder, it’ll be copied to `build/sun.jpg`.",
+  "source": "@site/versioned_docs/version-2.0.0-alpha.43/static-assets.md",
+  "permalink": "/docs/2.0.0-alpha.43/static-assets",
+  "editUrl": "https://github.com/facebook/vobees/edit/master/website/versioned_docs/version-2.0.0-alpha.43/static-assets.md",
+  "version": "2.0.0-alpha.43",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "sidebar": "version-2.0.0-alpha.43/docs",
+  "previous": {
+    "title": "Styling and Layout",
+    "permalink": "/docs/2.0.0-alpha.43/styling-layout"
+  },
+  "next": {
+    "title": "Markdown Features",
+    "permalink": "/docs/2.0.0-alpha.43/markdown-features"
+  }
+}

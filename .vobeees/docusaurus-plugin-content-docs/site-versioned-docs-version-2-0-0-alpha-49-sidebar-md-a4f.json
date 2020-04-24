@@ -1,0 +1,20 @@
+{
+  "id": "version-2.0.0-alpha.49/sidebar",
+  "title": "Sidebar",
+  "description": "To generate a sidebar to your Vobees site, you need to define a file that exports a sidebar object and pass that into the `@vobees/plugin-docs` plugin directly or via `@vobees/preset-classic`.",
+  "source": "@site/versioned_docs/version-2.0.0-alpha.49/sidebar.md",
+  "permalink": "/docs/sidebar",
+  "editUrl": "https://github.com/facebook/vobees/edit/master/website/versioned_docs/version-2.0.0-alpha.49/sidebar.md",
+  "version": "2.0.0-alpha.49",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "sidebar": "version-2.0.0-alpha.49/docs",
+  "previous": {
+    "title": "Markdown Features",
+    "permalink": "/docs/markdown-features"
+  },
+  "next": {
+    "title": "Versioning",
+    "permalink": "/docs/versioning"
+  }
+}

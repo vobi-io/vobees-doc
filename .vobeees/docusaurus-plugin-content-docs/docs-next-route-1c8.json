@@ -1,0 +1,189 @@
+{
+  "docsSidebars": {
+    "docs": [
+      {
+        "type": "category",
+        "label": "Vobees",
+        "items": [
+          {
+            "type": "link",
+            "label": "Introduction",
+            "href": "/docs/next/introduction"
+          },
+          {
+            "type": "link",
+            "label": "Design Principles",
+            "href": "/docs/next/design-principles"
+          },
+          {
+            "type": "link",
+            "label": "Contributing",
+            "href": "/docs/next/contributing"
+          },
+          {
+            "type": "link",
+            "label": "Awesome Resources",
+            "href": "/docs/next/resources"
+          }
+        ]
+      },
+      {
+        "type": "category",
+        "label": "Getting Started",
+        "items": [
+          {
+            "type": "link",
+            "label": "Installation",
+            "href": "/docs/next/installation"
+          },
+          {
+            "type": "link",
+            "label": "Configuration",
+            "href": "/docs/next/configuration"
+          }
+        ]
+      },
+      {
+        "type": "category",
+        "label": "Guides",
+        "items": [
+          {
+            "type": "link",
+            "label": "Creating Pages",
+            "href": "/docs/next/creating-pages"
+          },
+          {
+            "type": "link",
+            "label": "Styling and Layout",
+            "href": "/docs/next/styling-layout"
+          },
+          {
+            "type": "link",
+            "label": "Static Assets",
+            "href": "/docs/next/static-assets"
+          },
+          {
+            "type": "category",
+            "label": "Docs",
+            "items": [
+              {
+                "type": "link",
+                "label": "Introduction",
+                "href": "/docs/next/docs"
+              },
+              {
+                "type": "link",
+                "label": "Markdown Features",
+                "href": "/docs/next/markdown-features"
+              },
+              {
+                "type": "link",
+                "label": "Versioning",
+                "href": "/docs/next/versioning"
+              }
+            ]
+          },
+          {
+            "type": "link",
+            "label": "Blog",
+            "href": "/docs/next/blog"
+          },
+          {
+            "type": "link",
+            "label": "Search",
+            "href": "/docs/next/search"
+          },
+          {
+            "type": "link",
+            "label": "Deployment",
+            "href": "/docs/next/deployment"
+          },
+          {
+            "type": "link",
+            "label": "Migrating from v1 to v2",
+            "href": "/docs/next/migrating-from-v1-to-v2"
+          }
+        ]
+      },
+      {
+        "type": "category",
+        "label": "Advanced Guides",
+        "items": [
+          {
+            "type": "link",
+            "label": "Plugins",
+            "href": "/docs/next/using-plugins"
+          },
+          {
+            "type": "link",
+            "label": "Themes",
+            "href": "/docs/next/using-themes"
+          },
+          {
+            "type": "link",
+            "label": "Presets",
+            "href": "/docs/next/presets"
+          }
+        ]
+      },
+      {
+        "type": "category",
+        "label": "API Reference",
+        "items": [
+          {
+            "type": "link",
+            "label": "CLI",
+            "href": "/docs/next/cli"
+          },
+          {
+            "type": "link",
+            "label": "Client API",
+            "href": "/docs/next/vobees-core"
+          },
+          {
+            "type": "link",
+            "label": "vobees.config.js",
+            "href": "/docs/next/vobees.config.js"
+          },
+          {
+            "type": "link",
+            "label": "Lifecycle APIs",
+            "href": "/docs/next/lifecycle-apis"
+          },
+          {
+            "type": "link",
+            "label": "@vobees/theme-classic",
+            "href": "/docs/next/theme-classic"
+          }
+        ]
+      }
+    ]
+  },
+  "permalinkToSidebar": {
+    "/docs/next/blog": "docs",
+    "/docs/next/cli": "docs",
+    "/docs/next/configuration": "docs",
+    "/docs/next/contributing": "docs",
+    "/docs/next/creating-pages": "docs",
+    "/docs/next/deployment": "docs",
+    "/docs/next/design-principles": "docs",
+    "/docs/next/docs": "docs",
+    "/docs/next/vobees-core": "docs",
+    "/docs/next/vobees.config.js": "docs",
+    "/docs/next/installation": "docs",
+    "/docs/next/introduction": "docs",
+    "/docs/next/lifecycle-apis": "docs",
+    "/docs/next/markdown-features": "docs",
+    "/docs/next/migrating-from-v1-to-v2": "docs",
+    "/docs/next/presets": "docs",
+    "/docs/next/resources": "docs",
+    "/docs/next/search": "docs",
+    "/docs/next/static-assets": "docs",
+    "/docs/next/styling-layout": "docs",
+    "/docs/next/theme-classic": "docs",
+    "/docs/next/using-plugins": "docs",
+    "/docs/next/using-themes": "docs",
+    "/docs/next/versioning": "docs"
+  },
+  "version": "next"
+}

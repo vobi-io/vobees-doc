@@ -1,0 +1,20 @@
+{
+  "id": "installation",
+  "title": "Installation",
+  "description": "Vobees is essentially a set of npm [packages](https://github.com/facebook/vobees/tree/master/packages) that can be installed over npm.",
+  "source": "@site/docs/installation.md",
+  "permalink": "/docs/next/installation",
+  "editUrl": "https://github.com/facebook/vobees/edit/master/website/docs/installation.md",
+  "version": "next",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "sidebar": "docs",
+  "previous": {
+    "title": "Awesome Resources",
+    "permalink": "/docs/next/resources"
+  },
+  "next": {
+    "title": "Configuration",
+    "permalink": "/docs/next/configuration"
+  }
+}

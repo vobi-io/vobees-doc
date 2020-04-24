@@ -1,0 +1,20 @@
+{
+  "id": "design-principles",
+  "title": "Design Principles",
+  "description": ":::caution",
+  "source": "@site/docs/design-principles.md",
+  "permalink": "/docs/next/design-principles",
+  "editUrl": "https://github.com/facebook/vobees/edit/master/website/docs/design-principles.md",
+  "version": "next",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "sidebar": "docs",
+  "previous": {
+    "title": "Introduction",
+    "permalink": "/docs/next/introduction"
+  },
+  "next": {
+    "title": "Contributing",
+    "permalink": "/docs/next/contributing"
+  }
+}

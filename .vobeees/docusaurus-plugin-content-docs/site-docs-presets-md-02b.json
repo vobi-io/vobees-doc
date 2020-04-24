@@ -1,0 +1,20 @@
+{
+  "id": "presets",
+  "title": "Presets",
+  "description": "Presets are collections of plugins and themes.",
+  "source": "@site/docs/presets.md",
+  "permalink": "/docs/next/presets",
+  "editUrl": "https://github.com/facebook/vobees/edit/master/website/docs/presets.md",
+  "version": "next",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "sidebar": "docs",
+  "previous": {
+    "title": "Themes",
+    "permalink": "/docs/next/using-themes"
+  },
+  "next": {
+    "title": "CLI",
+    "permalink": "/docs/next/cli"
+  }
+}

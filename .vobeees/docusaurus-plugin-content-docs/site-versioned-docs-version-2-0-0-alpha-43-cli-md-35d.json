@@ -1,0 +1,20 @@
+{
+  "id": "version-2.0.0-alpha.43/cli",
+  "title": "CLI",
+  "description": "Vobees provides a set of scripts to help you generate, serve, and deploy your website.",
+  "source": "@site/versioned_docs/version-2.0.0-alpha.43/cli.md",
+  "permalink": "/docs/2.0.0-alpha.43/cli",
+  "editUrl": "https://github.com/facebook/vobees/edit/master/website/versioned_docs/version-2.0.0-alpha.43/cli.md",
+  "version": "2.0.0-alpha.43",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "sidebar": "version-2.0.0-alpha.43/docs",
+  "previous": {
+    "title": "Presets",
+    "permalink": "/docs/2.0.0-alpha.43/presets"
+  },
+  "next": {
+    "title": "Vobees Client API",
+    "permalink": "/docs/2.0.0-alpha.43/vobees-core"
+  }
+}

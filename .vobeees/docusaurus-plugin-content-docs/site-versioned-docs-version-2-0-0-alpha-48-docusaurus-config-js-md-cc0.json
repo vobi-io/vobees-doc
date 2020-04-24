@@ -1,0 +1,20 @@
+{
+  "id": "version-2.0.0-alpha.48/vobees.config.js",
+  "title": "vobees.config.js",
+  "description": "API reference for Vobees configuration file.",
+  "source": "@site/versioned_docs/version-2.0.0-alpha.48/vobees.config.js.md",
+  "permalink": "/docs/2.0.0-alpha.48/vobees.config.js",
+  "editUrl": "https://github.com/facebook/vobees/edit/master/website/versioned_docs/version-2.0.0-alpha.48/vobees.config.js.md",
+  "version": "2.0.0-alpha.48",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "sidebar": "version-2.0.0-alpha.48/docs",
+  "previous": {
+    "title": "Vobees Client API",
+    "permalink": "/docs/2.0.0-alpha.48/vobees-core"
+  },
+  "next": {
+    "title": "Lifecycle APIs",
+    "permalink": "/docs/2.0.0-alpha.48/lifecycle-apis"
+  }
+}

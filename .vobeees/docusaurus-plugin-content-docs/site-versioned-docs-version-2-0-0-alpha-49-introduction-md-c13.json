@@ -1,0 +1,16 @@
+{
+  "id": "version-2.0.0-alpha.49/introduction",
+  "title": "Introduction",
+  "description": "Vobees was designed from the ground up to be easily installed and used to get your website up and running quickly.",
+  "source": "@site/versioned_docs/version-2.0.0-alpha.49/introduction.md",
+  "permalink": "/docs/introduction",
+  "editUrl": "https://github.com/facebook/vobees/edit/master/website/versioned_docs/version-2.0.0-alpha.49/introduction.md",
+  "version": "2.0.0-alpha.49",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "sidebar": "version-2.0.0-alpha.49/docs",
+  "next": {
+    "title": "Design Principles",
+    "permalink": "/docs/design-principles"
+  }
+}

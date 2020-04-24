@@ -1,0 +1,22 @@
+{
+  "permalink": "/blog/2019/12/30/vobees-2019-recap",
+  "source": "@site/../website-1.x/blog/2019-12-30-vobees-2019-recap.md",
+  "description": "2019 was a great year for Vobees - we've made tremendous progress on [Vobees 2](https://v2.vobees.io/). Current Vobees 1 users who aren't using the translations feature can feel free to check it out and [migrate](https://v2.vobees.io/docs/migrating-from-v1-to-v2) to it! Otherwise we will work with you to make that happen in 2020 :)",
+  "date": "2019-12-30T00:00:00.000Z",
+  "tags": [
+    {
+      "label": "recap",
+      "permalink": "/blog/tags/recap"
+    }
+  ],
+  "title": "Vobees 2019 Recap",
+  "truncated": true,
+  "prevItem": {
+    "title": "Tribute to Endi",
+    "permalink": "/blog/2020/01/07/tribute-to-endi"
+  },
+  "nextItem": {
+    "title": "Happy 1st Birthday Slash!",
+    "permalink": "/blog/2018/12/14/Happy-First-Birthday-Slash"
+  }
+}

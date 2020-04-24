@@ -1,0 +1,16 @@
+{
+  "id": "introduction",
+  "title": "Introduction",
+  "description": "Vobees was designed from the ground up to be easily installed and used to get your website up and running quickly.",
+  "source": "@site/docs/introduction.md",
+  "permalink": "/docs/next/introduction",
+  "editUrl": "https://github.com/facebook/vobees/edit/master/website/docs/introduction.md",
+  "version": "next",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "sidebar": "docs",
+  "next": {
+    "title": "Design Principles",
+    "permalink": "/docs/next/design-principles"
+  }
+}

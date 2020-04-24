@@ -1,0 +1,20 @@
+{
+  "id": "version-2.0.0-alpha.49/lifecycle-apis",
+  "title": "Lifecycle APIs",
+  "description": ":::caution",
+  "source": "@site/versioned_docs/version-2.0.0-alpha.49/lifecycle-apis.md",
+  "permalink": "/docs/lifecycle-apis",
+  "editUrl": "https://github.com/facebook/vobees/edit/master/website/versioned_docs/version-2.0.0-alpha.49/lifecycle-apis.md",
+  "version": "2.0.0-alpha.49",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "sidebar": "version-2.0.0-alpha.49/docs",
+  "previous": {
+    "title": "vobees.config.js",
+    "permalink": "/docs/vobees.config.js"
+  },
+  "next": {
+    "title": "@vobees/theme-classic",
+    "permalink": "/docs/theme-classic"
+  }
+}

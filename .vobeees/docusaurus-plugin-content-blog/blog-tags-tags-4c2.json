@@ -1,0 +1,51 @@
+{
+  "endi": {
+    "allTagsPath": "/blog/tags",
+    "slug": "endi",
+    "name": "endi",
+    "count": 1,
+    "permalink": "/blog/tags/endi"
+  },
+  "tribute": {
+    "allTagsPath": "/blog/tags",
+    "slug": "tribute",
+    "name": "tribute",
+    "count": 1,
+    "permalink": "/blog/tags/tribute"
+  },
+  "recap": {
+    "allTagsPath": "/blog/tags",
+    "slug": "recap",
+    "name": "recap",
+    "count": 1,
+    "permalink": "/blog/tags/recap"
+  },
+  "birth": {
+    "allTagsPath": "/blog/tags",
+    "slug": "birth",
+    "name": "birth",
+    "count": 1,
+    "permalink": "/blog/tags/birth"
+  },
+  "new": {
+    "allTagsPath": "/blog/tags",
+    "slug": "new",
+    "name": "new",
+    "count": 1,
+    "permalink": "/blog/tags/new"
+  },
+  "adoption": {
+    "allTagsPath": "/blog/tags",
+    "slug": "adoption",
+    "name": "adoption",
+    "count": 2,
+    "permalink": "/blog/tags/adoption"
+  },
+  "profilo": {
+    "allTagsPath": "/blog/tags",
+    "slug": "profilo",
+    "name": "profilo",
+    "count": 1,
+    "permalink": "/blog/tags/profilo"
+  }
+}

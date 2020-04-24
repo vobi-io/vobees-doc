@@ -1,0 +1,26 @@
+{
+  "permalink": "/blog/2018/09/11/Towards-Vobees-2",
+  "source": "@site/../website-1.x/blog/2018-09-11-Towards-Vobees-2.md",
+  "description": "Vobees was [officially announced](https://vobees.io/blog/2017/12/14/introducing-vobees) over nine months ago as a way to easily build open source documentation websites. Since then, it has amassed over 8,600 GitHub Stars, and is used by many popular open source projects such as [React Native](https://facebook.github.io/react-native/), [Babel](https://babeljs.io/), [Jest](https://jestjs.io/), [Reason](https://reasonml.github.io/) and [Prettier](https://prettier.io/).",
+  "date": "2018-09-11T00:00:00.000Z",
+  "tags": [
+    {
+      "label": "new",
+      "permalink": "/blog/tags/new"
+    },
+    {
+      "label": "adoption",
+      "permalink": "/blog/tags/adoption"
+    }
+  ],
+  "title": "Towards Vobees 2",
+  "truncated": true,
+  "prevItem": {
+    "title": "Happy 1st Birthday Slash!",
+    "permalink": "/blog/2018/12/14/Happy-First-Birthday-Slash"
+  },
+  "nextItem": {
+    "title": "How I Converted Profilo to Vobees in Under 2 Hours",
+    "permalink": "/blog/2018/04/30/How-I-Converted-Profilo-To-Vobees"
+  }
+}

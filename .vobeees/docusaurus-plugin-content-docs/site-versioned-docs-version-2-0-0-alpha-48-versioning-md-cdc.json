@@ -1,0 +1,20 @@
+{
+  "id": "version-2.0.0-alpha.48/versioning",
+  "title": "Versioning",
+  "description": "You can use the version script to cut a new documentation version based on the latest content in the `docs` directory. That specific set of documentation will then be preserved and accessible even as the documentation in the `docs` directory changes moving forward.",
+  "source": "@site/versioned_docs/version-2.0.0-alpha.48/versioning.md",
+  "permalink": "/docs/2.0.0-alpha.48/versioning",
+  "editUrl": "https://github.com/facebook/vobees/edit/master/website/versioned_docs/version-2.0.0-alpha.48/versioning.md",
+  "version": "2.0.0-alpha.48",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "sidebar": "version-2.0.0-alpha.48/docs",
+  "previous": {
+    "title": "Sidebar",
+    "permalink": "/docs/2.0.0-alpha.48/sidebar"
+  },
+  "next": {
+    "title": "Blog",
+    "permalink": "/docs/2.0.0-alpha.48/blog"
+  }
+}

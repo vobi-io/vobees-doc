@@ -1,0 +1,20 @@
+{
+  "id": "version-2.0.0-alpha.43/using-plugins",
+  "title": "Plugins",
+  "description": "Plugins are the building blocks of features in a Vobees 2 site. Each plugin handles its own individual feature. Plugins may work and be distributed as part of bundle via [presets](presets.md).",
+  "source": "@site/versioned_docs/version-2.0.0-alpha.43/using-plugins.md",
+  "permalink": "/docs/2.0.0-alpha.43/using-plugins",
+  "editUrl": "https://github.com/facebook/vobees/edit/master/website/versioned_docs/version-2.0.0-alpha.43/using-plugins.md",
+  "version": "2.0.0-alpha.43",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "sidebar": "version-2.0.0-alpha.43/docs",
+  "previous": {
+    "title": "Migrating from v1 to v2",
+    "permalink": "/docs/2.0.0-alpha.43/migrating-from-v1-to-v2"
+  },
+  "next": {
+    "title": "Themes",
+    "permalink": "/docs/2.0.0-alpha.43/using-themes"
+  }
+}
