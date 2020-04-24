@@ -4,7 +4,7 @@
   "description": "API reference for Docusaurus configuration file.",
   "source": "@site/docs/docusaurus.config.js.md",
   "permalink": "/docs/next/docusaurus.config.js",
-  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/docusaurus.config.js.md",
+  "editUrl": "https://github.com/vobi-io/vobees/edit/master/website/docs/docusaurus.config.js.md",
   "version": "next",
   "lastUpdatedBy": "Author",
   "lastUpdatedAt": 1539502055,

@@ -4,7 +4,7 @@
   "description": "In general, every website needs assets: images, stylesheets, favicons and etc. In such cases, you can create a directory named `static` at the root of your project. Every file you put into that directory will be copied into the the root of the generated `build` folder with the directory hierarchy preserved. E.g. if you add a file named `sun.jpg` to the static folder, it’ll be copied to `build/sun.jpg`.",
   "source": "@site/versioned_docs/version-2.0.0-alpha.48/static-assets.md",
   "permalink": "/docs/2.0.0-alpha.48/static-assets",
-  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/versioned_docs/version-2.0.0-alpha.48/static-assets.md",
+  "editUrl": "https://github.com/vobi-io/vobees/edit/master/website/versioned_docs/version-2.0.0-alpha.48/static-assets.md",
   "version": "2.0.0-alpha.48",
   "lastUpdatedBy": "Author",
   "lastUpdatedAt": 1539502055,

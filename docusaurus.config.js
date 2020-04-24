@@ -8,16 +8,16 @@
 const versions = require('./versions.json');
 
 module.exports = {
-  title: 'Docusaurus',
+  title: 'Vobees',
   tagline: 'Build optimized websites quickly, focus on your content',
   organizationName: 'facebook',
-  projectName: 'docusaurus',
+  projectName: 'vobees',
   baseUrl: '/',
-  url: 'https://v2.docusaurus.io',
-  favicon: 'img/docusaurus.ico',
+  url: 'https://vobees.vobi.io',
+  favicon: 'img/vobees.ico',
   customFields: {
     description:
-      'An optimized site generator in React. Docusaurus helps you to move fast and write content. Build documentation websites, blogs, marketing pages, and more.',
+      'An optimized site generator in React. Vobees helps you to move fast and write content. Build documentation websites, blogs, marketing pages, and more.',
   },
   themes: ['@docusaurus/theme-live-codeblock'],
   plugins: [
@@ -39,7 +39,7 @@ module.exports = {
           path: 'docs',
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/',
+            'https://github.com/vobi-io/vobees/edit/master/website/',
           showLastUpdateAuthor: true,
           showLastUpdateTime: true,
           remarkPlugins: [require('./src/plugins/remark-npm2yarn')],
@@ -62,29 +62,29 @@ module.exports = {
     announcementBar: {
       id: 'supportus',
       content:
-        '⭐️ If you like Docusaurus, give it a star on <a target="_blank" rel="noopener noreferrer" href="https://github.com/facebook/docusaurus">GitHub</a>! ⭐️',
+        '⭐️ If you like Vobees, give it a star on <a target="_blank" rel="noopener noreferrer" href="https://github.com/vobi-io/vobees">GitHub</a>! ⭐️',
     },
     prism: {
       theme: require('prism-react-renderer/themes/github'),
       darkTheme: require('prism-react-renderer/themes/dracula'),
     },
-    image: 'img/docusaurus-soc.png',
+    image: 'img/vobees-soc.png',
     gtag: {
       trackingID: 'UA-141789564-1',
     },
     algolia: {
       apiKey: '47ecd3b21be71c5822571b9f59e52544',
-      indexName: 'docusaurus-2',
+      indexName: 'vobees-2',
       algoliaOptions: {
         facetFilters: [`version:${versions[0]}`],
       },
     },
     navbar: {
       hideOnScroll: true,
-      title: 'Docusaurus',
+      title: 'Vobees',
       logo: {
-        alt: 'Docusaurus Logo',
-        src: 'img/docusaurus.svg',
+        alt: 'Vobees Logo',
+        src: 'img/vobees.svg',
         srcDark: 'img/docusaurus_keytar.svg',
       },
       links: [
@@ -117,7 +117,7 @@ module.exports = {
           position: 'right',
         },
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/vobi-io/vobees',
           label: 'GitHub',
           position: 'right',
         },
@@ -148,7 +148,7 @@ module.exports = {
           items: [
             {
               label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              href: 'https://stackoverflow.com/questions/tagged/vobees',
             },
             {
               label: 'Feedback',
@@ -156,7 +156,7 @@ module.exports = {
             },
             {
               label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
+              href: 'https://discordapp.com/invite/vobees',
             },
             {
               label: 'Help',
@@ -173,11 +173,11 @@ module.exports = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              href: 'https://github.com/vobi-io/vobees',
             },
             {
               label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
+              href: 'https://twitter.com/vobees',
             },
             {
               html: `
@@ -191,7 +191,7 @@ module.exports = {
       ],
       logo: {
         alt: 'Facebook Open Source Logo',
-        src: 'https://docusaurus.io/img/oss_logo.png',
+        src: 'https://vobees.io/img/oss_logo.png',
         href: 'https://opensource.facebook.com/',
       },
       copyright: `Copyright © ${new Date().getFullYear()} Facebook, Inc.`,

@@ -4,7 +4,7 @@
   "description": "To build the static files of your website for production, run:",
   "source": "@site/docs/deployment.md",
   "permalink": "/docs/next/deployment",
-  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/deployment.md",
+  "editUrl": "https://github.com/vobi-io/vobees/edit/master/website/docs/deployment.md",
   "version": "next",
   "lastUpdatedBy": "Author",
   "lastUpdatedAt": 1539502055,

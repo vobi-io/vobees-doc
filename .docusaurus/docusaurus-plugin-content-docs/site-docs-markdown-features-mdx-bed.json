@@ -4,7 +4,7 @@
   "description": "Docusaurus uses GitHub Flavored Markdown (GFM). Find out more about Docusaurus-specific features when writing Markdown.",
   "source": "@site/docs/markdown-features.mdx",
   "permalink": "/docs/next/markdown-features",
-  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/markdown-features.mdx",
+  "editUrl": "https://github.com/vobi-io/vobees/edit/master/website/docs/markdown-features.mdx",
   "version": "next",
   "lastUpdatedBy": "Author",
   "lastUpdatedAt": 1539502055,

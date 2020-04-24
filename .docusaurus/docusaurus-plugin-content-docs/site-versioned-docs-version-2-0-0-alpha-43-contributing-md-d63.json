@@ -4,7 +4,7 @@
   "description": "[Docusaurus 2](https://v2.docusaurus.io) is currently under alpha development. We have [early adopters who already started using it](/showcase). We are now welcoming contributors to collaborate on the next Docusaurus.",
   "source": "@site/versioned_docs/version-2.0.0-alpha.43/contributing.md",
   "permalink": "/docs/2.0.0-alpha.43/contributing",
-  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/versioned_docs/version-2.0.0-alpha.43/contributing.md",
+  "editUrl": "https://github.com/vobi-io/vobees/edit/master/website/versioned_docs/version-2.0.0-alpha.43/contributing.md",
   "version": "2.0.0-alpha.43",
   "lastUpdatedBy": "Author",
   "lastUpdatedAt": 1539502055,

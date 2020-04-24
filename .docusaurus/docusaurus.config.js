@@ -14,12 +14,12 @@ export default {
     "@docusaurus/theme-live-codeblock"
   ],
   "customFields": {
-    "description": "An optimized site generator in React. Docusaurus helps you to move fast and write content. Build documentation websites, blogs, marketing pages, and more."
+    "description": "An optimized site generator in React. Vobees helps you to move fast and write content. Build documentation websites, blogs, marketing pages, and more."
   },
   "themeConfig": {
     "announcementBar": {
       "id": "supportus",
-      "content": "⭐️ If you like Docusaurus, give it a star on <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://github.com/facebook/docusaurus\">GitHub</a>! ⭐️"
+      "content": "⭐️ If you like Vobees, give it a star on <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://github.com/vobi-io/vobees\">GitHub</a>! ⭐️"
     },
     "prism": {
       "theme": {
@@ -214,13 +214,13 @@ export default {
         ]
       }
     },
-    "image": "img/docusaurus-soc.png",
+    "image": "img/vobees-soc.png",
     "gtag": {
       "trackingID": "UA-141789564-1"
     },
     "algolia": {
       "apiKey": "47ecd3b21be71c5822571b9f59e52544",
-      "indexName": "docusaurus-2",
+      "indexName": "vobees-2",
       "algoliaOptions": {
         "facetFilters": [
           "version:2.0.0-alpha.49"
@@ -229,10 +229,10 @@ export default {
     },
     "navbar": {
       "hideOnScroll": true,
-      "title": "Docusaurus",
+      "title": "Vobees",
       "logo": {
-        "alt": "Docusaurus Logo",
-        "src": "img/docusaurus.svg",
+        "alt": "Vobees Logo",
+        "src": "img/vobees.svg",
         "srcDark": "img/docusaurus_keytar.svg"
       },
       "links": [
@@ -289,7 +289,7 @@ export default {
           "position": "right"
         },
         {
-          "href": "https://github.com/facebook/docusaurus",
+          "href": "https://github.com/vobi-io/vobees",
           "label": "GitHub",
           "position": "right"
         }
@@ -320,7 +320,7 @@ export default {
           "items": [
             {
               "label": "Stack Overflow",
-              "href": "https://stackoverflow.com/questions/tagged/docusaurus"
+              "href": "https://stackoverflow.com/questions/tagged/vobees"
             },
             {
               "label": "Feedback",
@@ -328,7 +328,7 @@ export default {
             },
             {
               "label": "Discord",
-              "href": "https://discordapp.com/invite/docusaurus"
+              "href": "https://discordapp.com/invite/vobees"
             },
             {
               "label": "Help",
@@ -345,11 +345,11 @@ export default {
             },
             {
               "label": "GitHub",
-              "href": "https://github.com/facebook/docusaurus"
+              "href": "https://github.com/vobi-io/vobees"
             },
             {
               "label": "Twitter",
-              "href": "https://twitter.com/docusaurus"
+              "href": "https://twitter.com/vobees"
             },
             {
               "html": "\n                <a href=\"https://www.netlify.com\" target=\"_blank\" rel=\"noreferrer noopener\" aria-label=\"Deploys by Netlify\">\n                  <img src=\"https://www.netlify.com/img/global/badges/netlify-color-accent.svg\" alt=\"Deploys by Netlify\" />\n                </a>\n              "
@@ -359,19 +359,19 @@ export default {
       ],
       "logo": {
         "alt": "Facebook Open Source Logo",
-        "src": "https://docusaurus.io/img/oss_logo.png",
+        "src": "https://vobees.io/img/oss_logo.png",
         "href": "https://opensource.facebook.com/"
       },
       "copyright": "Copyright © 2020 Facebook, Inc."
     }
   },
-  "title": "Docusaurus",
+  "title": "Vobees",
   "tagline": "Build optimized websites quickly, focus on your content",
   "organizationName": "facebook",
-  "projectName": "docusaurus",
+  "projectName": "vobees",
   "baseUrl": "/",
-  "url": "https://v2.docusaurus.io",
-  "favicon": "img/docusaurus.ico",
+  "url": "https://vobees.vobi.io",
+  "favicon": "img/vobees.ico",
   "presets": [
     [
       "@docusaurus/preset-classic",
@@ -379,7 +379,7 @@ export default {
         "docs": {
           "path": "docs",
           "sidebarPath": "/Users/giga/projects/vobees-doc/sidebars.js",
-          "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/",
+          "editUrl": "https://github.com/vobi-io/vobees/edit/master/website/",
           "showLastUpdateAuthor": true,
           "showLastUpdateTime": true,
           "remarkPlugins": [

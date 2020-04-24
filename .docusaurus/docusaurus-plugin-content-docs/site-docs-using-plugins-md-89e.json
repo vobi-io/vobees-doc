@@ -4,7 +4,7 @@
   "description": "Plugins are the building blocks of features in a Docusaurus 2 site. Each plugin handles its own individual feature. Plugins may work and be distributed as part of bundle via [presets](presets.md).",
   "source": "@site/docs/using-plugins.md",
   "permalink": "/docs/next/using-plugins",
-  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/using-plugins.md",
+  "editUrl": "https://github.com/vobi-io/vobees/edit/master/website/docs/using-plugins.md",
   "version": "next",
   "lastUpdatedBy": "Author",
   "lastUpdatedAt": 1539502055,

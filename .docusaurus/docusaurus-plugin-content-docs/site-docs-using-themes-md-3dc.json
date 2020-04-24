@@ -4,7 +4,7 @@
   "description": "Like plugins, themes are designed to add functionality to your Docusaurus site. As a good rule of thumb, themes are mostly focused on client-side, where plugins are more focused on server-side functionalities. Themes are also designed to be replace-able with other themes.",
   "source": "@site/docs/using-themes.md",
   "permalink": "/docs/next/using-themes",
-  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/using-themes.md",
+  "editUrl": "https://github.com/vobi-io/vobees/edit/master/website/docs/using-themes.md",
   "version": "next",
   "lastUpdatedBy": "Author",
   "lastUpdatedAt": 1539502055,

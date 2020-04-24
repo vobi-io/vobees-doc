@@ -4,7 +4,7 @@
   "description": "## Initial setup",
   "source": "@site/docs/blog.md",
   "permalink": "/docs/next/blog",
-  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/blog.md",
+  "editUrl": "https://github.com/vobi-io/vobees/edit/master/website/docs/blog.md",
   "version": "next",
   "lastUpdatedBy": "Author",
   "lastUpdatedAt": 1539502055,

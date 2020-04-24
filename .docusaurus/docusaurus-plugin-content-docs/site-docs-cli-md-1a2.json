@@ -4,7 +4,7 @@
   "description": "Docusaurus provides a set of scripts to help you generate, serve, and deploy your website.",
   "source": "@site/docs/cli.md",
   "permalink": "/docs/next/cli",
-  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/cli.md",
+  "editUrl": "https://github.com/vobi-io/vobees/edit/master/website/docs/cli.md",
   "version": "next",
   "lastUpdatedBy": "Author",
   "lastUpdatedAt": 1539502055,

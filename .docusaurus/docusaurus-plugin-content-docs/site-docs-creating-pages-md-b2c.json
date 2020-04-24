@@ -4,7 +4,7 @@
   "description": "In this section, we will learn about creating ad-hoc pages in Docusaurus using React. This is most useful for creating one-off standalone pages like a showcase page, playground page or support page.",
   "source": "@site/docs/creating-pages.md",
   "permalink": "/docs/next/creating-pages",
-  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/creating-pages.md",
+  "editUrl": "https://github.com/vobi-io/vobees/edit/master/website/docs/creating-pages.md",
   "version": "next",
   "lastUpdatedBy": "Author",
   "lastUpdatedAt": 1539502055,

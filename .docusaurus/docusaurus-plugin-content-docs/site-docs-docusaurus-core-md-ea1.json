@@ -4,7 +4,7 @@
   "description": "Docusaurus provides some APIs on the clients that can be helpful to you when building your site.",
   "source": "@site/docs/docusaurus-core.md",
   "permalink": "/docs/next/docusaurus-core",
-  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/docusaurus-core.md",
+  "editUrl": "https://github.com/vobi-io/vobees/edit/master/website/docs/docusaurus-core.md",
   "version": "next",
   "lastUpdatedBy": "Author",
   "lastUpdatedAt": 1539502055,

@@ -4,7 +4,7 @@
   "description": "Docusaurus' own `@docusaurus/preset-classic` supports a search integration.",
   "source": "@site/docs/search.md",
   "permalink": "/docs/next/search",
-  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/search.md",
+  "editUrl": "https://github.com/vobi-io/vobees/edit/master/website/docs/search.md",
   "version": "next",
   "lastUpdatedBy": "Author",
   "lastUpdatedAt": 1539502055,
