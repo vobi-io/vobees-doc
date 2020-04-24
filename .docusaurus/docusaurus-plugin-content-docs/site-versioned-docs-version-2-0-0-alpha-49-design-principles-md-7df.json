@@ -3,7 +3,7 @@
   "title": "Design Principles",
   "description": ":::caution",
   "source": "@site/versioned_docs/version-2.0.0-alpha.49/design-principles.md",
-  "permalink": "/docs/design-principles",
+  "permalink": "/docs/2.0.0-alpha.49/design-principles",
   "editUrl": "https://github.com/vobi-io/vobees/edit/master/website/versioned_docs/version-2.0.0-alpha.49/design-principles.md",
   "version": "2.0.0-alpha.49",
   "lastUpdatedBy": "Author",
@@ -11,10 +11,10 @@
   "sidebar": "version-2.0.0-alpha.49/docs",
   "previous": {
     "title": "Introduction",
-    "permalink": "/docs/introduction"
+    "permalink": "/docs/2.0.0-alpha.49/introduction"
   },
   "next": {
     "title": "Contributing",
-    "permalink": "/docs/contributing"
+    "permalink": "/docs/2.0.0-alpha.49/contributing"
   }
 }

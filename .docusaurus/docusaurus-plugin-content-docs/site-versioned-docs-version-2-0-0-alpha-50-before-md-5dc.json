@@ -1,0 +1,20 @@
+{
+  "id": "version-2.0.0-alpha.50/before",
+  "title": "Before",
+  "description": "Install",
+  "source": "@site/versioned_docs/version-2.0.0-alpha.50/before.md",
+  "permalink": "/docs/before",
+  "editUrl": "https://github.com/vobi-io/vobees/edit/master/website/versioned_docs/version-2.0.0-alpha.50/before.md",
+  "version": "2.0.0-alpha.50",
+  "lastUpdatedBy": "Author",
+  "lastUpdatedAt": 1539502055,
+  "sidebar": "version-2.0.0-alpha.50/docs",
+  "previous": {
+    "title": "Policy",
+    "permalink": "/docs/policy"
+  },
+  "next": {
+    "title": "After",
+    "permalink": "/docs/after"
+  }
+}

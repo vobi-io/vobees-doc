@@ -3,7 +3,7 @@
   "title": "Presets",
   "description": "Presets are collections of plugins and themes.",
   "source": "@site/versioned_docs/version-2.0.0-alpha.49/presets.md",
-  "permalink": "/docs/presets",
+  "permalink": "/docs/2.0.0-alpha.49/presets",
   "editUrl": "https://github.com/vobi-io/vobees/edit/master/website/versioned_docs/version-2.0.0-alpha.49/presets.md",
   "version": "2.0.0-alpha.49",
   "lastUpdatedBy": "Author",
@@ -11,10 +11,10 @@
   "sidebar": "version-2.0.0-alpha.49/docs",
   "previous": {
     "title": "Themes",
-    "permalink": "/docs/using-themes"
+    "permalink": "/docs/2.0.0-alpha.49/using-themes"
   },
   "next": {
     "title": "CLI",
-    "permalink": "/docs/cli"
+    "permalink": "/docs/2.0.0-alpha.49/cli"
   }
 }

@@ -3,7 +3,7 @@
   "title": "Search",
   "description": "Docusaurus' own `@docusaurus/preset-classic` supports a search integration.",
   "source": "@site/versioned_docs/version-2.0.0-alpha.49/search.md",
-  "permalink": "/docs/search",
+  "permalink": "/docs/2.0.0-alpha.49/search",
   "editUrl": "https://github.com/vobi-io/vobees/edit/master/website/versioned_docs/version-2.0.0-alpha.49/search.md",
   "version": "2.0.0-alpha.49",
   "lastUpdatedBy": "Author",
@@ -11,10 +11,10 @@
   "sidebar": "version-2.0.0-alpha.49/docs",
   "previous": {
     "title": "Blog",
-    "permalink": "/docs/blog"
+    "permalink": "/docs/2.0.0-alpha.49/blog"
   },
   "next": {
     "title": "Deployment",
-    "permalink": "/docs/deployment"
+    "permalink": "/docs/2.0.0-alpha.49/deployment"
   }
 }

@@ -3,7 +3,7 @@
   "title": "Sidebar",
   "description": "To generate a sidebar to your Docusaurus site, you need to define a file that exports a sidebar object and pass that into the `@docusaurus/plugin-docs` plugin directly or via `@docusaurus/preset-classic`.",
   "source": "@site/versioned_docs/version-2.0.0-alpha.49/sidebar.md",
-  "permalink": "/docs/sidebar",
+  "permalink": "/docs/2.0.0-alpha.49/sidebar",
   "editUrl": "https://github.com/vobi-io/vobees/edit/master/website/versioned_docs/version-2.0.0-alpha.49/sidebar.md",
   "version": "2.0.0-alpha.49",
   "lastUpdatedBy": "Author",
@@ -11,10 +11,10 @@
   "sidebar": "version-2.0.0-alpha.49/docs",
   "previous": {
     "title": "Markdown Features",
-    "permalink": "/docs/markdown-features"
+    "permalink": "/docs/2.0.0-alpha.49/markdown-features"
   },
   "next": {
     "title": "Versioning",
-    "permalink": "/docs/versioning"
+    "permalink": "/docs/2.0.0-alpha.49/versioning"
   }
 }

@@ -3,7 +3,7 @@
   "title": "Lifecycle APIs",
   "description": ":::caution",
   "source": "@site/versioned_docs/version-2.0.0-alpha.49/lifecycle-apis.md",
-  "permalink": "/docs/lifecycle-apis",
+  "permalink": "/docs/2.0.0-alpha.49/lifecycle-apis",
   "editUrl": "https://github.com/vobi-io/vobees/edit/master/website/versioned_docs/version-2.0.0-alpha.49/lifecycle-apis.md",
   "version": "2.0.0-alpha.49",
   "lastUpdatedBy": "Author",
@@ -11,10 +11,10 @@
   "sidebar": "version-2.0.0-alpha.49/docs",
   "previous": {
     "title": "docusaurus.config.js",
-    "permalink": "/docs/docusaurus.config.js"
+    "permalink": "/docs/2.0.0-alpha.49/docusaurus.config.js"
   },
   "next": {
     "title": "@docusaurus/theme-classic",
-    "permalink": "/docs/theme-classic"
+    "permalink": "/docs/2.0.0-alpha.49/theme-classic"
   }
 }

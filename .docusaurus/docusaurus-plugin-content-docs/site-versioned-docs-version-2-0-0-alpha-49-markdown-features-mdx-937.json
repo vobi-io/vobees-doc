@@ -3,7 +3,7 @@
   "title": "Markdown Features",
   "description": "Docusaurus uses GitHub Flavored Markdown (GFM). Find out more about Docusaurus-specific features when writing Markdown.",
   "source": "@site/versioned_docs/version-2.0.0-alpha.49/markdown-features.mdx",
-  "permalink": "/docs/markdown-features",
+  "permalink": "/docs/2.0.0-alpha.49/markdown-features",
   "editUrl": "https://github.com/vobi-io/vobees/edit/master/website/versioned_docs/version-2.0.0-alpha.49/markdown-features.mdx",
   "version": "2.0.0-alpha.49",
   "lastUpdatedBy": "Author",
@@ -11,10 +11,10 @@
   "sidebar": "version-2.0.0-alpha.49/docs",
   "previous": {
     "title": "Static Assets",
-    "permalink": "/docs/static-assets"
+    "permalink": "/docs/2.0.0-alpha.49/static-assets"
   },
   "next": {
     "title": "Sidebar",
-    "permalink": "/docs/sidebar"
+    "permalink": "/docs/2.0.0-alpha.49/sidebar"
   }
 }

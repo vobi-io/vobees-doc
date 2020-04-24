@@ -3,7 +3,7 @@
   "title": "Styling and Layout",
   "description": "A Docusaurus site is a pre-rendered single-page React application. You can style it the way you style React apps.",
   "source": "@site/versioned_docs/version-2.0.0-alpha.49/styling-layout.md",
-  "permalink": "/docs/styling-layout",
+  "permalink": "/docs/2.0.0-alpha.49/styling-layout",
   "editUrl": "https://github.com/vobi-io/vobees/edit/master/website/versioned_docs/version-2.0.0-alpha.49/styling-layout.md",
   "version": "2.0.0-alpha.49",
   "lastUpdatedBy": "Author",
@@ -11,10 +11,10 @@
   "sidebar": "version-2.0.0-alpha.49/docs",
   "previous": {
     "title": "Creating Pages",
-    "permalink": "/docs/creating-pages"
+    "permalink": "/docs/2.0.0-alpha.49/creating-pages"
   },
   "next": {
     "title": "Static Assets",
-    "permalink": "/docs/static-assets"
+    "permalink": "/docs/2.0.0-alpha.49/static-assets"
   }
 }

@@ -1,0 +1,39 @@
+{
+  "docsSidebars": {
+    "version-2.0.0-alpha.50/docs": [
+      {
+        "type": "category",
+        "label": "Vobees",
+        "items": [
+          {
+            "type": "link",
+            "label": "Introduction",
+            "href": "/docs/2.0.0-alpha.50/introduction"
+          }
+        ]
+      },
+      {
+        "type": "category",
+        "label": "Getting Started",
+        "items": [
+          {
+            "type": "link",
+            "label": "Installation",
+            "href": "/docs/2.0.0-alpha.50/installation"
+          },
+          {
+            "type": "link",
+            "label": "Create Your APP",
+            "href": "/docs/2.0.0-alpha.50/create-your-app"
+          }
+        ]
+      }
+    ]
+  },
+  "permalinkToSidebar": {
+    "/docs/2.0.0-alpha.50/create-your-app": "version-2.0.0-alpha.50/docs",
+    "/docs/2.0.0-alpha.50/installation": "version-2.0.0-alpha.50/docs",
+    "/docs/2.0.0-alpha.50/introduction": "version-2.0.0-alpha.50/docs"
+  },
+  "version": "2.0.0-alpha.50"
+}

@@ -3,7 +3,7 @@
   "title": "@docusaurus/theme-classic",
   "description": ":::caution",
   "source": "@site/versioned_docs/version-2.0.0-alpha.49/theme-classic.md",
-  "permalink": "/docs/theme-classic",
+  "permalink": "/docs/2.0.0-alpha.49/theme-classic",
   "editUrl": "https://github.com/vobi-io/vobees/edit/master/website/versioned_docs/version-2.0.0-alpha.49/theme-classic.md",
   "version": "2.0.0-alpha.49",
   "lastUpdatedBy": "Author",
@@ -11,6 +11,6 @@
   "sidebar": "version-2.0.0-alpha.49/docs",
   "previous": {
     "title": "Lifecycle APIs",
-    "permalink": "/docs/lifecycle-apis"
+    "permalink": "/docs/2.0.0-alpha.49/lifecycle-apis"
   }
 }

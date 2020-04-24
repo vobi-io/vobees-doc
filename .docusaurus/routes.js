@@ -35,6 +35,156 @@ export default [
   
 },
 {
+  path: '/docs/2.0.0-alpha.49/:route',
+  component: ComponentCreator('/docs/2.0.0-alpha.49/:route'),
+  
+  routes: [
+{
+  path: '/docs/2.0.0-alpha.49/blog',
+  component: ComponentCreator('/docs/2.0.0-alpha.49/blog'),
+  exact: true,
+  
+},
+{
+  path: '/docs/2.0.0-alpha.49/cli',
+  component: ComponentCreator('/docs/2.0.0-alpha.49/cli'),
+  exact: true,
+  
+},
+{
+  path: '/docs/2.0.0-alpha.49/configuration',
+  component: ComponentCreator('/docs/2.0.0-alpha.49/configuration'),
+  exact: true,
+  
+},
+{
+  path: '/docs/2.0.0-alpha.49/contributing',
+  component: ComponentCreator('/docs/2.0.0-alpha.49/contributing'),
+  exact: true,
+  
+},
+{
+  path: '/docs/2.0.0-alpha.49/creating-pages',
+  component: ComponentCreator('/docs/2.0.0-alpha.49/creating-pages'),
+  exact: true,
+  
+},
+{
+  path: '/docs/2.0.0-alpha.49/deployment',
+  component: ComponentCreator('/docs/2.0.0-alpha.49/deployment'),
+  exact: true,
+  
+},
+{
+  path: '/docs/2.0.0-alpha.49/design-principles',
+  component: ComponentCreator('/docs/2.0.0-alpha.49/design-principles'),
+  exact: true,
+  
+},
+{
+  path: '/docs/2.0.0-alpha.49/docusaurus-core',
+  component: ComponentCreator('/docs/2.0.0-alpha.49/docusaurus-core'),
+  exact: true,
+  
+},
+{
+  path: '/docs/2.0.0-alpha.49/docusaurus.config.js',
+  component: ComponentCreator('/docs/2.0.0-alpha.49/docusaurus.config.js'),
+  exact: true,
+  
+},
+{
+  path: '/docs/2.0.0-alpha.49/installation',
+  component: ComponentCreator('/docs/2.0.0-alpha.49/installation'),
+  exact: true,
+  
+},
+{
+  path: '/docs/2.0.0-alpha.49/introduction',
+  component: ComponentCreator('/docs/2.0.0-alpha.49/introduction'),
+  exact: true,
+  
+},
+{
+  path: '/docs/2.0.0-alpha.49/lifecycle-apis',
+  component: ComponentCreator('/docs/2.0.0-alpha.49/lifecycle-apis'),
+  exact: true,
+  
+},
+{
+  path: '/docs/2.0.0-alpha.49/markdown-features',
+  component: ComponentCreator('/docs/2.0.0-alpha.49/markdown-features'),
+  exact: true,
+  
+},
+{
+  path: '/docs/2.0.0-alpha.49/migrating-from-v1-to-v2',
+  component: ComponentCreator('/docs/2.0.0-alpha.49/migrating-from-v1-to-v2'),
+  exact: true,
+  
+},
+{
+  path: '/docs/2.0.0-alpha.49/presets',
+  component: ComponentCreator('/docs/2.0.0-alpha.49/presets'),
+  exact: true,
+  
+},
+{
+  path: '/docs/2.0.0-alpha.49/resources',
+  component: ComponentCreator('/docs/2.0.0-alpha.49/resources'),
+  exact: true,
+  
+},
+{
+  path: '/docs/2.0.0-alpha.49/search',
+  component: ComponentCreator('/docs/2.0.0-alpha.49/search'),
+  exact: true,
+  
+},
+{
+  path: '/docs/2.0.0-alpha.49/sidebar',
+  component: ComponentCreator('/docs/2.0.0-alpha.49/sidebar'),
+  exact: true,
+  
+},
+{
+  path: '/docs/2.0.0-alpha.49/static-assets',
+  component: ComponentCreator('/docs/2.0.0-alpha.49/static-assets'),
+  exact: true,
+  
+},
+{
+  path: '/docs/2.0.0-alpha.49/styling-layout',
+  component: ComponentCreator('/docs/2.0.0-alpha.49/styling-layout'),
+  exact: true,
+  
+},
+{
+  path: '/docs/2.0.0-alpha.49/theme-classic',
+  component: ComponentCreator('/docs/2.0.0-alpha.49/theme-classic'),
+  exact: true,
+  
+},
+{
+  path: '/docs/2.0.0-alpha.49/using-plugins',
+  component: ComponentCreator('/docs/2.0.0-alpha.49/using-plugins'),
+  exact: true,
+  
+},
+{
+  path: '/docs/2.0.0-alpha.49/using-themes',
+  component: ComponentCreator('/docs/2.0.0-alpha.49/using-themes'),
+  exact: true,
+  
+},
+{
+  path: '/docs/2.0.0-alpha.49/versioning',
+  component: ComponentCreator('/docs/2.0.0-alpha.49/versioning'),
+  exact: true,
+  
+}],
+},
+{
   path: '/docs/next/:route',
   component: ComponentCreator('/docs/next/:route'),
   
@@ -190,56 +340,26 @@ export default [
   
   routes: [
 {
-  path: '/docs/blog',
-  component: ComponentCreator('/docs/blog'),
+  path: '/docs/after',
+  component: ComponentCreator('/docs/after'),
   exact: true,
   
 },
 {
-  path: '/docs/cli',
-  component: ComponentCreator('/docs/cli'),
+  path: '/docs/args',
+  component: ComponentCreator('/docs/args'),
   exact: true,
   
 },
 {
-  path: '/docs/configuration',
-  component: ComponentCreator('/docs/configuration'),
+  path: '/docs/before',
+  component: ComponentCreator('/docs/before'),
   exact: true,
   
 },
 {
-  path: '/docs/contributing',
-  component: ComponentCreator('/docs/contributing'),
-  exact: true,
-  
-},
-{
-  path: '/docs/creating-pages',
-  component: ComponentCreator('/docs/creating-pages'),
-  exact: true,
-  
-},
-{
-  path: '/docs/deployment',
-  component: ComponentCreator('/docs/deployment'),
-  exact: true,
-  
-},
-{
-  path: '/docs/design-principles',
-  component: ComponentCreator('/docs/design-principles'),
-  exact: true,
-  
-},
-{
-  path: '/docs/docusaurus-core',
-  component: ComponentCreator('/docs/docusaurus-core'),
-  exact: true,
-  
-},
-{
-  path: '/docs/docusaurus.config.js',
-  component: ComponentCreator('/docs/docusaurus.config.js'),
+  path: '/docs/create-your-app',
+  component: ComponentCreator('/docs/create-your-app'),
   exact: true,
   
 },
@@ -256,80 +376,20 @@ export default [
   
 },
 {
-  path: '/docs/lifecycle-apis',
-  component: ComponentCreator('/docs/lifecycle-apis'),
+  path: '/docs/policy',
+  component: ComponentCreator('/docs/policy'),
   exact: true,
   
 },
 {
-  path: '/docs/markdown-features',
-  component: ComponentCreator('/docs/markdown-features'),
+  path: '/docs/resolver',
+  component: ComponentCreator('/docs/resolver'),
   exact: true,
   
 },
 {
-  path: '/docs/migrating-from-v1-to-v2',
-  component: ComponentCreator('/docs/migrating-from-v1-to-v2'),
-  exact: true,
-  
-},
-{
-  path: '/docs/presets',
-  component: ComponentCreator('/docs/presets'),
-  exact: true,
-  
-},
-{
-  path: '/docs/resources',
-  component: ComponentCreator('/docs/resources'),
-  exact: true,
-  
-},
-{
-  path: '/docs/search',
-  component: ComponentCreator('/docs/search'),
-  exact: true,
-  
-},
-{
-  path: '/docs/sidebar',
-  component: ComponentCreator('/docs/sidebar'),
-  exact: true,
-  
-},
-{
-  path: '/docs/static-assets',
-  component: ComponentCreator('/docs/static-assets'),
-  exact: true,
-  
-},
-{
-  path: '/docs/styling-layout',
-  component: ComponentCreator('/docs/styling-layout'),
-  exact: true,
-  
-},
-{
-  path: '/docs/theme-classic',
-  component: ComponentCreator('/docs/theme-classic'),
-  exact: true,
-  
-},
-{
-  path: '/docs/using-plugins',
-  component: ComponentCreator('/docs/using-plugins'),
-  exact: true,
-  
-},
-{
-  path: '/docs/using-themes',
-  component: ComponentCreator('/docs/using-themes'),
-  exact: true,
-  
-},
-{
-  path: '/docs/versioning',
-  component: ComponentCreator('/docs/versioning'),
+  path: '/docs/type',
+  component: ComponentCreator('/docs/type'),
   exact: true,
   
 }],

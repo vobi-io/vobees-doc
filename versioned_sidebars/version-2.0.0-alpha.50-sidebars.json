@@ -1,134 +1,46 @@
 {
-  "version-2.0.0-alpha.49/docs": [
+  "version-2.0.0-alpha.50/docs": [
     {
       "type": "category",
-      "label": "Docusaurus",
+      "label": "Vobees",
       "items": [
         {
           "type": "doc",
-          "id": "version-2.0.0-alpha.49/introduction"
-        },
-        {
-          "type": "doc",
-          "id": "version-2.0.0-alpha.49/design-principles"
-        },
-        {
-          "type": "doc",
-          "id": "version-2.0.0-alpha.49/contributing"
-        },
-        {
-          "type": "doc",
-          "id": "version-2.0.0-alpha.49/resources"
+          "id": "version-2.0.0-alpha.50/introduction"
         }
       ]
     },
     {
       "type": "category",
-      "label": "Getting Started",
+      "label": "Basics",
       "items": [
         {
           "type": "doc",
-          "id": "version-2.0.0-alpha.49/installation"
+          "id": "version-2.0.0-alpha.50/resolver"
         },
         {
           "type": "doc",
-          "id": "version-2.0.0-alpha.49/configuration"
-        }
-      ]
-    },
-    {
-      "type": "category",
-      "label": "Guides",
-      "items": [
-        {
-          "type": "doc",
-          "id": "version-2.0.0-alpha.49/creating-pages"
+          "id": "version-2.0.0-alpha.50/policy"
         },
         {
           "type": "doc",
-          "id": "version-2.0.0-alpha.49/styling-layout"
+          "id": "version-2.0.0-alpha.50/before"
         },
         {
           "type": "doc",
-          "id": "version-2.0.0-alpha.49/static-assets"
-        },
-        {
-          "type": "category",
-          "label": "Docs",
-          "items": [
-            {
-              "type": "doc",
-              "id": "version-2.0.0-alpha.49/markdown-features"
-            },
-            {
-              "type": "doc",
-              "id": "version-2.0.0-alpha.49/sidebar"
-            },
-            {
-              "type": "doc",
-              "id": "version-2.0.0-alpha.49/versioning"
-            }
-          ]
+          "id": "version-2.0.0-alpha.50/after"
         },
         {
           "type": "doc",
-          "id": "version-2.0.0-alpha.49/blog"
+          "id": "version-2.0.0-alpha.50/policy"
         },
         {
           "type": "doc",
-          "id": "version-2.0.0-alpha.49/search"
+          "id": "version-2.0.0-alpha.50/type"
         },
         {
           "type": "doc",
-          "id": "version-2.0.0-alpha.49/deployment"
-        },
-        {
-          "type": "doc",
-          "id": "version-2.0.0-alpha.49/migrating-from-v1-to-v2"
-        }
-      ]
-    },
-    {
-      "type": "category",
-      "label": "Advanced Guides",
-      "items": [
-        {
-          "type": "doc",
-          "id": "version-2.0.0-alpha.49/using-plugins"
-        },
-        {
-          "type": "doc",
-          "id": "version-2.0.0-alpha.49/using-themes"
-        },
-        {
-          "type": "doc",
-          "id": "version-2.0.0-alpha.49/presets"
-        }
-      ]
-    },
-    {
-      "type": "category",
-      "label": "API Reference",
-      "items": [
-        {
-          "type": "doc",
-          "id": "version-2.0.0-alpha.49/cli"
-        },
-        {
-          "type": "doc",
-          "id": "version-2.0.0-alpha.49/docusaurus-core"
-        },
-        {
-          "type": "doc",
-          "id": "version-2.0.0-alpha.49/docusaurus.config.js"
-        },
-        {
-          "type": "doc",
-          "id": "version-2.0.0-alpha.49/lifecycle-apis"
-        },
-        {
-          "type": "doc",
-          "id": "version-2.0.0-alpha.49/theme-classic"
+          "id": "version-2.0.0-alpha.50/args"
         }
       ]
     }

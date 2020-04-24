@@ -3,7 +3,7 @@
   "title": "Installation",
   "description": "Docusaurus is essentially a set of npm [packages](https://github.com/facebook/docusaurus/tree/master/packages) that can be installed over npm.",
   "source": "@site/versioned_docs/version-2.0.0-alpha.49/installation.md",
-  "permalink": "/docs/installation",
+  "permalink": "/docs/2.0.0-alpha.49/installation",
   "editUrl": "https://github.com/vobi-io/vobees/edit/master/website/versioned_docs/version-2.0.0-alpha.49/installation.md",
   "version": "2.0.0-alpha.49",
   "lastUpdatedBy": "Author",
@@ -11,10 +11,10 @@
   "sidebar": "version-2.0.0-alpha.49/docs",
   "previous": {
     "title": "Awesome Resources",
-    "permalink": "/docs/resources"
+    "permalink": "/docs/2.0.0-alpha.49/resources"
   },
   "next": {
     "title": "Configuration",
-    "permalink": "/docs/configuration"
+    "permalink": "/docs/2.0.0-alpha.49/configuration"
   }
 }

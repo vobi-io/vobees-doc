@@ -3,7 +3,7 @@
   "title": "Deployment",
   "description": "To build the static files of your website for production, run:",
   "source": "@site/versioned_docs/version-2.0.0-alpha.49/deployment.md",
-  "permalink": "/docs/deployment",
+  "permalink": "/docs/2.0.0-alpha.49/deployment",
   "editUrl": "https://github.com/vobi-io/vobees/edit/master/website/versioned_docs/version-2.0.0-alpha.49/deployment.md",
   "version": "2.0.0-alpha.49",
   "lastUpdatedBy": "Author",
@@ -11,10 +11,10 @@
   "sidebar": "version-2.0.0-alpha.49/docs",
   "previous": {
     "title": "Search",
-    "permalink": "/docs/search"
+    "permalink": "/docs/2.0.0-alpha.49/search"
   },
   "next": {
     "title": "Migrating from v1 to v2",
-    "permalink": "/docs/migrating-from-v1-to-v2"
+    "permalink": "/docs/2.0.0-alpha.49/migrating-from-v1-to-v2"
   }
 }

@@ -3,7 +3,7 @@
   "title": "Awesome Resources",
   "description": "A curated list of interesting Docusaurus community projects.",
   "source": "@site/versioned_docs/version-2.0.0-alpha.49/resources.md",
-  "permalink": "/docs/resources",
+  "permalink": "/docs/2.0.0-alpha.49/resources",
   "editUrl": "https://github.com/vobi-io/vobees/edit/master/website/versioned_docs/version-2.0.0-alpha.49/resources.md",
   "version": "2.0.0-alpha.49",
   "lastUpdatedBy": "Author",
@@ -11,10 +11,10 @@
   "sidebar": "version-2.0.0-alpha.49/docs",
   "previous": {
     "title": "Contributing",
-    "permalink": "/docs/contributing"
+    "permalink": "/docs/2.0.0-alpha.49/contributing"
   },
   "next": {
     "title": "Installation",
-    "permalink": "/docs/installation"
+    "permalink": "/docs/2.0.0-alpha.49/installation"
   }
 }

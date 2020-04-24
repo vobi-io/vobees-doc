@@ -14,6 +14,106 @@
   "/versions": {
     "component": "component---site-src-pages-versions-js-18-b-bfe"
   },
+  "/docs/2.0.0-alpha.49/:route": {
+    "component": "component---theme-doc-page-1-be-9be",
+    "docsMetadata": "docsMetadata---docs-2-0-0-alpha-49-routedf-6-cf5"
+  },
+  "/docs/2.0.0-alpha.49/blog": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-blog-896-bbc"
+  },
+  "/docs/2.0.0-alpha.49/cli": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-cli-104-868"
+  },
+  "/docs/2.0.0-alpha.49/configuration": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-configuration-360-46f"
+  },
+  "/docs/2.0.0-alpha.49/contributing": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-contributingf-5-a-2b1"
+  },
+  "/docs/2.0.0-alpha.49/creating-pages": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-creating-pages-3-a-5-e0b"
+  },
+  "/docs/2.0.0-alpha.49/deployment": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-deploymentbdb-d4f"
+  },
+  "/docs/2.0.0-alpha.49/design-principles": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-design-principles-7-df-ed7"
+  },
+  "/docs/2.0.0-alpha.49/docusaurus-core": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-docusaurus-core-9-d-2-37b"
+  },
+  "/docs/2.0.0-alpha.49/docusaurus.config.js": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-docusaurus-config-js-6-ed-220"
+  },
+  "/docs/2.0.0-alpha.49/installation": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-installation-51-c-03b"
+  },
+  "/docs/2.0.0-alpha.49/introduction": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-introductionc-13-625"
+  },
+  "/docs/2.0.0-alpha.49/lifecycle-apis": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-lifecycle-apise-5-b-89c"
+  },
+  "/docs/2.0.0-alpha.49/markdown-features": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-markdown-features-937-b25"
+  },
+  "/docs/2.0.0-alpha.49/migrating-from-v1-to-v2": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-migrating-from-v-1-to-v-22-fa-c05"
+  },
+  "/docs/2.0.0-alpha.49/presets": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-presets-2-d-6-477"
+  },
+  "/docs/2.0.0-alpha.49/resources": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-resources-4-ab-fef"
+  },
+  "/docs/2.0.0-alpha.49/search": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-search-4-d-5-154"
+  },
+  "/docs/2.0.0-alpha.49/sidebar": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-sidebara-4-f-147"
+  },
+  "/docs/2.0.0-alpha.49/static-assets": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-static-assetsdad-7e0"
+  },
+  "/docs/2.0.0-alpha.49/styling-layout": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-styling-layout-6-b-1-ce4"
+  },
+  "/docs/2.0.0-alpha.49/theme-classic": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-theme-classic-848-47a"
+  },
+  "/docs/2.0.0-alpha.49/using-plugins": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-using-pluginsa-9-b-d7f"
+  },
+  "/docs/2.0.0-alpha.49/using-themes": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-using-themes-4-dc-91f"
+  },
+  "/docs/2.0.0-alpha.49/versioning": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-versioninged-4-779"
+  },
   "/docs/next/:route": {
     "component": "component---theme-doc-page-1-be-9be",
     "docsMetadata": "docsMetadata---docs-next-routec-6-c-720"
@@ -118,100 +218,40 @@
     "component": "component---theme-doc-page-1-be-9be",
     "docsMetadata": "docsMetadata---docs-route-20-a-f24"
   },
-  "/docs/blog": {
+  "/docs/after": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-blog-896-bbc"
+    "content": "content---docs-after-192-92f"
   },
-  "/docs/cli": {
+  "/docs/args": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-cli-104-868"
+    "content": "content---docs-argsc-53-29a"
   },
-  "/docs/configuration": {
+  "/docs/before": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-configuration-360-46f"
+    "content": "content---docs-before-5-dc-054"
   },
-  "/docs/contributing": {
+  "/docs/create-your-app": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-contributingf-5-a-2b1"
-  },
-  "/docs/creating-pages": {
-    "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-creating-pages-3-a-5-e0b"
-  },
-  "/docs/deployment": {
-    "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-deploymentbdb-d4f"
-  },
-  "/docs/design-principles": {
-    "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-design-principles-7-df-ed7"
-  },
-  "/docs/docusaurus-core": {
-    "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-docusaurus-core-9-d-2-37b"
-  },
-  "/docs/docusaurus.config.js": {
-    "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-docusaurus-config-js-6-ed-220"
+    "content": "content---docs-2-0-0-alpha-50-create-your-app-4-d-8-a1e"
   },
   "/docs/installation": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-installation-51-c-03b"
+    "content": "content---docs-2-0-0-alpha-50-installation-348-8e7"
   },
   "/docs/introduction": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-introductionc-13-625"
+    "content": "content---docs-2-0-0-alpha-50-introductionf-60-cfd"
   },
-  "/docs/lifecycle-apis": {
+  "/docs/policy": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-lifecycle-apise-5-b-89c"
+    "content": "content---docs-policyed-8-f29"
   },
-  "/docs/markdown-features": {
+  "/docs/resolver": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-markdown-features-937-b25"
+    "content": "content---docs-installation-4-d-8-70a"
   },
-  "/docs/migrating-from-v1-to-v2": {
+  "/docs/type": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-migrating-from-v-1-to-v-22-fa-c05"
-  },
-  "/docs/presets": {
-    "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-presets-2-d-6-477"
-  },
-  "/docs/resources": {
-    "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-resources-4-ab-fef"
-  },
-  "/docs/search": {
-    "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-search-4-d-5-154"
-  },
-  "/docs/sidebar": {
-    "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-sidebara-4-f-147"
-  },
-  "/docs/static-assets": {
-    "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-static-assetsdad-7e0"
-  },
-  "/docs/styling-layout": {
-    "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-styling-layout-6-b-1-ce4"
-  },
-  "/docs/theme-classic": {
-    "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-theme-classic-848-47a"
-  },
-  "/docs/using-plugins": {
-    "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-using-pluginsa-9-b-d7f"
-  },
-  "/docs/using-themes": {
-    "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-using-themes-4-dc-91f"
-  },
-  "/docs/versioning": {
-    "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-versioninged-4-779"
+    "content": "content---docs-type-9-ed-f65"
   }
 }

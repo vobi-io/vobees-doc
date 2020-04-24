@@ -3,7 +3,7 @@
   "title": "docusaurus.config.js",
   "description": "API reference for Docusaurus configuration file.",
   "source": "@site/versioned_docs/version-2.0.0-alpha.49/docusaurus.config.js.md",
-  "permalink": "/docs/docusaurus.config.js",
+  "permalink": "/docs/2.0.0-alpha.49/docusaurus.config.js",
   "editUrl": "https://github.com/vobi-io/vobees/edit/master/website/versioned_docs/version-2.0.0-alpha.49/docusaurus.config.js.md",
   "version": "2.0.0-alpha.49",
   "lastUpdatedBy": "Author",
@@ -11,10 +11,10 @@
   "sidebar": "version-2.0.0-alpha.49/docs",
   "previous": {
     "title": "Docusaurus Client API",
-    "permalink": "/docs/docusaurus-core"
+    "permalink": "/docs/2.0.0-alpha.49/docusaurus-core"
   },
   "next": {
     "title": "Lifecycle APIs",
-    "permalink": "/docs/lifecycle-apis"
+    "permalink": "/docs/2.0.0-alpha.49/lifecycle-apis"
   }
 }
