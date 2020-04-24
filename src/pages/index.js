@@ -21,7 +21,7 @@ const QUOTES = [
   {
     thumbnail: require('../data/quotes/giorgi.jpeg'),
     name: 'Giorgi Tsitsvidze',
-    title: 'Lead Developer',
+    title: 'Full Developer',
     text: (
       <>
         I&apos;ve helped open source many projects at Facebook and every one
@@ -51,8 +51,8 @@ const QUOTES = [
     title: 'Lead Developer',
     text: (
       <>
-        Docusaurus has been a great choice for the ReasonML family of projects.
-        It makes our documentation consistent, i18n-friendly, easy to maintain,
+        Vobees has been a great choice for Nodejs lovers.
+        It makes our documentation consistent, api-friendly, easy to maintain,
         and friendly for new contributors.
       </>
     ),
@@ -77,12 +77,11 @@ function Home() {
                 className={styles.heroLogo}
                 src={useBaseUrl('img/vobees_keytar.svg')}
               />
-              Build{' '}
-              <span className={styles.heroProjectKeywords}>optimized</span>{' '}
-              websites{' '}
-              <span className={styles.heroProjectKeywords}>quickly</span>, focus
-              on your{' '}
-              <span className={styles.heroProjectKeywords}>content</span>
+              The{' '}
+              <span className={styles.heroProjectKeywords}>Simplest</span>{' '}
+              Node.js framework for building {' '}
+              <span className={styles.heroProjectKeywords}>APIs</span> and{' '}
+              <span className={styles.heroProjectKeywords}>microservices</span>
             </h1>
             <div className={styles.indexCtas}>
               <Link
@@ -93,7 +92,7 @@ function Home() {
               <span className={styles.indexCtasGitHubButtonWrapper}>
                 <iframe
                   className={styles.indexCtasGitHubButton}
-                  src="https://ghbtns.com/github-btn.html?user=facebook&amp;repo=docusaurus&amp;type=star&amp;count=true&amp;size=large"
+                  src="https://ghbtns.com/github-btn.html?user=vobi-io&amp;repo=vobees&amp;type=star&amp;count=true&amp;size=large"
                   width={160}
                   height={30}
                   title="GitHub Stars"
@@ -122,14 +121,10 @@ function Home() {
                   src={useBaseUrl('img/undraw_typewriter.svg')}
                 />
                 <h2 className={classnames(styles.featureHeading)}>
-                  Powered by Markdown
+                 Fully customizable
                 </h2>
                 <p className="padding-horiz--md">
-                  Save time and focus on your project's documentation. Simply
-                  write docs and blog posts with Markdown/MDX and Docusaurus
-                  will publish a set of static HTML files ready to serve. You
-                  can even embed JSX components into your Markdown thanks to
-                  MDX.
+                  Doesn’t force you to write on its style it just provides simplified api.
                 </p>
               </div>
               <div className="col">
@@ -139,12 +134,10 @@ function Home() {
                   src={useBaseUrl('img/undraw_react.svg')}
                 />
                 <h2 className={classnames(styles.featureHeading)}>
-                  Built Using React
+                  Graphql & Rest-APIs
                 </h2>
                 <p className="padding-horiz--md">
-                  Extend or customize your project's layout by reusing React.
-                  Docusaurus can be extended while reusing the same header and
-                  footer.
+                  You can generate Graphql and Rest-Api automatically.
                 </p>
               </div>
               <div className="col">
@@ -154,11 +147,11 @@ function Home() {
                   src={useBaseUrl('img/undraw_around_the_world.svg')}
                 />
                 <h2 className={classnames(styles.featureHeading)}>
-                  Ready for Translations
+                  Love with Mongodb
                 </h2>
                 <p className="padding-horiz--md">
-                  Localization comes pre-configured. Use Crowdin to translate
-                  your docs into over 70 languages.
+                  If you are in love with Mongodb and Mongoose, That is for you. 
+                  You can generate graqphl and Rest-api from Mongoose Schema.
                 </p>
               </div>
             </div>
@@ -172,12 +165,11 @@ function Home() {
                   src={useBaseUrl('img/undraw_version_control.svg')}
                 />
                 <h2 className={classnames(styles.featureHeading)}>
-                  Document Versioning
+                  Easy WebSocket integration
                 </h2>
                 <p className="padding-horiz--md">
-                  Support users on all versions of your project. Document
-                  versioning helps you keep documentation in sync with project
-                  releases.
+                GraphQL WebSocket server and client to facilitate GraphQL queries, 
+                mutations and subscriptions over WebSocket.
                 </p>
               </div>
               <div className="col col--4">
@@ -187,12 +179,10 @@ function Home() {
                   src={useBaseUrl('img/undraw_algolia.svg')}
                 />
                 <h2 className={classnames(styles.featureHeading)}>
-                  Content Search
+                  Built In Filters
                 </h2>
                 <p className="padding-horiz--md">
-                  Make it easy for your community to find what they need in your
-                  documentation. We proudly support Algolia documentation
-                  search.
+                  We already took care of as complicated stuff as filters, pagination, sorting..
                 </p>
               </div>
             </div>

@@ -9,7 +9,7 @@ const versions = require('./versions.json');
 
 module.exports = {
   title: 'Vobees',
-  tagline: 'Build optimized websites quickly, focus on your content',
+  tagline: 'The Simplest Node.js framework for building APIs and microservices.',
   organizationName: 'facebook',
   projectName: 'vobees',
   baseUrl: '/',
@@ -179,22 +179,22 @@ module.exports = {
               label: 'Twitter',
               href: 'https://twitter.com/vobees',
             },
-            {
-              html: `
-                <a href="https://www.netlify.com" target="_blank" rel="noreferrer noopener" aria-label="Deploys by Netlify">
-                  <img src="https://www.netlify.com/img/global/badges/netlify-color-accent.svg" alt="Deploys by Netlify" />
-                </a>
-              `,
-            },
+            // {
+            //   html: `
+            //     <a href="https://www.netlify.com" target="_blank" rel="noreferrer noopener" aria-label="Deploys by Netlify">
+            //       <img src="https://www.netlify.com/img/global/badges/netlify-color-accent.svg" alt="Deploys by Netlify" />
+            //     </a>
+            //   `,
+            // },
           ],
         },
       ],
       logo: {
-        alt: 'Facebook Open Source Logo',
-        src: 'https://vobees.io/img/oss_logo.png',
-        href: 'https://opensource.facebook.com/',
+        alt: 'Vobi Logo',
+        src: '../img/vobi.png',
+        href: 'https://vobi.io/',
       },
-      copyright: `Copyright © ${new Date().getFullYear()} Facebook, Inc.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Vobi, Inc.`,
     },
   },
 };

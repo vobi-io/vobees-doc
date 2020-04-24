@@ -243,17 +243,17 @@ export default {
           "activeBasePath": "docs",
           "items": [
             {
-              "label": "2.0.0-alpha.49",
+              "label": "1.0.0-alpha.02",
               "to": "docs/introduction"
             },
             {
               "label": "2.0.0-alpha.50",
               "to": "docs/2.0.0-alpha.50/introduction"
             },
-            {
-              "label": "Master/Unreleased",
-              "to": "docs/next/introduction"
-            }
+            // {
+            //   "label": "Master/Unreleased",
+            //   "to": "docs/next/introduction"
+            // }
           ]
         },
         {
@@ -338,23 +338,20 @@ export default {
             {
               "label": "Twitter",
               "href": "https://twitter.com/vobees"
-            },
-            {
-              "html": "\n                <a href=\"https://www.netlify.com\" target=\"_blank\" rel=\"noreferrer noopener\" aria-label=\"Deploys by Netlify\">\n                  <img src=\"https://www.netlify.com/img/global/badges/netlify-color-accent.svg\" alt=\"Deploys by Netlify\" />\n                </a>\n              "
             }
           ]
         }
       ],
       "logo": {
-        "alt": "Facebook Open Source Logo",
-        "src": "https://vobees.io/img/oss_logo.png",
-        "href": "https://opensource.facebook.com/"
+        "alt": "Vobi Logo",
+        "src": "../img/vobi.png",
+        "href": "https://vobi.io/"
       },
-      "copyright": "Copyright © 2020 Facebook, Inc."
+      "copyright": "Copyright © 2020 Vobi, Inc."
     }
   },
   "title": "Vobees",
-  "tagline": "Build optimized websites quickly, focus on your content",
+  "tagline": "The Simplest Node.js framework for building APIs and microservices.",
   "organizationName": "facebook",
   "projectName": "vobees",
   "baseUrl": "/",
@@ -366,7 +363,7 @@ export default {
       {
         "docs": {
           "path": "docs",
-          "sidebarPath": "/Users/giga/projects/vobees-doc/sidebars.js",
+          "sidebarPath": "/Users/giga/projects/vobees/vobees-doc/sidebars.js",
           "editUrl": "https://github.com/vobi-io/vobees/edit/master/website/",
           "showLastUpdateAuthor": true,
           "showLastUpdateTime": true,
@@ -383,7 +380,7 @@ export default {
           }
         },
         "theme": {
-          "customCss": "/Users/giga/projects/vobees-doc/src/css/custom.css"
+          "customCss": "/Users/giga/projects/vobees/vobees-doc/src/css/custom.css"
         }
       }
     ]
