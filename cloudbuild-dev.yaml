@@ -1,5 +1,5 @@
 steps:
-  - name: node:10.9.0
+  - name: node:12.11.1
     entrypoint: yarn
     args: ['install']
   - name: 'gcr.io/cloud-builders/yarn'
