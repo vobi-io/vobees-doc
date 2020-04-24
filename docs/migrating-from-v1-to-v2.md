@@ -233,7 +233,7 @@ module.exports = {
       },
       copyright: `Copyright © ${new Date().getFullYear()} Facebook, Inc.`, // You can also put own HTML here
     },
-    image: 'img/docusaurus.png',
+    image: 'img/vobees.png',
     // Equivalent to `docsSideNavCollapsible`
     sidebarCollapsible: false,
     // ...
@@ -246,7 +246,8 @@ module.exports = {
 In Docusaurus 1, header icon and header links were root fields in `siteConfig`:
 
 ```js
-headerIcon: 'img/docusaurus.svg',
+headerIcon: 'img/    image: 'img/vobees.png',
+.svg',
 headerLinks: [
   { doc: "doc1", label: "Getting Started" },
   { page: "help", label: "Help" },
@@ -265,7 +266,7 @@ module.exports = {
       title: 'Docusaurus',
       logo: {
         alt: 'Docusaurus Logo',
-        src: 'img/docusaurus.svg',
+        src: 'img/vobees.svg',
       },
       links: [
         {to: 'docs/doc1', label: 'Getting Started', position: 'left'},

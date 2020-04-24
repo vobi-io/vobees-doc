@@ -44,7 +44,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl'; // Add to the top of the file b
 You could also just use Markdown image syntax, but you would have to manually maintain the image paths yourself and isn't recommended.
 
 ```md title="my-doc.md"
-![Docusaurus with Keytar](/img/docusaurus_keytar.png)
+![Docusaurus with Keytar](/img/vobees_keytar.png)
 ```
 
 ### Caveats

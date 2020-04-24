@@ -35,7 +35,7 @@ module.exports = {
   themeConfig: {
     // Relative to your site's "static" directory.
     // Cannot be SVGs. Can be external URLs too.
-    image: 'img/docusaurus.png',
+    image: 'img/vobees.png',
     ...
   },
 }
