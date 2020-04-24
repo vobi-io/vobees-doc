@@ -19,9 +19,9 @@ import styles from './styles.module.css';
 
 const QUOTES = [
   {
-    thumbnail: require('../data/quotes/christopher-chedeau.jpg'),
-    name: 'Christopher "vjeux" Chedeau',
-    title: 'Lead Prettier Developer',
+    thumbnail: require('../data/quotes/giorgi.jpeg'),
+    name: 'Giorgi Tsitsvidze',
+    title: 'Lead Developer',
     text: (
       <>
         I&apos;ve helped open source many projects at Facebook and every one
@@ -33,9 +33,9 @@ const QUOTES = [
     ),
   },
   {
-    thumbnail: require('../data/quotes/hector-ramos.jpg'),
-    name: 'Hector Ramos',
-    title: 'Lead React Native Advocate',
+    thumbnail: require('../data/quotes/saba.jpeg'),
+    name: 'Saba Tchikhinashvili',
+    title: 'Senior Developer',
     text: (
       <>
         Open source contributions to the React Native docs have skyrocketed
@@ -46,9 +46,9 @@ const QUOTES = [
     ),
   },
   {
-    thumbnail: require('../data/quotes/ricky-vetter.jpg'),
-    name: 'Ricky Vetter',
-    title: 'ReasonReact Developer',
+    thumbnail: require('../data/quotes/giga.jpeg'),
+    name: 'Giga Chkhikvadze',
+    title: 'Lead Developer',
     text: (
       <>
         Docusaurus has been a great choice for the ReasonML family of projects.
