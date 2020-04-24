@@ -243,7 +243,7 @@ export default {
           "activeBasePath": "docs",
           "items": [
             {
-              "label": "1.0.0-alpha.02",
+              "label": "1.0.0-alpha.49",
               "to": "docs/introduction"
             },
             {

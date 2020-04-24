@@ -21,7 +21,7 @@ const QUOTES = [
   {
     thumbnail: require('../data/quotes/giorgi.jpeg'),
     name: 'Giorgi Tsitsvidze',
-    title: 'Full Developer',
+    title: 'Lead Developer',
     text: (
       <>
         I&apos;ve helped open source many projects at Facebook and every one
@@ -101,16 +101,7 @@ function Home() {
             </div>
           </div>
         </div>
-        <div
-          className={classnames(styles.announcement, styles.announcementDark)}>
-          <div className={styles.announcementInner}>
-            Coming from v1? Check out our{' '}
-            <Link to={useBaseUrl('/docs/migrating-from-v1-to-v2')}>
-              v1 to v2 migration guide
-            </Link>
-            .
-          </div>
-        </div>
+
         <div className={styles.section}>
           <div className="container text--center margin-bottom--xl">
             <div className="row">
@@ -185,6 +176,48 @@ function Home() {
                   We already took care of as complicated stuff as filters, pagination, sorting..
                 </p>
               </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className={classnames(styles.announcement, styles.announcementDark)}>
+          <h1>Built in CRUD</h1>
+          <div className={styles.announcementInner}>
+             Vobees provides simple interface for creating crud module which works on all of its plugins.
+          </div>
+        </div>
+        <div className={styles.section}>
+          <div className="container text--center margin-bottom--xl">
+            <div className="row">
+              <div className="col">
+                <img
+                  className={styles.featureImage}
+                  alt="Powered by MDX"
+                  src={useBaseUrl('img/undraw_typewriter.svg')}
+                />
+                <h2 className={classnames(styles.featureHeading)}>
+                Easily readable
+                </h2>
+                <p className="padding-horiz--md">
+                  Vobees provides easily readable interface exposing methods like before, after, beforeSync so you can easily see buisness logic behind each route just by looking at api declaration.
+                </p>
+              </div>
+              <div className="col">
+                <img
+                  alt="Built Using React"
+                  className={styles.featureImage}
+                  src={useBaseUrl('img/undraw_react.svg')}
+                />
+                <h2 className={classnames(styles.featureHeading)}>
+                  Write only once
+                </h2>
+                <p className="padding-horiz--md">
+                  Generates input/output/swagger types automatically from mongodb model. 
+                  It is simplier to modify properties since you change it in one place so you don't have to care about side effects. 
+                  You can also create custom types if you want.
+                </p>
+              </div>
+            
             </div>
           </div>
         </div>
