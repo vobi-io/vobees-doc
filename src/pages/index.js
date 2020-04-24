@@ -182,7 +182,6 @@ function Home() {
         <div
           className={classnames(styles.announcement, styles.announcementDark)}>
           <iframe width="420" height="315"
-            // src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1">
             src="https://www.youtube.com/embed/BeULvxMobzM?autoplay=1">
           </iframe>
           <h1>Built in CRUD</h1>
