@@ -181,6 +181,10 @@ function Home() {
         </div>
         <div
           className={classnames(styles.announcement, styles.announcementDark)}>
+          <iframe width="420" height="315"
+            // src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1">
+            src="https://www.youtube.com/embed/BeULvxMobzM?autoplay=1">
+          </iframe>
           <h1>Built in CRUD</h1>
           <div className={styles.announcementInner}>
              Vobees provides simple interface for creating crud module which works on all of its plugins.
@@ -196,7 +200,7 @@ function Home() {
                   src={useBaseUrl('img/undraw_typewriter.svg')}
                 />
                 <h2 className={classnames(styles.featureHeading)}>
-                Easily readable
+                  Easily readable
                 </h2>
                 <p className="padding-horiz--md">
                   Vobees provides easily readable interface exposing methods like before, after, beforeSync so you can easily see buisness logic behind each route just by looking at api declaration.
